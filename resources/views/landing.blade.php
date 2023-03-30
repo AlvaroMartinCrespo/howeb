@@ -79,86 +79,42 @@
         </div>
 
         <div class=" flex justify-center gap-6 mt-[5rem] px-5">
-            <div
-                class="w-[30rem] mx-auto bg-white rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-110">
-                <img class="h-48 w-full object-cover" src="https://via.placeholder.com/640x360" alt="Alojamiento">
-                <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800 mb-2">Nombre del Alojamiento</h2>
-                    <p class="text-gray-600 mb-4">Descripción breve del alojamiento.</p>
-                    <div class="flex items-center justify-between">
-                        <p class="text-gray-700 font-bold text-xl">$100</p>
-                        <a href="#" class="text-indigo-500 hover:text-indigo-600 font-semibold text-sm">Ver
-                            detalles</a>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="w-[30rem] mx-auto bg-white rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-110">
-                <img class="h-48 w-full object-cover" src="https://via.placeholder.com/640x360" alt="Alojamiento">
-                <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800 mb-2">Nombre del Alojamiento</h2>
-                    <p class="text-gray-600 mb-4">Descripción breve del alojamiento.</p>
-                    <div class="flex items-center justify-between">
-                        <p class="text-gray-700 font-bold text-xl">$100</p>
-                        <a href="#" class="text-indigo-500 hover:text-indigo-600 font-semibold text-sm">Ver
-                            detalles</a>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="w-[30rem] mx-auto bg-white rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-110">
-                <img class="h-48 w-full object-cover" src="https://via.placeholder.com/640x360" alt="Alojamiento">
-                <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800 mb-2">Nombre del Alojamiento</h2>
-                    <p class="text-gray-600 mb-4">Descripción breve del alojamiento.</p>
-                    <div class="flex items-center justify-between">
-                        <p class="text-gray-700 font-bold text-xl">$100</p>
-                        <a href="#" class="text-indigo-500 hover:text-indigo-600 font-semibold text-sm">Ver
-                            detalles</a>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-        <div class=" flex justify-center gap-6 mt-[5rem] px-5">
             <div
-                class="w-[30rem] mx-auto bg-white rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-110">
-                <img class="h-48 w-full object-cover" src="https://via.placeholder.com/640x360" alt="Alojamiento">
-                <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800 mb-2">Nombre del Alojamiento</h2>
-                    <p class="text-gray-600 mb-4">Descripción breve del alojamiento.</p>
-                    <div class="flex items-center justify-between">
-                        <p class="text-gray-700 font-bold text-xl">$100</p>
-                        <a href="#" class="text-indigo-500 hover:text-indigo-600 font-semibold text-sm">Ver
-                            detalles</a>
+                class="w-[30rem] bg-gray-800 mx-auto rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-105">
+                <a href="#" class="block w-full">
+                    <div class="relative">
+                        <img class="w-full h-full shadow-md opacity-75 transition-all easy-in-out duration-300 hover:opacity-100 "
+                            src="https://via.placeholder.com/600x400" alt="placeholder image">
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-white font-bold text-2xl ">Título de la tarjeta</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div
-                class="w-[30rem] mx-auto bg-white rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-110">
-                <img class="h-48 w-full object-cover" src="https://via.placeholder.com/640x360" alt="Alojamiento">
-                <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800 mb-2">Nombre del Alojamiento</h2>
-                    <p class="text-gray-600 mb-4">Descripción breve del alojamiento.</p>
-                    <div class="flex items-center justify-between">
-                        <p class="text-gray-700 font-bold text-xl">$100</p>
-                        <a href="#" class="text-indigo-500 hover:text-indigo-600 font-semibold text-sm">Ver
-                            detalles</a>
+                class="w-[30rem] bg-gray-800 mx-auto rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-105">
+                <a href="#" class="block w-full">
+                    <div class="relative">
+                        <img class="w-full h-full shadow-md opacity-75 transition-all easy-in-out duration-300 hover:opacity-100 "
+                            src="https://via.placeholder.com/600x400" alt="placeholder image">
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-white font-bold text-2xl ">Título de la tarjeta</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div
-                class="w-[30rem] mx-auto bg-white rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-110">
-                <img class="h-48 w-full object-cover" src="https://via.placeholder.com/640x360" alt="Alojamiento">
-                <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800 mb-2">Nombre del Alojamiento</h2>
-                    <p class="text-gray-600 mb-4">Descripción breve del alojamiento.</p>
-                    <div class="flex items-center justify-between">
-                        <p class="text-gray-700 font-bold text-xl">$100</p>
-                        <a href="#" class="text-indigo-500 hover:text-indigo-600 font-semibold text-sm">Ver
-                            detalles</a>
+                class="w-[30rem] bg-gray-800 mx-auto rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-105">
+                <a href="#" class="block w-full">
+                    <div class="relative">
+                        <img class="w-full h-full shadow-md opacity-75 transition-all easy-in-out duration-300 hover:opacity-100 "
+                            src="https://via.placeholder.com/600x400" alt="placeholder image">
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-white font-bold text-2xl ">Título de la tarjeta</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
         </div>
@@ -171,8 +127,8 @@
     <section class="w-full mb-[10rem]">
 
         <div class="w-full flex justify-center flex-col items-center p-5 mb-[5rem]">
-            <h1 class="text-6xl"> <span class="font-thin">Opiniones</span><span
-                    class="font-bold text-orange-400">Clientes </span>
+            <h1 class="text-6xl"> <span class="font-thin">Opiniones</span><span class="font-bold text-orange-400">Clientes
+                </span>
             </h1>
             <p class="mt-[2rem] lg:text-3xl"><span class="font-thin">Tendrás las mejores <span
                         class="font-bold">experiencias</span>, en los
@@ -186,50 +142,37 @@
             <img class="h-full w-full object-cover" src="https://via.placeholder.com/150" alt="Imagen">
         </div> --}}
 
-        <div id="container-personas" class="flex justify-center flex-col gap-4 px-[3rem]">
-
-            <div
-                class=" h-full w-full flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                    src="{{ asset('img/landing/avatar.png') }}" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                        acquisitions 2021</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                        acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
+        <div id="client1"
+            class="w-auto bg-gradient-to-r from-blue-100 to-white gap-10 opacity-0 transition-all easy-in-out duration-1000 bg-dark flex justify-left items-center mb-[2rem]">
+            <img class="object-cover rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                src="{{ asset('img/landing/avatar.png') }}" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Nombre de cliente.</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Opinion de cliente.</p>
             </div>
-
-            <div
-                class=" h-full flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                    src="{{ asset('img/landing/avatar.png') }}" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                        acquisitions 2021</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                        acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
-            </div>
-
-            <div
-                class=" h-full flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                    src="{{ asset('img/landing/avatar.png') }}" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                        acquisitions 2021</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                        acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
-            </div>
-
-
         </div>
 
+        <div id="client2"
+            class="w-auto bg-gradient-to-r from-blue-100 to-white gap-10 opacity-0 transition-all easy-in-out duration-1000 bg-dark flex justify-left items-center mb-[2rem]">
+            <img class="object-cover rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                src="{{ asset('img/landing/avatar.png') }}" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Nombre de cliente.</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Opinion de cliente.</p>
+            </div>
+        </div>
+
+        <div id="client3"
+            class="w-auto bg-gradient-to-r from-blue-100 to-white gap-10 opacity-0 transition-all easy-in-out duration-1000 bg-dark flex justify-left items-center mb-[2rem]">
+            <img class="object-cover rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                src="{{ asset('img/landing/avatar.png') }}" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Nombre de cliente</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Opinion de cliente.</p>
+            </div>
+        </div>
 
     </section>
-
 
 @endsection
 

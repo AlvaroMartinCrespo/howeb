@@ -33,8 +33,10 @@
 
                         <div class="flex flex-col justify-center items-center w-full">
                             <span>or</span>
-                            <span><a href="{{ route('login') }}">Login</a></span>
+                            <span><a class="text-[#C79A25]" href="{{ route('login') }}">Login</a></span>
                         </div>
+
+                        <span><a class="text-[#C79A25]" href="{{ route('landing') }}">Volver</a></span>
                     </form>
                 </div>
             </div>

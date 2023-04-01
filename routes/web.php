@@ -25,4 +25,4 @@ Route::controller(LoginController::class)->group(function () {
 //Landing Page
 Route::get('/', function () {
     return view('landing');
-});
+})->name('landing');

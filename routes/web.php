@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LandingController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Routes LoginController
+Route::controller(LoginController::class)->group(function () {
+    Route::get('/login', 'loginPage')->name('login');
+    Route::get('/register', 'registerPage')->name('register');
+});
+
+//Landing Page
 Route::get('/', function () {
     return view('landing');
 });

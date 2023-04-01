@@ -15,31 +15,18 @@
                         <a href="#"
                             class="ml-10 box-content w-25 text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400 ">Inicio</a>
                         <a href="#"
-                            class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Acerca
-                            de</a>
+                            class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Hoteles</a>
                         <a href="#"
-                            class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Contacto</a>
+                            class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Sobre
+                            Nosotros</a>
                     </div>
                 </div>
                 <div
                     class="p-1 rounded-full transition ease-in-out duration-300 hover:bg-orange-200 h-full hidden md:block">
-                    <a href="#" text-gray-300 hover:text-white"><img class="h-full"
+                    <a href="{{ route('login') }}" text-gray-300 hover:text-white"><img class="h-full"
                             src="{{ asset('/img/icons/iconoNoPhoto.png') }}" alt="login"></a>
                 </div>
-                <div class="-mr-2 flex md:hidden">
-                    <button type="button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
-                        aria-label="Main menu" aria-expanded="false">
-                        <svg class="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                        <svg class="hidden h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                            </path>
-                        </svg>
-                    </button>
-                </div>
+
             </div>
         </div>
     </nav>
@@ -54,7 +41,7 @@
                 <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""
                     href="#">Mirar Alojamientos</a>
                 <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""
-                    href="#">Iniciar Sesión</a>
+                    href="{{ route('login') }}">Iniciar Sesión</a>
             </div>
 
         </div>

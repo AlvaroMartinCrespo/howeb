@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,8 +19,18 @@ use Illuminate\Support\Facades\Route;
 
 // Routes LoginController
 Route::controller(LoginController::class)->group(function () {
+    //Routes
     Route::get('/login', 'loginPage')->name('login');
     Route::get('/register', 'registerPage')->name('register');
+    // Session methods
+    Route::post('/register-validate', 'register')->name('register-validate');
+    Route::post('/login-validate', 'login')->name('login-validate');
+    Route::post('/logout', 'logout')->name('logout');
+});
+
+//Routes PageController
+Route::controller(PageController::class)->group(function () {
+    Route::get('/home', 'index')->middleware('auth')->name('home');
 });
 
 //Landing Page

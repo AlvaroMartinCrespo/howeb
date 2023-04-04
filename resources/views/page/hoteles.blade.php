@@ -1,6 +1,6 @@
 @extends('../plantilla/plantilla')
 
-@section('title', 'Howeb')
+@section('title', 'Login Howeb')
 
 @section('main')
 
@@ -13,5 +13,7 @@
             @include('page/typepage/userPage')
         </div>
     @endif
+
+    <h1>Hoteles</h1>
 
 @endsection

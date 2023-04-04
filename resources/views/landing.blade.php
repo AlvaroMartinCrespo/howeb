@@ -4,7 +4,7 @@
 
 @section('main')
 
-    <nav id="nav-landing"
+    {{-- <nav id="nav-landing"
         class="transition-all ease-in-out duration-400 bg-white p-3 fixed z-10 w-full hover:opacity-100 hover:p-3">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -29,19 +29,19 @@
 
             </div>
         </div>
-    </nav>
+    </nav> --}}
 
     <section id="inicio-landing" class="w-full h-[45rem] bg-[url('{{ asset('/img/landing/playa.jpg') }}')]">
 
         <div class="h-full flex justify-center items-center flex-col">
-            <h1 class="text-white font-bold text-6xl text-black left-50 top-50">Playas. <span
-                    class="text-orange-300">Hoteles.</span> <br><span class="text-7xl ">Diversion.</span>
+            <h1 class="text-white font-bold text-6xl left-50 top-50">Playas. <span class="text-orange-300">Hoteles.</span>
+                <br><span class="text-7xl ">Diversion.</span>
             </h1>
             <div class="flex justify-center items-center gap-10 mt-20">
                 <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""
-                    href="#">Mirar Alojamientos</a>
-                <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""
-                    href="{{ route('login') }}">Iniciar Sesión</a>
+                    href="{{ route('login', ['hotel' => true]) }}">Mirar Alojamientos</a>
+                {{-- <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""
+                    href="{{ route('login') }}">Iniciar Sesión</a> --}}
             </div>
 
         </div>
@@ -124,10 +124,6 @@
                 <span class="font-bold">vacaciones.</span>
             </p>
         </div>
-
-        {{-- <div class="h-64 bg-gray-400">
-            <img class="h-full w-full object-cover" src="https://via.placeholder.com/150" alt="Imagen">
-        </div> --}}
 
         <div id="client1"
             class="w-auto bg-gradient-to-r from-blue-100 to-white gap-10 opacity-0 transition-all easy-in-out duration-1000 bg-dark flex justify-left items-center mb-[2rem]">

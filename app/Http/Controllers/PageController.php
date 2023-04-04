@@ -13,4 +13,9 @@ class PageController extends Controller
     {
         return view('page/home');
     }
+
+    public function hoteles()
+    {
+        return view('page/hoteles');
+    }
 }

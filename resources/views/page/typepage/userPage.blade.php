@@ -1,55 +1,16 @@
-    <nav id="nav-landing"
-        class="transition-all ease-in-out duration-400 bg-white p-3 z-10 w-full hover:opacity-100 hover:p-3">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class=" h-full flex items-center justify-center align-items-center">
-                    <a href="#" class="h-full text-white font-bold"><img class="h-full"
-                            src="{{ asset('/img/landing/icons/logoSinFondo.png') }}" alt="logo-hov"></a>
-                    <div class="hidden md:block">
-                        <a href="#"
-                            class="ml-10 box-content w-25 text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400 ">Inicio</a>
-                        <a href="#"
-                            class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Hoteles</a>
-                        <a href="#"
-                            class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Sobre
-                            Nosotros</a>
-                    </div>
-                </div>
-                <div
-                    class="relative p-1 rounded-full transition ease-in-out duration-300 hover:bg-orange-200 h-full hidden md:block">
-                    <button id="dropdown" class="h-full text-gray-300 hover:text-white"><img
-                            class="h-full rounded-full" src="{{ asset('/img/landing/avatar.png') }}"
-                            alt="login"></button>
-                    <ul id="menu" class="absolute hidden text-gray-700 pt-1 right-[0rem] w-[6rem]">
-                        <li><span
-                                class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap rounded-t">{{ Auth()->user()->name }}</span>
-                        </li>
-                        <li>
-                            <form
-                                class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap rounded-b shadow-lg"
-                                action="{{ route('logout') }}" method="post">
-                                @csrf
-                                <button type="submit">Logout</button>
-                            </form>
-
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </nav>
-
-    <div class="m-5 grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="bg-white p-4 rounded-lg shadow">
+    <div class="mt-[5.5rem] grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow m-5 flex justify-center items-center flex-col">
+            <img class="w-[20rem]" src="{{ asset('img/landing/avatar.png') }}" alt="img-user">
             <h2 class="text-xl font-semibold text-gray-800 mb-4">Información Personal</h2>
-            <p><strong>Nombre:</strong> Juan Pérez</p>
-            <p><strong>Correo electrónico:</strong> juan.perez@gmail.com</p>
-            <p><strong>Teléfono:</strong> +52 55 1234 5678</p>
-            <p><strong>Dirección:</strong> Calle 123, Colonia ABC, Ciudad XYZ</p>
+            <div class="flex justify-start flex-col">
+                <p><strong>Nombre:</strong> {{ auth()->user()->name }}</p>
+                <p><strong>Correo electrónico:</strong> {{ auth()->user()->email }}</p>
+                <p><strong>Usuario Nº:</strong> {{ auth()->user()->id }}</p>
+            </div>
+
         </div>
         <div class="m-5 bg-white p-4 rounded-lg shadow">
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">Cambiar Contraseña</h2>
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Cambiar Datos</h2>
             <form>
                 <div class="mb-4">
                     <label class="block text-gray-700 font-bold mb-2" for="new-password">
@@ -66,9 +27,38 @@
         </div>
     </div>
 
-    <h1>User Page</h1>
+    <div class=" grid grid-cols-1 md:grid-cols-1 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow m-5 ">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Hoteles Reservados</h2>
+            <div class="bg-white rounded-lg shadow-lg">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                        <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo"
+                            class="h-48 w-full object-cover md:w-48">
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Nombre Hotel
+                        </div>
+                        <p class="mt-2 text-gray-500">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg mt-[1rem]">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                        <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo"
+                            class="h-48 w-full object-cover md:w-48">
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Nombre Hotel
+                        </div>
+                        <p class="mt-2 text-gray-500">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-
-
-    <script src="{{ asset('js/userPage.js') }}"></script>
+    </div>

@@ -1,17 +1,5 @@
 // Listener scroll
 window.addEventListener("scroll", () => {
-    // Effect nav-bar
-
-    if (window.scrollY > 0) {
-        document.getElementById("nav-landing").classList.add("opacity-40");
-        document.getElementById("nav-landing").classList.remove("p-3");
-    }
-
-    if (window.scrollY === 0) {
-        document.getElementById("nav-landing").classList.remove("opacity-40");
-        document.getElementById("nav-landing").classList.add("p-3");
-    }
-
     // Effect clients
     //Client 1
     const client1 = document.querySelector("#client1");

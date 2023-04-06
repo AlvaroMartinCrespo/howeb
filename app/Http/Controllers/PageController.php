@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PageController extends Controller
 {
@@ -14,13 +16,43 @@ class PageController extends Controller
         return view('page/home');
     }
 
+    /**
+     * Return hotels view
+     */
     public function hoteles()
     {
         return view('page/hoteles');
     }
 
+    /**
+     *  Return cpanel view
+     */
     public function cpanel()
     {
-        return view('page/cPanel');
+
+        $countUsers = DB::table('users')->count();
+        return view('page/cPanel', ['countUsers' => $countUsers]);
+    }
+
+    /**
+     * Return users view.
+     * Paginate users.
+     * @param Request $request
+     */
+    public function users(Request $request)
+    {
+
+        $users = User::paginate(5);
+        return view('page/users', compact('users'));
+    }
+
+    /**
+     * Return user view
+     * @param $id
+     */
+    public function user($id)
+    {
+        $user = User::find($id);
+        return view('page/user', compact('user'));
     }
 }

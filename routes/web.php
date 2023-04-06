@@ -33,6 +33,8 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/home', 'index')->middleware('auth')->name('home');
     Route::get('/hoteles', 'hoteles')->middleware('auth')->name('hoteles');
     Route::get('/cpanel', 'cpanel')->middleware('auth')->name('cpanel');
+    Route::get('/users', 'users')->middleware('auth')->name('users');
+    Route::get('/users/{id}', 'user')->middleware('auth')->name('user');
 });
 
 //Landing Page

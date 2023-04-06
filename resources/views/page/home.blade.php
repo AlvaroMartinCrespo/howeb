@@ -36,6 +36,8 @@
 
         @if (auth()->user()->admin)
         @else
+            {{-- foreach --}}
+            {{-- sino tiene reservas es un if y aparece que no tiene reservas de hoteles --}}
             <div class=" grid grid-cols-1 md:grid-cols-1 gap-4">
                 <div class="bg-white p-4 rounded-lg shadow m-5 ">
                     <h2 class="text-xl font-semibold text-gray-800 mb-4">Hoteles Reservados</h2>

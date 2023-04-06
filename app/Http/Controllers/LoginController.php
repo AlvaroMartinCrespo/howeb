@@ -28,7 +28,8 @@ class LoginController extends Controller
     }
 
     /**
-     * Function for login and redirect to home
+     * Function for login and redirect to home.
+     * If the user is admin, redirect to admin dashboard.
      */
     public function login(Request $request)
     {
@@ -39,6 +40,9 @@ class LoginController extends Controller
 
         if (Auth::attempt($credenciales)) {
             $request->session()->regenerate();
+            if (auth()->user()->admin) {
+                return redirect(route('cpanel'));
+            }
             return redirect()->intended(route('home'));
         } else {
 

@@ -4,32 +4,6 @@
 
 @section('main')
 
-    {{-- <nav id="nav-landing"
-        class="transition-all ease-in-out duration-400 bg-white p-3 fixed z-10 w-full hover:opacity-100 hover:p-3">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class=" h-full flex items-center justify-center align-items-center">
-                    <a href="#" class="h-full text-white font-bold"><img class="h-full"
-                            src="{{ asset('/img/landing/icons/logoSinFondo.png') }}" alt="logo-hov"></a>
-                    <div class="hidden md:block">
-                        <a href="#"
-                            class="ml-10 box-content w-25 text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400 ">Inicio</a>
-                        <a href="#"
-                            class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Hoteles</a>
-                        <a href="#"
-                            class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Sobre
-                            Nosotros</a>
-                    </div>
-                </div>
-                <div
-                    class="p-1 rounded-full transition ease-in-out duration-300 hover:bg-orange-200 h-full hidden md:block">
-                    <a href="{{ route('login') }}" text-gray-300 hover:text-white"><img class="h-full"
-                            src="{{ asset('/img/icons/iconoNoPhoto.png') }}" alt="login"></a>
-                </div>
-
-            </div>
-        </div>
-    </nav> --}}
 
     <section id="inicio-landing" class="w-full h-[45rem] bg-[url('{{ asset('/img/landing/playa.jpg') }}')]">
 
@@ -38,10 +12,15 @@
                 <br><span class="text-7xl ">Diversion.</span>
             </h1>
             <div class="flex justify-center items-center gap-10 mt-20">
-                <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""
-                    href="{{ route('login', ['hotel' => true]) }}">Mirar Alojamientos</a>
-                {{-- <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""
-                    href="{{ route('login') }}">Iniciar Sesión</a> --}}
+                @if (auth()->check())
+                    <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""
+                        href="{{ route('home') }}">Perfil</a>
+                @else
+                    <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""
+                        href="{{ route('login') }}">Iniciar Sesión</a>
+                @endif
+
+
             </div>
 
         </div>

@@ -29,7 +29,7 @@
                             Nosotros</a>
                         @auth
                             @if (auth()->user()->admin)
-                                <a href="#"
+                                <a href="{{ route('cpanel') }}"
                                     class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Control
                                     Panel</a>
                             @else
@@ -65,6 +65,14 @@
                                 </form>
 
                             </li>
+                            @if (auth()->user()->admin)
+                                <li>
+                                    <a href="{{ route('cpanel') }}"
+                                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap rounded-b">Control
+                                        Panel</a>
+                                </li>
+                            @else
+                            @endif
                         @else
                             <li><a href="{{ route('login') }}"
                                     class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap rounded">Inicio

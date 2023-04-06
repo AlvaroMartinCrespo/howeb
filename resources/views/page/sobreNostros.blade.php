@@ -4,6 +4,6 @@
 
 @section('main')
 
-    <h1>Hoteles</h1>
+    <h1>Sobre nosotros</h1>
 
 @endsection

@@ -18,4 +18,9 @@ class PageController extends Controller
     {
         return view('page/hoteles');
     }
+
+    public function cpanel()
+    {
+        return view('page/cPanel');
+    }
 }

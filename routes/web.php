@@ -32,6 +32,7 @@ Route::controller(LoginController::class)->group(function () {
 Route::controller(PageController::class)->group(function () {
     Route::get('/home', 'index')->middleware('auth')->name('home');
     Route::get('/hoteles', 'hoteles')->middleware('auth')->name('hoteles');
+    Route::get('/cpanel', 'cpanel')->middleware('auth')->name('cpanel');
 });
 
 //Landing Page

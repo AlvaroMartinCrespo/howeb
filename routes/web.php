@@ -3,6 +3,7 @@
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,6 +36,10 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/cpanel', 'cpanel')->middleware('auth')->name('cpanel');
     Route::get('/users', 'users')->middleware('auth')->name('users');
     Route::get('/users/{id}', 'user')->middleware('auth')->name('user');
+});
+
+Route::controller(UserController::class)->group(function () {
+    Route::get('/search', 'index')->middleware('auth')->name('search');
 });
 
 //Landing Page

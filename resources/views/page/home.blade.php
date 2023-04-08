@@ -18,18 +18,43 @@
             </div>
             <div class="m-5 bg-white p-4 rounded-lg shadow">
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">Cambiar Datos</h2>
-                <form>
+                <form action="{{ route('update') }}" method="post">
+                    @csrf
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="password" name="password">
+                            Contraseña Actual
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="new-password" type="password" name="password" placeholder="******************">
+                        @if (session('error'))
+                            <span class="text-sm text-red-600">Contraseña incorrecta</span>
+                            @php
+                                session()->forget('error');
+                            @endphp
+                        @else
+                        @endif
+                    </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="new-password">
                             Nueva Contraseña
                         </label>
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="new-password" type="password" placeholder="******************">
+                            id="new-password" type="newPassword" placeholder="******************">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="email">
+                            Nuevo Email
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email" type="email" name="email" placeholder="ejemplo@dominio.com">
+                        <span class="text-gray-400 text-sm">Si se deja en blanco, no se cambia el Email.</span>
                     </div>
                     <button
                         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="submit">Cambiar Contraseña</button>
+                        type="submit">Actualizar Datos</button>
                 </form>
             </div>
         </div>

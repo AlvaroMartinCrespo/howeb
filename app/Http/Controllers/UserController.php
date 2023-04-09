@@ -33,8 +33,6 @@ class UserController extends Controller
         $emailUser = auth()->user()->email;
         $user = auth()->user();
 
-        dd($user);
-
         $credenciales = [
             'email' => $emailUser,
             'password' => $request->password,
@@ -43,15 +41,17 @@ class UserController extends Controller
         // Check if passwords match
         if (Auth::attempt($credenciales)) {
 
-            if ($request->newPassword === '' || $request->newPassword === null && $request->email === '' || $request->email === null) {
-                return redirect()->back()->with('error', 'Campos vacíos');
+            if ($request->newPassword === '' && $request->newPassword === null && $request->email === '' && $request->email === null) {
+                return redirect()->back()->with('field', 'Campos vacíos');
             }
-            if ($request->newPassword !== '' || $request->newPassword !== null) {
-                $user->password = Hash::make($request->password);
+            if ($request->newPassword !== '' && $request->newPassword !== null) {
+                $user->password = Hash::make($request->newPassword);
             }
-            if ($request->email !== '' || $request->email !== null) {
+            if ($request->email !== '' && $request->email !== null) {
                 $user->email = $request->email;
             }
+            $user->save();
+            return redirect()->back()->with('success', 'Datos actualizados correctamente');
         } else {
             return redirect()->back()->with('error', 'Contraseña incorrecta');
         }

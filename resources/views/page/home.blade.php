@@ -4,6 +4,13 @@
 
 @section('main')
 
+    @if (session('success'))
+        <div id="alertMessage" class="bg-green-500 text-white font-bold p-4 hidden fixed bottom-10 left-10" role="alert">
+            <p>Datos Actualizados!</p>
+        </div>
+    @endif
+
+
     <div class="bg-[#E5E7EB]">
         <div class="mt-[5.5rem] grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="bg-white p-4 rounded-lg shadow m-5 flex justify-center items-center flex-col">
@@ -32,16 +39,17 @@
                             @php
                                 session()->forget('error');
                             @endphp
-                        @else
                         @endif
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="new-password">
                             Nueva Contraseña
                         </label>
+
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="new-password" type="newPassword" placeholder="******************">
+                            id="new-password" type="password" name="newPassword" placeholder="******************">
+                        <span class="text-gray-400 text-sm">Si se deja en blanco, no se cambia la contraseña.</span>
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="email">
@@ -55,6 +63,13 @@
                     <button
                         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="submit">Actualizar Datos</button>
+
+                    @if (session('field'))
+                        <span class="text-sm text-red-600">Rellena alguno de los dos campos.</span>
+                        @php
+                            session()->forget('field');
+                        @endphp
+                    @endif
                 </form>
             </div>
         </div>
@@ -102,4 +117,7 @@
     </div>
 
 
+
 @endsection
+
+<script src="{{ asset('js/home.js') }}" type="module"></script>

@@ -19,13 +19,13 @@
             </div>
 
         </div>
-        <div class="bg-slate-800 grid grid-cols-1 pb-[10rem]">
+        <div class="bg-slate-800 grid grid-cols-1 pb-[16rem]">
             <div class="card p-6 rounded-lg shadow-md bg-white m-[2rem]">
                 <h2 class="text-xl font-bold mb-4 text-center">Buscador de Usuarios</h2>
                 <form action="{{ route('search') }}" method="get">
 
                     <div class="flex items-center justify-center mt-6">
-                        <div class="relative w-full max-w-md">
+                        <div class="relative w-[20rem] ">
                             <div class="absolute inset-y-0 left-0 pl-[0.5rem] flex items-center pointer-events-none">
                                 <img class="h-5 w-7" src="{{ asset('/img/landing/icons/logoSinFondo.png') }}"
                                     alt="svg-buscador">

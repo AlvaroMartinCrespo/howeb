@@ -12,6 +12,9 @@
                 <div class="px-5 py-7">
                     <form action="{{ route('login-validate') }}" method="post">
                         @csrf
+                        @if (isset($error))
+                            <span class="text-red-500 text-xs italic">{{ $error }}</span>
+                        @endif  
                         <label class="font-semibold text-sm text-gray-600 pb-1 block">Correo electrónico</label>
                         <input name="email" type="email" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
                             placeholder="Correo electrónico" />

@@ -45,8 +45,8 @@ class LoginController extends Controller
             }
             return redirect()->intended(route('home'));
         } else {
-
-            return redirect(route('login'));
+            return view('session/login', ['error' => 'Email and/or password incorrect.']);
+            // return redirect(route('login'));
         }
     }
 

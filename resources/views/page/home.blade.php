@@ -5,14 +5,17 @@
 @section('main')
 
     @if (session('success'))
-        <div id="alertMessage" class="bg-green-500 text-white font-bold p-4 hidden fixed bottom-10 left-10" role="alert">
-            <p>Datos Actualizados!</p>
+        <div id="alertMessage" class="bg-green-500 text-white font-bold p-4 hidden fixed bottom-10 left-10">
+            <p>{{ session('success') }}</p>
         </div>
+        @php
+            session()->forget('success');
+        @endphp
     @endif
 
 
     <div class="bg-[#E5E7EB]">
-        <div class="mt-[5.5rem] grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="mt-[5.5rem] grid grid-cols-1 md:grid-cols-2 gap-4 ">
             <div class="bg-white p-4 rounded-lg shadow m-5 flex justify-center items-center flex-col">
                 <img class="w-[20rem]" src="{{ asset('img/landing/avatar.png') }}" alt="img-user">
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">Información Personal</h2>
@@ -35,7 +38,7 @@
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="new-password" type="password" name="password" placeholder="******************">
                         @if (session('error'))
-                            <span class="text-sm text-red-600">Contraseña incorrecta</span>
+                            <span class="text-sm text-red-600">{{ session('error') }}</span>
                             @php
                                 session()->forget('error');
                             @endphp
@@ -60,12 +63,13 @@
                             id="email" type="email" name="email" placeholder="ejemplo@dominio.com">
                         <span class="text-gray-400 text-sm">Si se deja en blanco, no se cambia el Email.</span>
                     </div>
+
                     <button
                         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="submit">Actualizar Datos</button>
 
                     @if (session('field'))
-                        <span class="text-sm text-red-600">Rellena alguno de los dos campos.</span>
+                        <span class="text-sm text-red-600">{{ session('field') }}</span>
                         @php
                             session()->forget('field');
                         @endphp

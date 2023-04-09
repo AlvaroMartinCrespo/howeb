@@ -41,19 +41,19 @@ class UserController extends Controller
         // Check if passwords match
         if (Auth::attempt($credenciales)) {
 
-            if ($request->newPassword === '' && $request->newPassword === null && $request->email === '' && $request->email === null) {
-                return redirect()->back()->with('field', 'Campos vacíos');
+            if ($request->newPassword === null && $request->email === null) {
+                return redirect()->back()->with('field', 'Empty fields');
             }
-            if ($request->newPassword !== '' && $request->newPassword !== null) {
+            if ($request->newPassword !== null) {
                 $user->password = Hash::make($request->newPassword);
             }
-            if ($request->email !== '' && $request->email !== null) {
+            if ($request->email !== null) {
                 $user->email = $request->email;
             }
             $user->save();
-            return redirect()->back()->with('success', 'Datos actualizados correctamente');
+            return redirect()->back()->with('success', 'Data updated successfully!');
         } else {
-            return redirect()->back()->with('error', 'Contraseña incorrecta');
+            return redirect()->back()->with('error', 'Incorrect password');
         }
     }
 }

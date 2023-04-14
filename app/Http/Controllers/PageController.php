@@ -19,9 +19,9 @@ class PageController extends Controller
     /**
      * Return hotels view
      */
-    public function hoteles()
+    public function alojamientos()
     {
-        return view('page/hoteles');
+        return view('page/alojamientos');
     }
 
     /**

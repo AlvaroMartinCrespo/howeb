@@ -43,7 +43,12 @@ Route::controller(UserController::class)->group(function () {
     Route::post('/update-data', 'update')->middleware('auth')->name('update');
 });
 
-//Landing Page
-Route::get('/', function () {
-    return view('landing');
-})->name('landing');
+//Controler Landing
+Route::controller(LandingController::class)->group(function () {
+    Route::get('/', 'landing')->name('landing');
+});
+
+// //Landing Page
+// Route::get('/', function () {
+//     return view('landing');
+// })->name('landing');

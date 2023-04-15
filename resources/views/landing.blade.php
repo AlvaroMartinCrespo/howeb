@@ -46,42 +46,23 @@
 
         <div class=" flex justify-center gap-6 mt-[5rem] px-5">
 
-            <div
-                class="w-[30rem] bg-gray-800 mx-auto rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-105">
-                <a href="#" class="block w-full">
-                    <div class="relative">
-                        <img class="w-full h-full shadow-md opacity-75 transition-all easy-in-out duration-300 hover:opacity-100 "
-                            src="https://via.placeholder.com/600x400" alt="placeholder image">
-                        <div class="absolute bottom-0 left-0 p-4">
-                            <h3 class="text-white font-bold text-2xl ">Título de la tarjeta</h3>
+            @foreach ($randomAccomodations as $accomodation)
+                <div
+                    class="accomodation w-[30rem] bg-gray-800 mx-auto rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-105">
+                    <div class="block w-full">
+                        <div class="relative">
+                            <img class="w-full h-80 shadow-md opacity-75 transition-all easy-in-out duration-300 hover:opacity-100 "
+                                src={{ $accomodation->image }} alt={{ $accomodation->name }}>
+                            <div class="absolute bottom-0 left-0 p-4">
+                                <h3 class="text-white font-bold text-3xl ">{{ $accomodation->name }}</h3>
+                                <p data-id={{ $accomodation->id }}
+                                    class="accomodationDescription text-xl bg-slate-600 bg-opacity-50 text-white font-bold transition-all ease-in-out duration-200 opacity-0 rounded p-1 h-0">
+                                    {{ $accomodation->description }}</p>
+                            </div>
                         </div>
                     </div>
-                </a>
-            </div>
-            <div
-                class="w-[30rem] bg-gray-800 mx-auto rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-105">
-                <a href="#" class="block w-full">
-                    <div class="relative">
-                        <img class="w-full h-full shadow-md opacity-75 transition-all easy-in-out duration-300 hover:opacity-100 "
-                            src="https://via.placeholder.com/600x400" alt="placeholder image">
-                        <div class="absolute bottom-0 left-0 p-4">
-                            <h3 class="text-white font-bold text-2xl ">Título de la tarjeta</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div
-                class="w-[30rem] bg-gray-800 mx-auto rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-105">
-                <a href="#" class="block w-full">
-                    <div class="relative">
-                        <img class="w-full h-full shadow-md opacity-75 transition-all easy-in-out duration-300 hover:opacity-100 "
-                            src="https://via.placeholder.com/600x400" alt="placeholder image">
-                        <div class="absolute bottom-0 left-0 p-4">
-                            <h3 class="text-white font-bold text-2xl ">Título de la tarjeta</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                </div>
+            @endforeach
 
         </div>
 

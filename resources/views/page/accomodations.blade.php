@@ -15,7 +15,7 @@
                     Alojamientos</h1>
             </div>
 
-            <hr class="border-2 border-orange-200 rounded mt-[2rem]">
+            <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
 
             <div class="grid grid-cols-2 mt-[5rem]">
 
@@ -37,16 +37,15 @@
 
     <section class="container mx-auto my-[2rem]">
 
-        <h2 class="text-3xl font-bold mb-10">Seccion de Alojamientos</h2>
+        <h2 class="text-3xl font-bold mb-10">Sección de Alojamientos</h2>
 
-        <hr class="border-2 border-orange-200 rounded mt-[2rem] mb-[2rem]">
+        <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
 
         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-7">
 
             {{-- ForEach de los alojamientos --}}
             @foreach ($accomodations as $accomodation)
-                <div data-aos="zoom-in-up"
-                    class="max-w-sm rounded overflow-hidden shadow-lg transition-all ease-in-out duration-300 hover:scale-105">
+                <div data-aos="zoom-in-up" class="max-w-sm rounded overflow-hidden shadow-lg ">
                     <div>
                         <img class="w-96 h-80" src="{{ $accomodation->image }}" alt="{{ $accomodation->name }}">
                         <div class="px-6 py-4">

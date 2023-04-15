@@ -11,6 +11,7 @@ class PageController extends Controller
 {
     /**
      * Return home view
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
@@ -19,6 +20,9 @@ class PageController extends Controller
 
     /**
      * Return hotels view
+     * Accomodations
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * 
      */
     public function accomodations()
     {

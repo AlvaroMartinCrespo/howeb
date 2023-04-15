@@ -53,3 +53,27 @@ window.addEventListener("scroll", () => {
         client3.classList.remove("ml-[1rem]");
     }
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+    let accomodations = document.querySelectorAll(".accomodation");
+
+    accomodations.forEach((accomodation) => {
+        let description = accomodation.querySelector(
+            ".accomodationDescription"
+        );
+
+        accomodation.addEventListener("mouseover", () => {
+            if (description) {
+                description.classList.remove("h-0");
+                description.classList.remove("opacity-0");
+            }
+        });
+
+        accomodation.addEventListener("mouseout", () => {
+            if (description) {
+                description.classList.add("h-0");
+                description.classList.add("opacity-0");
+            }
+        });
+    });
+});

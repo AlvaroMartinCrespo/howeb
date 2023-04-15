@@ -15,6 +15,9 @@
                     Alojamientos</h1>
             </div>
 
+            <p class="flex justify-center mt-7 font-bold text-xl">Disfruta de los mejores alojamientos que puedes encontrar.
+            </p>
+
         </div>
 
     </section>
@@ -29,9 +32,18 @@
                     <img class="w-full" src="https://via.placeholder.com/600x400" alt="Hotel image">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Nombre del Hotel</div>
-                        <p class="text-gray-700 text-base">
-                            Precio: $100/noche
-                        </p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-700 text-base flex justify-center flex-col items-center">
+                                <svg width="20" height="20">
+                                    <polygon points="10,0 14,6 20,7 15,12 16,20 10,16 4,20 5,12 0,7 6,6" fill="#FFD700" />
+                                </svg>
+                                <span class=" text-yellow-800 font-bold">5</span>
+                            </p>
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Mostrar precio
+                            </button>
+                        </div>
+
                     </div>
                 </a>
             </div>
@@ -40,9 +52,18 @@
                     <img class="w-full" src="https://via.placeholder.com/600x400" alt="Hotel image">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Nombre del Hotel</div>
-                        <p class="text-gray-700 text-base">
-                            Precio: $100/noche
-                        </p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-700 text-base flex justify-center flex-col items-center">
+                                <svg width="20" height="20">
+                                    <polygon points="10,0 14,6 20,7 15,12 16,20 10,16 4,20 5,12 0,7 6,6" fill="#FFD700" />
+                                </svg>
+                                <span class=" text-yellow-800 font-bold">5</span>
+                            </p>
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Mostrar precio
+                            </button>
+                        </div>
+
                     </div>
                 </a>
             </div>
@@ -51,9 +72,18 @@
                     <img class="w-full" src="https://via.placeholder.com/600x400" alt="Hotel image">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Nombre del Hotel</div>
-                        <p class="text-gray-700 text-base">
-                            Precio: $100/noche
-                        </p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-700 text-base flex justify-center flex-col items-center">
+                                <svg width="20" height="20">
+                                    <polygon points="10,0 14,6 20,7 15,12 16,20 10,16 4,20 5,12 0,7 6,6" fill="#FFD700" />
+                                </svg>
+                                <span class=" text-yellow-800 font-bold">5</span>
+                            </p>
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Mostrar precio
+                            </button>
+                        </div>
+
                     </div>
                 </a>
             </div>
@@ -62,9 +92,18 @@
                     <img class="w-full" src="https://via.placeholder.com/600x400" alt="Hotel image">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Nombre del Hotel</div>
-                        <p class="text-gray-700 text-base">
-                            Precio: $100/noche
-                        </p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-700 text-base flex justify-center flex-col items-center">
+                                <svg width="20" height="20">
+                                    <polygon points="10,0 14,6 20,7 15,12 16,20 10,16 4,20 5,12 0,7 6,6" fill="#FFD700" />
+                                </svg>
+                                <span class=" text-yellow-800 font-bold">5</span>
+                            </p>
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Mostrar precio
+                            </button>
+                        </div>
+
                     </div>
                 </a>
             </div>

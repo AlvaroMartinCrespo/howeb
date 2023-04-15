@@ -5,38 +5,37 @@
 @section('main')
 
     {{-- Method using containers and columns to make the page responsive. --}}
-    <section id="title" class="container mx-auto my-[7rem]">
-
+    <section id="title" class="container mx-auto my-28">
         <div class="grid grid-cols-1">
-
             <div class="flex justify-center">
                 <h1
-                    class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 font-bold text-transparent bg-clip-text text-6xl h-[5rem]">
-                    Alojamientos</h1>
+                    class="text-6xl font-bold bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent h-20">
+                    Alojamientos
+                </h1>
             </div>
-
-            <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
-
-            <div class="grid grid-cols-2 mt-[5rem]">
-
+            <hr class="w-48 h-1 mx-auto my-4 rounded bg-yellow-200 border-0 md:my-10 dark:bg-gray-700">
+            <div class="grid grid-cols-2 mt-20">
                 <img class="p-10" src="https://via.placeholder.com/600x400" alt="placeholder">
+                <div>
+                    <p class="text-2xl font-bold p-10 bg-gray-100">
+                        Ofrecemos opciones como cabañas acogedoras en la montaña, villas de lujo frente al mar y
+                        apartamentos en la ciudad.
+                        Estamos seguros de que encontrará la opción perfecta para sus vacaciones.
+                    </p>
 
-                <p class="text-xl p-10">En nuestra empresa, nos esforzamos por brindarle una experiencia
-                    vacacional
-                    inolvidable.
-                    Queremos que
-                    nuestros huéspedes se sientan cómodos y como en casa. Por esta razón, ofrecemos una amplia selección de
-                    alojamientos que se adaptan a todos los gustos y necesidades.Ya sea que busque una cabaña
-                    acogedora en
-                    la montaña, una villa de lujo frente al mar o un apartamento en la ciudad, estamos seguros de que
-                    encontrará la opción perfecta para sus vacaciones. Además, nos aseguramos de que nuestros alojamientos
-                    estén equipados con todas las comodidades necesarias para que nuestros huéspedes disfruten de una
-                    estadía confortable y placentera. ¡Esperamos poder recibirte pronto y hacerte sentir como en casa!</p>
+                    <ul class="list-disc list-inside p-10">
+                        <li class="text-xl">Alojamientos equipados con todas las comodidades necesarias.</li>
+                        <li class="text-xl">Permanencia confortable y placentera.</li>
+                    </ul>
+
+                    <p class="text-xl p-10">
+                        Esperamos hacerte sentir como en casa <span class="font-bold">¡No te lo pierdas!</span>
+                    </p>
+
+                </div>
 
             </div>
-
         </div>
-
     </section>
 
     <section class="container mx-auto my-[2rem]">

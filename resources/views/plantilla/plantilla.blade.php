@@ -15,7 +15,7 @@
 <body>
 
     <nav id="nav-landing"
-        class="transition-all ease-in-out duration-400 bg-white fixed p-3 z-10 w-full hover:opacity-100 hover:p-3 top-0">
+        class="transition-all ease-in-out duration-400 bg-white fixed p-3 z-10 w-full hover:opacity-100 hover:p-3 hover:bg-slate-100 top-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class=" h-full flex items-center justify-center align-items-center">
@@ -34,9 +34,7 @@
                                 <a href="{{ route('cpanel') }}"
                                     class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Control
                                     Panel</a>
-                            @else
                             @endif
-                        @else
                         @endauth
 
                     </div>
@@ -58,22 +56,13 @@
                             <li><a href="{{ route('home') }}"
                                     class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap rounded-t">{{ strtoupper(Auth()->user()->name) }}</a>
                             </li>
-                            <li>
-                                <form
-                                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap rounded-b shadow-lg"
-                                    action="{{ route('logout') }}" method="post">
-                                    @csrf
-                                    <button type="submit">Logout</button>
-                                </form>
-
-                            </li>
+                            {{-- If user is admin --}}
                             @if (auth()->user()->admin)
                                 <li>
                                     <a href="{{ route('cpanel') }}"
-                                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap rounded-b">Control
+                                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Control
                                         Panel</a>
                                 </li>
-                            @else
                             @endif
                         @else
                             <li><a href="{{ route('login') }}"
@@ -81,7 +70,15 @@
                                     Sesión</a>
                             </li>
                         @endauth
+                        <li>
+                            <form
+                                class="bg-gray-200 hover:bg-gray-400 w-full h-full block whitespace-no-wrap rounded-b shadow-lg m-0"
+                                action="{{ route('logout') }}" method="post">
+                                @csrf
+                                <button class="w-full h-full p-3" type="submit">Logout</button>
+                            </form>
 
+                        </li>
                     </ul>
                 </div>
 

@@ -70,9 +70,10 @@ class PageController extends Controller
      *  Return accomodation view
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function accomodation()
+    public function accomodation($id)
     {
-        return view('page/accomodation');
+        $accomodation = Accomodations::find($id);
+        return view('page/accomodation', compact('accomodation'));
     }
 
     /**
@@ -81,7 +82,7 @@ class PageController extends Controller
      */
     public function listAccomodation()
     {
-        $accomodations = Accomodations::all();
+        $accomodations = Accomodations::paginate(5);
         return view('page/listAccomodations', ['accomodations' => $accomodations]);
     }
 }

@@ -37,7 +37,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/users', 'users')->middleware('auth')->name('users');
     Route::get('/users/{id}', 'user')->middleware('auth')->name('user');
     Route::get('/listAccomodation', 'listAccomodation')->middleware('auth')->name('listAccomodation');
-    Route::get('/accomodation', 'accomodation')->middleware('auth')->name('accomodation');
+    Route::get('/accomodation/{id}', 'accomodation')->middleware('auth')->name('accomodation');
 });
 
 Route::controller(UserController::class)->group(function () {

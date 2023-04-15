@@ -22,7 +22,7 @@
                     <div class="hidden md:block">
                         <a href="{{ route('landing') }}"
                             class="ml-10 box-content w-25 text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400 ">Inicio</a>
-                        <a href="{{ route('alojamientos') }}"
+                        <a href="{{ route('accomodations') }}"
                             class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Alojamientos</a>
                         <a href="#"
                             class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Sobre

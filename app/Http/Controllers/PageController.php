@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Accomodations;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -19,9 +20,10 @@ class PageController extends Controller
     /**
      * Return hotels view
      */
-    public function alojamientos()
+    public function accomodations()
     {
-        return view('page/alojamientos');
+        $accomodations = Accomodations::all();
+        return view('page/accomodations', ['accomodations' => $accomodations]);
     }
 
     /**

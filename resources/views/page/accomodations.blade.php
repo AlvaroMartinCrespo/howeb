@@ -28,7 +28,7 @@
 
             {{-- ForEach de los alojamientos --}}
             @foreach ($accomodations as $accomodation)
-                <div
+                <div data-aos="fade-up"
                     class="max-w-sm rounded overflow-hidden shadow-lg transition-all ease-in-out duration-300 hover:scale-105">
                     <div>
                         <img class="w-96 h-80" src="{{ $accomodation->image }}" alt="{{ $accomodation->name }}">

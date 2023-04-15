@@ -54,6 +54,9 @@ window.addEventListener("scroll", () => {
     }
 });
 
+/**
+ * Animation to accomodation in the landing page
+ */
 window.addEventListener("DOMContentLoaded", () => {
     let accomodations = document.querySelectorAll(".accomodation");
 

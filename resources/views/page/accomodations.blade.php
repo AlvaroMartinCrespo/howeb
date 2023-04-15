@@ -15,14 +15,31 @@
                     Alojamientos</h1>
             </div>
 
-            <p class="flex justify-center mt-7 font-bold text-xl">Disfruta de los mejores alojamientos que puedes encontrar.
-            </p>
+            <hr class="border-2 border-orange-200 rounded mt-[2rem]">
+
+            <div class="grid grid-cols-2 mt-[5rem]">
+
+                <img src="" alt="">
+
+                <p>En nuestra empresa, nos esforzamos por brindarle una experiencia vacacional inolvidable. Queremos que
+                    nuestros huéspedes se sientan cómodos y como en casa. Por esta razón, ofrecemos una amplia selección de
+                    alojamientos que se adaptan a todos los gustos y necesidades. Ya sea que busque una cabaña acogedora en
+                    la montaña, una villa de lujo frente al mar o un apartamento en la ciudad, estamos seguros de que
+                    encontrará la opción perfecta para sus vacaciones. Además, nos aseguramos de que nuestros alojamientos
+                    estén equipados con todas las comodidades necesarias para que nuestros huéspedes disfruten de una
+                    estadía confortable y placentera. ¡Esperamos poder recibirte pronto y hacerte sentir como en casa!</p>
+
+            </div>
 
         </div>
 
     </section>
 
     <section class="container mx-auto my-[2rem]">
+
+        <h2 class="text-3xl font-bold mb-10">Seccion de Alojamientos</h2>
+
+        <hr class="border-2 border-orange-200 rounded mt-[2rem] mb-[2rem]">
 
         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-7">
 

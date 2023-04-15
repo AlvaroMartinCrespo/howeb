@@ -19,11 +19,14 @@
 
             <div class="grid grid-cols-2 mt-[5rem]">
 
-                <img src="" alt="">
+                <img src="https://via.placeholder.com/600x400" alt="placeholder">
 
-                <p>En nuestra empresa, nos esforzamos por brindarle una experiencia vacacional inolvidable. Queremos que
+                <p class="text-xl p-10">En nuestra empresa, nos esforzamos por brindarle una experiencia vacacional
+                    inolvidable.
+                    Queremos que
                     nuestros huéspedes se sientan cómodos y como en casa. Por esta razón, ofrecemos una amplia selección de
-                    alojamientos que se adaptan a todos los gustos y necesidades. Ya sea que busque una cabaña acogedora en
+                    alojamientos que se adaptan a todos los gustos y necesidades.Ya sea que busque una cabaña
+                    acogedora en
                     la montaña, una villa de lujo frente al mar o un apartamento en la ciudad, estamos seguros de que
                     encontrará la opción perfecta para sus vacaciones. Además, nos aseguramos de que nuestros alojamientos
                     estén equipados con todas las comodidades necesarias para que nuestros huéspedes disfruten de una
@@ -37,7 +40,7 @@
 
     <section class="container mx-auto my-[2rem]">
 
-        <h2 class="text-3xl font-bold mb-10">Sección de Alojamientos</h2>
+        <h2 class="text-3xl font-bold mb-10 text-center">Sección de Alojamientos</h2>
 
         <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
 

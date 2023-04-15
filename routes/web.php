@@ -36,6 +36,8 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/cpanel', 'cpanel')->middleware('auth')->name('cpanel');
     Route::get('/users', 'users')->middleware('auth')->name('users');
     Route::get('/users/{id}', 'user')->middleware('auth')->name('user');
+    Route::get('/listAccomodation', 'listAccomodation')->middleware('auth')->name('listAccomodation');
+    Route::get('/accomodation', 'accomodation')->middleware('auth')->name('accomodation');
 });
 
 Route::controller(UserController::class)->group(function () {
@@ -47,8 +49,3 @@ Route::controller(UserController::class)->group(function () {
 Route::controller(LandingController::class)->group(function () {
     Route::get('/', 'landing')->name('landing');
 });
-
-// //Landing Page
-// Route::get('/', function () {
-//     return view('landing');
-// })->name('landing');

@@ -14,14 +14,15 @@
             </div>
 
             <div class="card p-6 rounded-lg shadow-md bg-white m-[2rem]">
-                <h2 class="text-xl font-bold mb-4">Reservas</h2>
-                <p class="mb-4">Cantidad de reservas: <span class="font-bold">? reservas</span>.</p>
+                <h2 class="text-xl font-bold mb-4">Gestión de Alojamientos</h2>
+                <p class="mb-4">Actualmente hay<span class="font-bold"> {{ $countAccomodations }} alojamientos
+                        registrados</span></p>
+                <a href="{{ route('listAccomodation') }}" class="text-[#C79A25] px-4 py-2 rounded-md">Ver alojamientos</a>
             </div>
 
             <div class="card p-6 rounded-lg shadow-md bg-white m-[2rem]">
-                <h2 class="text-xl font-bold mb-4">Gestión de Alojamientos</h2>
-                <p class="mb-4">Actualmente hay<span class="font-bold"> ?? alojamientos registrados</span></p>
-                <a href="{{ route('users') }}" class="text-[#C79A25] px-4 py-2 rounded-md">Ver alojamientos</a>
+                <h2 class="text-xl font-bold mb-4">Reservas</h2>
+                <p class="mb-4">Cantidad de reservas: <span class="font-bold">? reservas</span>.</p>
             </div>
 
         </div>

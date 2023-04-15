@@ -11,7 +11,7 @@
 
             <div class="flex justify-center">
                 <h1
-                    class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 font-bold text-transparent bg-clip-text text-6xl">
+                    class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 font-bold text-transparent bg-clip-text text-6xl h-[5rem]">
                     Alojamientos</h1>
             </div>
 
@@ -19,9 +19,10 @@
 
             <div class="grid grid-cols-2 mt-[5rem]">
 
-                <img src="https://via.placeholder.com/600x400" alt="placeholder">
+                <img class="p-10" src="https://via.placeholder.com/600x400" alt="placeholder">
 
-                <p class="text-xl p-10">En nuestra empresa, nos esforzamos por brindarle una experiencia vacacional
+                <p class="text-xl p-10">En nuestra empresa, nos esforzamos por brindarle una experiencia
+                    vacacional
                     inolvidable.
                     Queremos que
                     nuestros huéspedes se sientan cómodos y como en casa. Por esta razón, ofrecemos una amplia selección de

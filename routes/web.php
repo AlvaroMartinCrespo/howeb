@@ -43,6 +43,7 @@ Route::controller(PageController::class)->group(function () {
 Route::controller(UserController::class)->group(function () {
     Route::get('/search', 'index')->middleware('auth')->name('search');
     Route::post('/update-data', 'update')->middleware('auth')->name('update');
+    Route::get('/delete/{id}', 'delete')->middleware('auth')->name('delete');
 });
 
 //Controler Landing

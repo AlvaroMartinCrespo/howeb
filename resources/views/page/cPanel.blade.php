@@ -11,14 +11,18 @@
                 <h2 class="text-xl font-bold mb-4 text-white">Usuarios</h2>
                 <p class="mb-4 text-white">Actualmente hay <span class="font-bold">{{ $countUsers }} usuarios
                         registrados</span>.</p>
-                <a href="{{ route('users') }}" class="text-yellow-500 px-4 py-2 rounded-md bg-gray-700">Ver usuarios</a>
+                <a href="{{ route('users') }}"
+                    class="text-yellow-500 px-4 py-2 rounded-md bg-gray-700 hover:bg-gray-500 transition-all ease-in-out duration-300">Ver
+                    usuarios</a>
             </div>
 
             <div class="card p-6 rounded-lg shadow-md bg-gray-800 m-[2rem]">
                 <h2 class="text-xl font-bold mb-4 text-white">Gestión de Alojamientos</h2>
-                <p class="mb-4 text-white">Actualmente hay<span class="font-bold"> {{ $countAccomodations }} alojamientos
+                <p class="mb-4 text-white">Actualmente hay<span class="font-bold"> {{ $countAccomodations }}
+                        alojamientos
                         registrados</span></p>
-                <a href="{{ route('listAccomodation') }}" class="text-yellow-500 px-4 py-2 rounded-md bg-gray-700">Ver
+                <a href="{{ route('listAccomodation') }}"
+                    class="text-yellow-500 px-4 py-2 rounded-md bg-gray-700 hover:bg-gray-500 transition-all ease-in-out duration-300">Ver
                     alojamientos</a>
             </div>
 
@@ -28,8 +32,8 @@
             </div>
 
         </div>
-        <div class="bg-gray-900 grid grid-cols-1 pb-16rem">
-            <div class="card p-6 rounded-lg shadow-md bg-gray-800 m-2">
+        <div class="bg-gray-900 pb-[16rem] grid grid-cols-1">
+            <div class="card p-6 rounded-lg shadow-md bg-gray-800 m-[2rem]">
                 <h2 class="text-xl font-bold mb-4 text-center text-gray-200">Buscador de Usuarios</h2>
                 <form action="{{ route('search') }}" method="get">
                     <div class="flex items-center justify-center mt-6">

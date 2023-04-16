@@ -6,6 +6,6 @@ window.addEventListener("DOMContentLoaded", () => {
         alertMessage.classList.remove("hidden");
         setTimeout(() => {
             alertMessage.classList.add("hidden");
-        }, 5000); // Hide after 5 seconds
+        }, 5000);
     }
 });

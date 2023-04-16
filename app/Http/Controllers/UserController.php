@@ -56,4 +56,14 @@ class UserController extends Controller
             return redirect()->back()->with('error', 'Incorrect password');
         }
     }
+
+    /**
+     * Delete the data of user in the database.
+     */
+    public function delete($id)
+    {
+        $user = User::find($id);
+        $user->delete();
+        return redirect(route('users'))->with('success', 'Data deleted successfully!');
+    }
 }

@@ -124,4 +124,4 @@
 
 @endsection
 
-<script src="{{ asset('js/home.js') }}" type="module"></script>
+<script src="{{ asset('js/popUpAlert.js') }}" type="module"></script>

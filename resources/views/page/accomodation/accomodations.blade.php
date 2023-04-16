@@ -17,7 +17,7 @@
             <div class="grid grid-cols-2 mt-20">
                 <img class="p-10" src="https://via.placeholder.com/600x400" alt="placeholder">
                 <div>
-                    <p class="text-2xl font-bold p-10 bg-gray-100">
+                    <p class="text-2xl font-bold p-10">
                         Ofrecemos opciones como cabañas acogedoras en la montaña, villas de lujo frente al mar y
                         apartamentos en la ciudad.
                         Estamos seguros de que encontrará la opción perfecta para sus vacaciones.
@@ -46,7 +46,7 @@
 
         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-7">
 
-            {{-- ForEach de los alojamientos --}}
+            {{-- ForEach --}}
             @foreach ($accomodations as $accomodation)
                 <div data-aos="zoom-in-up" class="max-w-sm rounded overflow-hidden shadow-lg ">
                     <div>
@@ -61,9 +61,9 @@
                                     </svg>
                                     <span class=" text-yellow-800 font-bold">{{ $accomodation->stars }}</span>
                                 </p>
-                                <a href="#"
+                                <a href="{{ route('accomodation', ['id' => $accomodation->id]) }}"
                                     class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                    Mostrar precio
+                                    Informacion
                                 </a>
                             </div>
 

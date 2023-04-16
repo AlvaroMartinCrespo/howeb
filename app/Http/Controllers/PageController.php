@@ -27,7 +27,7 @@ class PageController extends Controller
     public function accomodations()
     {
         $accomodations = Accomodations::all();
-        return view('page/accomodations', ['accomodations' => $accomodations]);
+        return view('page/accomodation/accomodations', ['accomodations' => $accomodations]);
     }
 
     /**
@@ -52,7 +52,7 @@ class PageController extends Controller
     {
 
         $users = User::paginate(5);
-        return view('page/users', compact('users'));
+        return view('page/user/users', compact('users'));
     }
 
     /**
@@ -63,7 +63,7 @@ class PageController extends Controller
     public function user($id)
     {
         $user = User::find($id);
-        return view('page/user', compact('user'));
+        return view('page/user/user', compact('user'));
     }
 
     /**
@@ -73,7 +73,7 @@ class PageController extends Controller
     public function accomodation($id)
     {
         $accomodation = Accomodations::find($id);
-        return view('page/accomodation', compact('accomodation'));
+        return view('page/accomodation/accomodation', compact('accomodation'));
     }
 
     /**
@@ -83,6 +83,6 @@ class PageController extends Controller
     public function listAccomodation()
     {
         $accomodations = Accomodations::paginate(5);
-        return view('page/listAccomodations', ['accomodations' => $accomodations]);
+        return view('page/accomodation/listAccomodations', ['accomodations' => $accomodations]);
     }
 }

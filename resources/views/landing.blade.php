@@ -32,19 +32,26 @@
 
     <section class="w-full mt-[2rem] mb-[2rem]">
 
+        <div id="particles-js" class="absolute w-full h-full"></div>
+
 
         <div class="w-full flex justify-center flex-col items-center p-5">
-            <h1 class="text-6xl"> <span class="font-thin">Los</span><span class="font-bold text-blue-600">Hoteles</span>
+            <h1 class="text-6xl z-10"> <span class="font-thin">Los</span><span
+                    class="font-bold text-blue-600">Hoteles</span>
             </h1>
-            <p class="mt-[2rem] lg:text-3xl"><span class="font-thin">Tendrás las mejores <span
+            <p class="mt-[2rem] lg:text-3xl z-10"><span class="font-thin">Tendrás las mejores <span
                         class="font-bold">experiencias</span>, en los
                     mejores</span>
-                <span class="font-bold">alojamientos,</span> <br> <span class="font-thin">para tus mejores</span>
-                <span class="font-bold">vacaciones.</span>
+                <span class="font-bold z-10">alojamientos,</span> <br> <span class="font-thin">para tus mejores</span>
+                <span class="font-bold z-10">vacaciones.</span>
             </p>
         </div>
 
+
+
         <div class=" flex justify-center gap-6 mt-[5rem] px-5">
+
+
 
             @foreach ($randomAccomodations as $accomodation)
                 <div
@@ -67,11 +74,14 @@
         </div>
 
 
+
     </section>
 
     <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 
-    <section class="w-full mb-[10rem]">
+    <section class="w-full mt-[18rem] mb-[10rem]">
+
+        {{-- <div id="particles-js" class="absolute w-full h-full"></div> --}}
 
         <div class="w-full flex justify-center flex-col items-center p-5 mb-[5rem]">
             <h1 class="text-6xl"> <span class="font-thin">Opiniones</span><span class="font-bold text-orange-400">Clientes
@@ -87,7 +97,7 @@
 
         <div id="client1"
             class="w-auto bg-gradient-to-r from-blue-100 to-white gap-10 opacity-0 transition-all easy-in-out duration-1000 bg-dark flex justify-left items-center mb-[2rem]">
-            <img class="object-cover rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+            <img class="object-cover z-10 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                 src="{{ asset('img/landing/avatar.png') }}" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Nombre de cliente.</h5>
@@ -97,7 +107,7 @@
 
         <div id="client2"
             class="w-auto bg-gradient-to-r from-blue-100 to-white gap-10 opacity-0 transition-all easy-in-out duration-1000 bg-dark flex justify-left items-center mb-[2rem]">
-            <img class="object-cover rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+            <img class="object-cover z-10 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                 src="{{ asset('img/landing/avatar.png') }}" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Nombre de cliente.</h5>
@@ -107,7 +117,7 @@
 
         <div id="client3"
             class="w-auto bg-gradient-to-r from-blue-100 to-white gap-10 opacity-0 transition-all easy-in-out duration-1000 bg-dark flex justify-left items-center mb-[2rem]">
-            <img class="object-cover rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+            <img class="object-cover z-10 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                 src="{{ asset('img/landing/avatar.png') }}" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Nombre de cliente</h5>
@@ -118,5 +128,8 @@
     </section>
 
 @endsection
-
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- stats.js lib -->
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 <script src="{{ asset('js/landing.js') }}" type="module"></script>

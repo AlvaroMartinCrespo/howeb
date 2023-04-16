@@ -59,6 +59,8 @@ class UserController extends Controller
 
     /**
      * Delete the data of user in the database.
+     * @param $id
+     * @return \Illuminate\Http\Response
      */
     public function delete($id)
     {

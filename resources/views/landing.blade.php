@@ -73,7 +73,7 @@
     <section class="container mx-auto mt-[18rem] mb-[10rem]">
 
         <div class="w-full flex justify-center flex-col items-center p-5 mb-[5rem]">
-            <h1 class="text-6xl"> <span class="font-thin">Opiniones</span><span class="font-bold text-orange-400">Expertos
+            <h1 class="text-6xl"> <span class="font-thin">Opinión</span><span class="font-bold text-orange-400">Expertos
                 </span>
             </h1>
             <p class="mt-[2rem] lg:text-3xl"><span class="font-thin">Tendrás las mejores <span

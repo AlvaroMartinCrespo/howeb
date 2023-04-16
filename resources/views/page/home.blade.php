@@ -27,7 +27,7 @@
 
             </div>
             <div class="m-5 bg-white p-4 rounded-lg shadow">
-                <h2 class="text-xl font-semibold text-gray-800 mb-4">Cambiar Datos</h2>
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 text-center">Cambiar Datos</h2>
                 <form action="{{ route('update') }}" method="post">
                     @csrf
                     <div class="mb-4">

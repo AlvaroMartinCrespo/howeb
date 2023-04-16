@@ -20,11 +20,8 @@
                         href="{{ route('login') }}">Iniciar Sesión</a>
                 @endif
 
-
             </div>
-
         </div>
-
 
     </section>
 
@@ -47,11 +44,7 @@
             </p>
         </div>
 
-
-
         <div class=" flex justify-center gap-6 mt-[5rem] px-5">
-
-
 
             @foreach ($randomAccomodations as $accomodation)
                 <div
@@ -73,18 +66,14 @@
 
         </div>
 
-
-
     </section>
 
     <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 
-    <section class="w-full mt-[18rem] mb-[10rem]">
-
-        {{-- <div id="particles-js" class="absolute w-full h-full"></div> --}}
+    <section class="container mx-auto mt-[18rem] mb-[10rem]">
 
         <div class="w-full flex justify-center flex-col items-center p-5 mb-[5rem]">
-            <h1 class="text-6xl"> <span class="font-thin">Opiniones</span><span class="font-bold text-orange-400">Clientes
+            <h1 class="text-6xl"> <span class="font-thin">Opiniones</span><span class="font-bold text-orange-400">Expertos
                 </span>
             </h1>
             <p class="mt-[2rem] lg:text-3xl"><span class="font-thin">Tendrás las mejores <span
@@ -95,41 +84,94 @@
             </p>
         </div>
 
-        <div id="client1"
-            class="w-auto bg-gradient-to-r from-blue-100 to-white gap-10 opacity-0 transition-all easy-in-out duration-1000 bg-dark flex justify-left items-center mb-[2rem]">
-            <img class="object-cover z-10 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                src="{{ asset('img/landing/avatar.png') }}" alt="">
-            <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Nombre de cliente.</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Opinion de cliente.</p>
+        <div class="grid grid-cols-2 gap-10">
+
+            <div data-aos="fade-right" class="opacity-0 transition-all easy-in-out duration-200">
+
+                <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                    <img class="h-full mx-auto" src="{{ asset('img/landing/avatar.png') }}" alt="" width="384"
+                        height="512">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <p class="text-lg font-medium">
+                            “Me encanta esta aplicación de reserva de alojamientos. Es fácil de usar y tiene una amplia
+                            selección de alojamientos disponibles en cualquier ciudad que desee visitar.”
+                        </p>
+                        <figcaption class="font-medium">
+                            <div class="text-orange-500">
+                                Nombre de Cliente
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+
+            </div>
+
+            <div data-aos="fade-right"
+                class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
+
+                <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                        src="{{ asset('img/landing/avatar.png') }}" alt="" width="384" height="512">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <p class="text-lg font-medium">
+                            “Esta aplicación me ha salvado la vida en varias ocasiones. Viajo mucho por trabajo y siempre
+                            necesito reservar un alojamiento de última hora.”
+                        </p>
+                        <figcaption class="font-medium">
+                            <div class="text-orange-500">
+                                Nombre de Cliente
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+
+            </div>
+
+            <div data-aos="fade-left"
+                class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
+
+                <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                    <img class="w-48 mx-auto" src="{{ asset('img/landing/avatar.png') }}" alt="" width="384"
+                        height="512">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <p class="text-lg font-medium">
+                            “Con esta aplicación, puedo encontrar y reservar un alojamiento en cuestión de minutos.”
+                        </p>
+                        <figcaption class="font-medium">
+                            <div class="text-orange-500">
+                                Nombre de Cliente
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+
+            </div>
+
+            <div data-aos="fade-left" class="opacity-0 transition-all easy-in-out duration-200">
+
+                <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                    <img class="h-auto w-48 mx-auto" src="{{ asset('img/landing/avatar.png') }}" alt=""
+                        width="384" height="512">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <p class="text-lg font-medium">
+                            “No puedo decir suficientes cosas buenas sobre esta aplicación. La interfaz es súper intuitiva y
+                            fácil de usar.”
+                        </p>
+                        <figcaption class="font-medium">
+                            <div class="text-orange-500">
+                                Nombre de Cliente
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+
             </div>
         </div>
-
-        <div id="client2"
-            class="w-auto bg-gradient-to-r from-blue-100 to-white gap-10 opacity-0 transition-all easy-in-out duration-1000 bg-dark flex justify-left items-center mb-[2rem]">
-            <img class="object-cover z-10 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                src="{{ asset('img/landing/avatar.png') }}" alt="">
-            <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Nombre de cliente.</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Opinion de cliente.</p>
-            </div>
-        </div>
-
-        <div id="client3"
-            class="w-auto bg-gradient-to-r from-blue-100 to-white gap-10 opacity-0 transition-all easy-in-out duration-1000 bg-dark flex justify-left items-center mb-[2rem]">
-            <img class="object-cover z-10 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                src="{{ asset('img/landing/avatar.png') }}" alt="">
-            <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Nombre de cliente</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Opinion de cliente.</p>
-            </div>
-        </div>
-
     </section>
 
 @endsection
-<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+
+{{-- Particles --}}
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<!-- stats.js lib -->
 <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 <script src="{{ asset('js/landing.js') }}" type="module"></script>

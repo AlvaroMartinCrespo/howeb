@@ -52,6 +52,23 @@ window.addEventListener("scroll", () => {
         client3.classList.add("opacity-0");
         client3.classList.remove("ml-[1rem]");
     }
+    //Client 4
+    const client4 = document.querySelector("#client4");
+    const rectClient4 = client4.getBoundingClientRect();
+    if (
+        rectClient4.top >= 0 &&
+        rectClient4.left >= 0 &&
+        rectClient4.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+        rectClient4.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+    ) {
+        client4.classList.remove("opacity-0");
+        client4.classList.add("ml-[1rem]");
+    } else {
+        client4.classList.add("opacity-0");
+        client4.classList.remove("ml-[1rem]");
+    }
 });
 
 /**

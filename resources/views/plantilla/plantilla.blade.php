@@ -64,21 +64,22 @@
                                         Panel</a>
                                 </li>
                             @endif
+                            <li>
+                                <form
+                                    class="bg-gray-200 hover:bg-gray-400 w-full h-full block whitespace-no-wrap rounded-b shadow-lg m-0"
+                                    action="{{ route('logout') }}" method="post">
+                                    @csrf
+                                    <button class="w-full h-full p-3" type="submit">Logout</button>
+                                </form>
+
+                            </li>
                         @else
                             <li><a href="{{ route('login') }}"
                                     class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap rounded">Inicio
                                     Sesión</a>
                             </li>
                         @endauth
-                        <li>
-                            <form
-                                class="bg-gray-200 hover:bg-gray-400 w-full h-full block whitespace-no-wrap rounded-b shadow-lg m-0"
-                                action="{{ route('logout') }}" method="post">
-                                @csrf
-                                <button class="w-full h-full p-3" type="submit">Logout</button>
-                            </form>
 
-                        </li>
                     </ul>
                 </div>
 

@@ -36,7 +36,7 @@
             <h1 class="text-6xl z-10"> <span class="font-thin">Los</span><span
                     class="font-bold text-blue-600">Hoteles</span>
             </h1>
-            <p class="mt-[2rem] lg:text-3xl z-10"><span class="font-thin">Tendrás las mejores <span
+            <p class="mt-[2rem] lg:text-3xl z-10"><span class="font-thin">Tendrás las mejores <span     
                         class="font-bold">experiencias</span>, en los
                     mejores</span>
                 <span class="font-bold z-10">alojamientos,</span> <br> <span class="font-thin">para tus mejores</span>
@@ -48,7 +48,7 @@
 
             @foreach ($randomAccomodations as $accomodation)
                 <div
-                    class="accomodation w-[30rem] bg-gray-800 mx-auto rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-105">
+                    class="accomodation w-[30rem] bg-gray-800 mx-auto rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-105 z-30">
                     <div class="block w-full">
                         <div class="relative">
                             <img class="w-full h-80 shadow-md opacity-75 transition-all easy-in-out duration-300 hover:opacity-100 "

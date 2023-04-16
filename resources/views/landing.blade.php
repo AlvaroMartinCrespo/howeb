@@ -36,7 +36,7 @@
             <h1 class="text-6xl z-10"> <span class="font-thin">Los</span><span
                     class="font-bold text-blue-600">Hoteles</span>
             </h1>
-            <p class="mt-[2rem] lg:text-3xl z-10"><span class="font-thin">Tendrás las mejores <span     
+            <p class="mt-[2rem] lg:text-3xl z-10"><span class="font-thin">Tendrás las mejores <span
                         class="font-bold">experiencias</span>, en los
                     mejores</span>
                 <span class="font-bold z-10">alojamientos,</span> <br> <span class="font-thin">para tus mejores</span>
@@ -89,8 +89,8 @@
             <div data-aos="fade-right" class="opacity-0 transition-all easy-in-out duration-200">
 
                 <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                    <img class="h-full mx-auto" src="{{ asset('img/landing/avatar.png') }}" alt="" width="384"
-                        height="512">
+                    <img class="h-full mx-auto" src="{{ asset('img/landing/experts/expertoQuevedo.png') }}" alt=""
+                        width="384" height="512">
                     <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <p class="text-lg font-medium">
                             “Me encanta esta aplicación de reserva de alojamientos. Es fácil de usar y tiene una amplia
@@ -98,7 +98,7 @@
                         </p>
                         <figcaption class="font-medium">
                             <div class="text-orange-500">
-                                Nombre de Cliente
+                                Pedro Luis Domínguez Quevedo
                             </div>
                         </figcaption>
                     </div>
@@ -110,16 +110,22 @@
                 class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
 
                 <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-                        src="{{ asset('img/landing/avatar.png') }}" alt="" width="384" height="512">
+                    <img class="w-60 h-auto mx-auto" src="{{ asset('img/landing/experts/ibaiExperto.webp') }}"
+                        alt="" width="384" height="512">
                     <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <p class="text-lg font-medium">
-                            “Esta aplicación me ha salvado la vida en varias ocasiones. Viajo mucho por trabajo y siempre
-                            necesito reservar un alojamiento de última hora.”
+                            “Gestiona con eficiencia mi alojamiento de último momento, <br>
+                            Ofreciéndome opciones de reserva en cada movimiento, <br>
+                            Rescatándome en situaciones de viaje repentinas, <br>
+                            Asegurando mi tranquilidad y evitando las espinas. <br>
+
+                            En verdad, esta aplicación me ha salvado más de una vez, <br>
+                            Trabajando por doquier, mi rutina se torna a veces un estrés, <br>
+                            Afortunadamente, con ella puedo encontrar mi refugio,”
                         </p>
                         <figcaption class="font-medium">
                             <div class="text-orange-500">
-                                Nombre de Cliente
+                                Ibai Llanos Garatea
                             </div>
                         </figcaption>
                     </div>
@@ -131,15 +137,15 @@
                 class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
 
                 <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                    <img class="w-48 mx-auto" src="{{ asset('img/landing/avatar.png') }}" alt="" width="384"
-                        height="512">
+                    <img class="w-48 mx-auto" src="{{ asset('img/landing/experts/orslokExperto.jpg') }}" alt=""
+                        width="384" height="512">
                     <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <p class="text-lg font-medium">
                             “Con esta aplicación, puedo encontrar y reservar un alojamiento en cuestión de minutos.”
                         </p>
                         <figcaption class="font-medium">
                             <div class="text-orange-500">
-                                Nombre de Cliente
+                                Germán García Carro
                             </div>
                         </figcaption>
                     </div>
@@ -150,8 +156,8 @@
             <div data-aos="fade-left" class="opacity-0 transition-all easy-in-out duration-200">
 
                 <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                    <img class="h-auto w-48 mx-auto" src="{{ asset('img/landing/avatar.png') }}" alt=""
-                        width="384" height="512">
+                    <img class="h-auto w-48 mx-auto" src="{{ asset('img/landing/experts/BadBunnyExpert.jpg') }}"
+                        alt="" width="384" height="512">
                     <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <p class="text-lg font-medium">
                             “No puedo decir suficientes cosas buenas sobre esta aplicación. La interfaz es súper intuitiva y
@@ -159,7 +165,7 @@
                         </p>
                         <figcaption class="font-medium">
                             <div class="text-orange-500">
-                                Nombre de Cliente
+                                Benito Antonio Martinez Ocasio
                             </div>
                         </figcaption>
                     </div>

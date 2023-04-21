@@ -97,4 +97,15 @@ class PageController extends Controller
         $reservations = Reservation::paginate(5);
         return view('page/reservation/listReservation', ['reservations' => $reservations]);
     }
+
+    /**
+     * Return a view of reservation of accomodation by id 
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    function reservation($id)
+    {
+        $accomodation = Accomodations::find($id);
+        return view('page/reservation/reservation', compact('accomodation'));
+    }
 }

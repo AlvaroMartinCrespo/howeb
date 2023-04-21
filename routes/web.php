@@ -38,8 +38,10 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/users/{id}', 'user')->middleware('auth')->name('user');
     Route::get('/listAccomodation', 'listAccomodation')->middleware('auth')->name('listAccomodation');
     Route::get('/accomodation/{id}', 'accomodation')->middleware('auth')->name('accomodation');
+    Route::get('/listReservation', 'listReservation')->middleware('auth')->name('listReservation');
 });
 
+//User controller
 Route::controller(UserController::class)->group(function () {
     Route::get('/search', 'index')->middleware('auth')->name('search');
     Route::post('/update-data', 'update')->middleware('auth')->name('update');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Accomodations;
+use App\Models\Reservation;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -39,7 +40,8 @@ class PageController extends Controller
 
         $countUsers = DB::table('users')->count();
         $countAccomodations = DB::table('accomodations')->count();
-        return view('page/cPanel', ['countUsers' => $countUsers, 'countAccomodations' => $countAccomodations]);
+        $countReservations = DB::table('reservation')->count();
+        return view('page/cPanel', ['countUsers' => $countUsers, 'countAccomodations' => $countAccomodations], ['countReservations' => $countReservations]);
     }
 
     /**
@@ -84,5 +86,15 @@ class PageController extends Controller
     {
         $accomodations = Accomodations::paginate(5);
         return view('page/accomodation/listAccomodations', ['accomodations' => $accomodations]);
+    }
+
+    /**
+     * Return a view of list of reservation
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    function listReservation()
+    {
+        $reservations = Reservation::paginate(5);
+        return view('page/reservation/listReservation', ['reservations' => $reservations]);
     }
 }

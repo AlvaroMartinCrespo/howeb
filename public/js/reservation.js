@@ -1,27 +1,26 @@
-// Obtener el elemento tbody de la tabla
-var tbody = document.getElementsByTagName("tbody")[0];
+window.addEventListener("DOMContentLoaded", () => {
+    // Card number input
+    const inputCardNumber = document.getElementById("inputCardNumber");
+    const cardNumber = document.getElementById("cardNumber");
 
-// Agregar un evento de clic a cada celda de fecha
-var cells = tbody.getElementsByTagName("td");
-for (var i = 0; i < cells.length; i++) {
-    cells[i].addEventListener("click", function () {
-        // Quitar la clase 'selected' de todas las celdas de fecha
-        for (var j = 0; j < cells.length; j++) {
-            cells[j].classList.remove("selected");
-        }
-        // Agregar la clase 'selected' a la celda de fecha seleccionada
-        this.classList.add("selected");
+    console.log(inputCardNumber);
+
+    inputCardNumber.addEventListener("input", function () {
+        const input = this.value;
+
+        console.log(input);
+
+        const formattedInput = input.replaceAll(/[^0-9]/g, "");
+        const formattedNumber = formattedInput.padEnd(16, "#");
+        cardNumber.textContent = formattedNumber;
     });
-}
 
-// Obtener los botones de navegación por mes
-var prevMonthBtn = document.getElementById("prev-month-btn");
-var nextMonthBtn = document.getElementById("next-month-btn");
+    const inputName = document.getElementById("inputName");
+    const cardName = document.getElementById("cardName");
 
-// Agregar eventos de clic a los botones de navegación por mes
-prevMonthBtn.addEventListener("click", function () {
-    // TODO: Navegar al mes anterior
-});
-nextMonthBtn.addEventListener("click", function () {
-    // TODO: Navegar al mes siguiente
+    inputName.addEventListener("input", function () {
+        const input = this.value;
+        const formattedInput = input.toUpperCase();
+        cardName.textContent = formattedInput || "JOHN DOE";
+    });
 });

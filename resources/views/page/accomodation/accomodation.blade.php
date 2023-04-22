@@ -40,7 +40,8 @@
                 </a>
             </div>
             <div class="flex justify-center items-center">
-                <a href="#" class="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold h-full rounded">
+                <a href="{{ route('reservation', ['id' => $accomodation->id]) }}"
+                    class="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold h-full rounded">
                     Continuar a Reserva
                 </a>
             </div>

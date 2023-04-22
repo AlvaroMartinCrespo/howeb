@@ -40,6 +40,8 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/accomodation/{id}', 'accomodation')->middleware('auth')->name('accomodation');
     Route::get('/listReservation', 'listReservation')->middleware('auth')->name('listReservation');
     Route::get('/reservation/{id}', 'reservation')->middleware('auth')->name('reservation');
+    Route::get('/reservationStep2/{id}', 'reservationStep2')->middleware('auth')->name('reservationStep2');
+    Route::get('/reservationStep3/{id}', 'reservationStep3')->middleware('auth')->name('reservationStep3');
 });
 
 //User controller

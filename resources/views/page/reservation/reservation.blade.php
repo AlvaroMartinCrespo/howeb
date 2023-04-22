@@ -4,7 +4,7 @@
 
 @section('main')
 
-    <section class="container mx-auto mt-[5.5rem]">
+    <section class="container mx-auto mt-[7rem]">
 
         <div class="flex items-center justify-center">
             <span class="w-5 h-5 rounded-full bg-green-500 flex justify-center"></span>
@@ -14,12 +14,15 @@
             <span class="w-5 h-5 rounded-full bg-gray-300 flex justify-center"></span>
         </div>
 
-        <div class="grid grid-rows-1">
+        <div class="grid grid-rows-2">
 
             <div class="grid grid-cols-1">
+
                 <div class="max-w-4xl mx-auto py-12 sm:px-6 lg:px-8">
                     <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-8">Formulario de Datos Personales</h1>
-                    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+                        action="{{ route('reservationStep2', ['id' => $accomodation->id]) }}" method="get">
+                        @csrf
                         <div class="grid grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-gray-700 font-bold mb-2" for="nombre">
@@ -91,6 +94,22 @@
                                         class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="pais" type="text" placeholder="Ingrese su país">
                                 </div>
+                                <div>
+                                    <label class="block text-gray-700 font-bold mb-2" for="alojamiento">
+                                        Alojamiento
+                                    </label>
+                                    <input
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-slate-300 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="pais" type="text" value="{{ $accomodation->name }}" readonly>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 font-bold mb-2" for="pais">
+                                        Id
+                                    </label>
+                                    <input
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-slate-300 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="pais" type="text" value="{{ $accomodation->id }}" readonly>
+                                </div>
                             </div>
                             <div class="mt-8 text-center">
                                 <button
@@ -101,7 +120,6 @@
                             </div>
                     </form>
                 </div>
-
 
             </div>
 

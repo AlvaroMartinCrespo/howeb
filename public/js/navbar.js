@@ -5,11 +5,13 @@ window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
         document.getElementById("nav-landing").classList.add("opacity-40");
         document.getElementById("nav-landing").classList.remove("p-3");
+        document.getElementById("nav-landing").classList.add("rounded-b-xl");
     }
 
     if (window.scrollY === 0) {
         document.getElementById("nav-landing").classList.remove("opacity-40");
         document.getElementById("nav-landing").classList.add("p-3");
+        document.getElementById("nav-landing").classList.remove("rounded-b-xl");
     }
 });
 

@@ -3,6 +3,7 @@
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,9 +40,6 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/listAccomodation', 'listAccomodation')->middleware('auth')->name('listAccomodation');
     Route::get('/accomodation/{id}', 'accomodation')->middleware('auth')->name('accomodation');
     Route::get('/listReservation', 'listReservation')->middleware('auth')->name('listReservation');
-    Route::get('/reservation/{id}', 'reservation')->middleware('auth')->name('reservation');
-    Route::get('/reservationStep2/{id}', 'reservationStep2')->middleware('auth')->name('reservationStep2');
-    Route::get('/reservationStep3/{id}', 'reservationStep3')->middleware('auth')->name('reservationStep3');
 });
 
 //User controller
@@ -49,6 +47,14 @@ Route::controller(UserController::class)->group(function () {
     Route::get('/search', 'index')->middleware('auth')->name('search');
     Route::post('/update-data', 'update')->middleware('auth')->name('update');
     Route::get('/delete/{id}', 'delete')->middleware('auth')->name('delete');
+});
+
+//Reservation controller
+Route::controller(ReservationController::class)->group(function () {
+    Route::get('/reservation/{id}', 'reservation')->middleware('auth')->name('reservation');
+    Route::get('/reservationStep2/{id}', 'reservationStep2')->middleware('auth')->name('reservationStep2');
+    Route::get('/reservationStep3/{id}', 'reservationStep3')->middleware('auth')->name('reservationStep3');
+    Route::get('/complete', 'complete')->middleware('auth')->name('complete');
 });
 
 //Controler Landing

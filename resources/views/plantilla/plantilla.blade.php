@@ -15,7 +15,7 @@
 <body>
 
     <nav id="nav-landing"
-        class="z-40 transition-all ease-in-out duration-400 bg-white fixed p-3 z-10 w-full hover:opacity-100 hover:p-3 hover:bg-slate-100 top-0">
+        class="z-40 transition-all ease-in-out duration-400 bg-white fixed p-3 w-full hover:rounded-none hover:opacity-100 hover:p-3 hover:bg-slate-100 top-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class=" h-full flex items-center justify-center align-items-center">

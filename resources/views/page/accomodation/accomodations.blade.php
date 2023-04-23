@@ -48,7 +48,7 @@
 
             {{-- ForEach --}}
             @foreach ($accomodations as $accomodation)
-                <div data-aos="zoom-in-up" class="max-w-sm rounded overflow-hidden shadow-lg ">
+                <div data-aos="zoom-in-up" class="max-w-sm rounded overflow-hidden shadow-lg">
                     <div>
                         <img class="w-96 h-80" src="{{ $accomodation->image }}" alt="{{ $accomodation->name }}">
                         <div class="px-6 py-4">

@@ -5,7 +5,7 @@
 @section('main')
 
 
-    <section id="inicio-landing" class="w-full h-[45rem] bg-[url('{{ asset('/img/landing/playa.jpg') }}')]">
+    <section id="inicio-landing" class="w-full h-[45rem] bg-[url('{{ asset('/img/landing/playa.jpg') }}')] rounded-b-xl">
 
         <div class="h-full flex justify-center items-center flex-col">
             <h1 class="text-white font-bold text-6xl left-50 top-50">Playas. <span class="text-orange-300">Hoteles.</span>
@@ -110,22 +110,16 @@
                 class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
 
                 <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                    <img class="w-60 h-auto mx-auto" src="{{ asset('img/landing/experts/ibaiExperto.webp') }}"
+                    <img class="w-60 h-auto mx-auto" src="{{ asset('img/landing/experts/rosaliaExpert.jpg') }}"
                         alt="" width="384" height="512">
                     <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <p class="text-lg font-medium">
-                            “Gestiona con eficiencia mi alojamiento de último momento, <br>
-                            Ofreciéndome opciones de reserva en cada movimiento, <br>
-                            Rescatándome en situaciones de viaje repentinas, <br>
-                            Asegurando mi tranquilidad y evitando las espinas. <br>
-
-                            En verdad, esta aplicación me ha salvado más de una vez, <br>
-                            Trabajando por doquier, mi rutina se torna a veces un estrés, <br>
-                            Afortunadamente, con ella puedo encontrar mi refugio,”
+                            “Recientemente visité la página de reserva de alojamientos "Howeb.com" y quedé gratamente
+                            sorprendida por la amplia variedad de opciones de alojamiento que ofrece en todo el mundo.”
                         </p>
                         <figcaption class="font-medium">
                             <div class="text-orange-500">
-                                Ibai Llanos Garatea
+                                Rosalía Vila Tobella
                             </div>
                         </figcaption>
                     </div>

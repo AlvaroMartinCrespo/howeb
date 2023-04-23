@@ -16,7 +16,8 @@ class PageController extends Controller
      */
     public function index()
     {
-        return view('page/home');
+        $randomAccomodations = DB::table('accomodations')->inRandomOrder()->take(3)->get();
+        return view('page/home', compact('randomAccomodations'));
     }
 
     /**

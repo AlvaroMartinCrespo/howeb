@@ -1,6 +1,6 @@
 @extends('../plantilla/plantilla')
 
-@section('title', 'Lista de Reservas')
+@section('title', 'Reserva ' . $accomodation->name)
 
 @section('main')
 

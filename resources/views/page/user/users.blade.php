@@ -1,6 +1,6 @@
 @extends('../plantilla/plantilla')
 
-@section('title', 'Login Howeb')
+@section('title', 'Lista de Usuarios')
 
 @section('main')
 

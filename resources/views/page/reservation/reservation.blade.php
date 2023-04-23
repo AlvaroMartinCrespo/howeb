@@ -1,6 +1,6 @@
 @extends('../plantilla/plantilla')
 
-@section('title', 'Lista de Reservas')
+@section('title', 'Reserva ' . $accomodation->name)
 
 @section('main')
 
@@ -30,7 +30,7 @@
                                 </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="nombre" type="text" placeholder="Ingrese su nombre">
+                                    id="nombre" type="text" placeholder="Ingrese su nombre" required>
                             </div>
                             <div>
                                 <label class="block text-gray-700 font-bold mb-2" for="apellidos">
@@ -38,7 +38,7 @@
                                 </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="apellidos" type="text" placeholder="Ingrese sus apellidos">
+                                    id="apellidos" type="text" placeholder="Ingrese sus apellidos" required>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4 mt-4">
@@ -48,7 +48,7 @@
                                 </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="email" type="email" placeholder="Ingrese su email">
+                                    id="email" type="email" placeholder="Ingrese su email" required>
                             </div>
                             <div>
                                 <label class="block text-gray-700 font-bold mb-2" for="telefono">
@@ -56,7 +56,7 @@
                                 </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="telefono" type="tel" placeholder="Ingrese su número de teléfono">
+                                    id="telefono" type="tel" placeholder="Ingrese su número de teléfono" required>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4 mt-4">
@@ -66,7 +66,7 @@
                                 </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="dni" type="text" placeholder="Ingrese su DNI">
+                                    id="dni" type="text" placeholder="Ingrese su DNI" required>
                             </div>
                             <div>
                                 <label class="block text-gray-700 font-bold mb-2" for="direccion">
@@ -74,7 +74,7 @@
                                 </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="direccion" type="text" placeholder="Ingrese su dirección">
+                                    id="direccion" type="text" placeholder="Ingrese su dirección" required>
 
                             </div>
                             <div class="grid grid-cols-2 gap-4 mt-4">
@@ -84,7 +84,7 @@
                                     </label>
                                     <input
                                         class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                        id="cp" type="text" placeholder="Ingrese su código postal">
+                                        id="cp" type="text" placeholder="Ingrese su código postal" required>
                                 </div>
                                 <div>
                                     <label class="block text-gray-700 font-bold mb-2" for="pais">
@@ -92,7 +92,7 @@
                                     </label>
                                     <input
                                         class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                        id="pais" type="text" placeholder="Ingrese su país">
+                                        id="pais" type="text" placeholder="Ingrese su país" required>
                                 </div>
                                 <div>
                                     <label class="block text-gray-700 font-bold mb-2" for="alojamiento">

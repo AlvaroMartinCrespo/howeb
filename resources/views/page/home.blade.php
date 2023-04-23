@@ -1,6 +1,6 @@
 @extends('../plantilla/plantilla')
 
-@section('title', 'Howeb')
+@section('title', auth()->user()->name)
 
 @section('main')
 
@@ -77,11 +77,8 @@
                 </form>
             </div>
         </div>
-
-        @if (auth()->user()->admin)
-        @else
-            {{-- foreach --}}
-            {{-- sino tiene reservas es un if y aparece que no tiene reservas de hoteles --}}
+        {{-- Hacer foreach de reservas --}}
+        @if (auth()->user()->reservations)
             <div class=" grid grid-cols-1 md:grid-cols-1 gap-4">
                 <div class="bg-white p-4 rounded-lg shadow m-5 ">
                     <h2 class="text-xl font-semibold text-gray-800 mb-4">Hoteles Reservados</h2>
@@ -117,7 +114,37 @@
 
 
             </div>
+        @else
+            <div class=" grid grid-cols-1 md:grid-cols-1 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow m-5 flex justify-center flex-col">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Actualmente no tiene ninguna reserva</h2>
+                    <h2>Según sus intereses le recomendamos estos alojamientos:</h2>
+                    <div class=" flex justify-center gap-6 mt-[5rem] px-5 ">
+
+                        @foreach ($randomAccomodations as $accomodation)
+                            <a href="{{ route('accomodation', ['id' => $accomodation->id]) }}"
+                                class="accomodation w-[30rem] bg-gray-800 mx-auto rounded-md shadow-md overflow-hidden transition-all ease-in-out duration-300 hover:scale-105 z-30">
+                                <div class="block w-full">
+                                    <div class="relative">
+                                        <img class="w-full h-80 shadow-md opacity-75 transition-all easy-in-out duration-300 hover:opacity-100 "
+                                            src={{ $accomodation->image }} alt={{ $accomodation->name }}>
+                                        <div class="absolute bottom-0 left-0 p-4">
+                                            <h3 class="text-white font-bold text-3xl ">{{ $accomodation->name }}</h3>
+                                            <p data-id={{ $accomodation->id }}
+                                                class="accomodationDescription text-xl bg-slate-600 bg-opacity-50 text-white font-bold transition-all ease-in-out duration-200 opacity-0 rounded p-1 h-0">
+                                                {{ $accomodation->description }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        @endforeach
+
+                    </div>
+                </div>
+            </div>
         @endif
+
     </div>
 
 

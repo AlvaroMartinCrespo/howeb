@@ -76,10 +76,6 @@ Note: Make sure you have the necessary permissions to run the application and th
 ![Diseño 4](https://example.com/designs/design4.png)
 
 
-### Home Admin
-
-![Diseño 4](https://example.com/designs/design4.png)
-
 ## Created by [Álvaro Martín Crespo](https://www.linkedin.com/in/%C3%A1lvaro-mart%C3%ADn-crespo-bb9aa5246/?originalSubdomain=es) · [GitHub](https://github.com/AlvaroMartinCrespo)
 
 

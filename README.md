@@ -1,7 +1,7 @@
 <p align="center"><img src="public/img/landing/icons/logoSinFondo.png" width="400" alt="Laravel Logo"></p>
-
+<p align="center">
 ## HOWEB
-
+</p>
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>

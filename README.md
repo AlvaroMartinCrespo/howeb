@@ -80,16 +80,8 @@ Note: Make sure you have the necessary permissions to run the application and th
 
 ![Diseño 4](https://example.com/designs/design4.png)
 
-Created by [Álvaro Martín Crespo](https://www.linkedin.com/in/%C3%A1lvaro-mart%C3%ADn-crespo-bb9aa5246/?originalSubdomain=es) · [GitHub](https://github.com/AlvaroMartinCrespo)
+## Created by [Álvaro Martín Crespo](https://www.linkedin.com/in/%C3%A1lvaro-mart%C3%ADn-crespo-bb9aa5246/?originalSubdomain=es) · [GitHub](https://github.com/AlvaroMartinCrespo)
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 

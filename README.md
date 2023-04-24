@@ -30,27 +30,27 @@ Note: Make sure you have the necessary permissions to run the application and th
 
 ### Landing Page
 
-![Diseño 1](https://example.com/designs/design1.png)
+![Diseño 1](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
 
 
 ### Login and Register
 
-![Diseño 2](https://example.com/designs/design2.png)
+![Diseño 2](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
 
 
 ### Home Client
 
-![Diseño 3](https://example.com/designs/design3.png)
+![Diseño 3](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
 
 
 ### Home Admin
 
-![Diseño 4](https://example.com/designs/design4.png)
+![Diseño 4](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
 
 
 ### Home Admin
 
-![Diseño 4](https://example.com/designs/design4.png)
+![Diseño 4](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
 
 
 
@@ -58,26 +58,35 @@ Note: Make sure you have the necessary permissions to run the application and th
 
 ### Landing Page
 
-![Diseño 1](https://example.com/designs/design1.png)
+![Diseño 1](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
 
 
 ### Login and Register
 
-![Diseño 2](https://example.com/designs/design2.png)
+![Diseño 2](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
 
 
 ### Home Client
 
-![Diseño 3](https://example.com/designs/design3.png)
+![Diseño 3](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
 
 
 ### Home Admin
 
-![Diseño 4](https://example.com/designs/design4.png)
+![Diseño 4](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
 
 
 ## Created by [Álvaro Martín Crespo](https://www.linkedin.com/in/%C3%A1lvaro-mart%C3%ADn-crespo-bb9aa5246/?originalSubdomain=es) · [GitHub](https://github.com/AlvaroMartinCrespo)
 
+## Table relationship
+
+### Entity-relationship 
+
+![Entity-relationship](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
+
+### Relational model
+
+![Relational model](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
 
 ## License
 

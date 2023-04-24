@@ -1,4 +1,5 @@
 <p align="center"><img src="public/img/landing/icons/logoSinFondo.png" width="400" alt="Laravel Logo"></p>
+
 ## HOWEB
 
 <p align="center">

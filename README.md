@@ -30,51 +30,61 @@ Note: Make sure you have the necessary permissions to run the application and th
 
 ### Landing Page
 
-![Diseño 1](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
 
 ### Login and Register
 
-![Diseño 2](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
-
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
 ### Home Client
 
-![Diseño 3](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
-
-
-### Home Admin
-
-![Diseño 4](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
-
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
 ### Home Admin
 
-![Diseño 4](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
+### Home Admin
+
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
 
 ## Images
 
 ### Landing Page
 
-![Diseño 1](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
-
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
 ### Login and Register
 
-![Diseño 2](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
-
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
 ### Home Client
 
-![Diseño 3](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
-
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
 ### Home Admin
 
-![Diseño 4](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
-
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
 ## Created by [Álvaro Martín Crespo](https://www.linkedin.com/in/%C3%A1lvaro-mart%C3%ADn-crespo-bb9aa5246/?originalSubdomain=es) · [GitHub](https://github.com/AlvaroMartinCrespo)
 
@@ -82,11 +92,15 @@ Note: Make sure you have the necessary permissions to run the application and th
 
 ### Entity-relationship 
 
-![Entity-relationship](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
 ### Relational model
 
-![Relational model](https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg)
+<p align="center">
+    <img src="https://chafiras.com/2882688-large_default/panel-de-luxe-blanco-2750x1220x18-alvic.jpg" alt="landing-page" />
+</p>
 
 ## License
 

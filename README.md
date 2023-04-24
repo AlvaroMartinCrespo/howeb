@@ -1,4 +1,4 @@
-<p align="center"><img src="public/img/landing/icons/logoSinFondo.png" width="400" alt="Laravel Logo"></p>
+<p align="center"><img src="public/img/landing/icons/logoSinFondo.png" width="500" alt="Laravel Logo"></p>
 
 ## HOWEB
 
@@ -9,7 +9,7 @@ Howeb is an accommodation booking application that offers various options for di
 Among the functionalities offered by Howeb are the possibility to book accommodations in different destinations and to see a wide selection of available accommodations in each place. 
 
 This application has been developed using the powerful and versatile Laravel framework.
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png" width="40%"/></p>
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png" width="30%"/></p>
 
 ## HOW TO INSTALL
 
@@ -28,10 +28,59 @@ Note: Make sure you have the necessary permissions to run the application and th
 ## Designs
 
 
+### Landing Page
+
+![Diseño 1](https://example.com/designs/design1.png)
+
+
+### Login and Register
+
+![Diseño 2](https://example.com/designs/design2.png)
+
+
+### Home Client
+
+![Diseño 3](https://example.com/designs/design3.png)
+
+
+### Home Admin
+
+![Diseño 4](https://example.com/designs/design4.png)
+
+
+### Home Admin
+
+![Diseño 4](https://example.com/designs/design4.png)
+
+
 
 ## Images
 
+### Landing Page
 
+![Diseño 1](https://example.com/designs/design1.png)
+
+
+### Login and Register
+
+![Diseño 2](https://example.com/designs/design2.png)
+
+
+### Home Client
+
+![Diseño 3](https://example.com/designs/design3.png)
+
+
+### Home Admin
+
+![Diseño 4](https://example.com/designs/design4.png)
+
+
+### Home Admin
+
+![Diseño 4](https://example.com/designs/design4.png)
+
+Created by [Álvaro Martín Crespo](https://www.linkedin.com/in/%C3%A1lvaro-mart%C3%ADn-crespo-bb9aa5246/?originalSubdomain=es) · [GitHub](https://github.com/AlvaroMartinCrespo)
 
 ## Contributing
 

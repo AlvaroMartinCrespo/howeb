@@ -1,4 +1,5 @@
-<p align="center"><img src="public/img/landing/icons/logoSinFondo.png" width="400" alt="Laravel Logo">HOWEB</p>
+<p align="center"><img src="public/img/landing/icons/logoSinFondo.png" width="400" alt="Laravel Logo"></p>
+## HOWEB
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>

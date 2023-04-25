@@ -90,7 +90,7 @@
                     </div>
                 </div>
 
-                <form action="{{ route('complete') }}" method="post">
+                <form action="{{ route('complete', ['id' => $accomodation->id]) }}" method="get">
                     @csrf
                     <div class="mt-[2rem] shadow-md border p-7 rounded-lg bg-gray-100 ">
 

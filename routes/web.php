@@ -54,7 +54,7 @@ Route::controller(ReservationController::class)->group(function () {
     Route::get('/reservation/{id}', 'reservation')->middleware('auth')->name('reservation');
     Route::get('/reservationStep2/{id}', 'reservationStep2')->middleware('auth')->name('reservationStep2');
     Route::get('/reservationStep3/{id}', 'reservationStep3')->middleware('auth')->name('reservationStep3');
-    Route::get('/complete', 'complete')->middleware('auth')->name('complete');
+    Route::get('/complete/{id}', 'complete')->middleware('auth')->name('complete');
 });
 
 //Controler Landing

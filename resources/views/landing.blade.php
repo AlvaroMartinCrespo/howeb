@@ -84,89 +84,97 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-2 gap-10">
+        <div class="grid grid-rows-1">
 
-            <div data-aos="fade-right" class="opacity-0 transition-all easy-in-out duration-200">
+            <div class="grid grid-cols-1 gap-10">
 
-                <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                    <img class="h-full mx-auto" src="{{ asset('img/landing/experts/expertoQuevedo.png') }}" alt=""
-                        width="384" height="512">
-                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-                        <p class="text-lg font-medium">
-                            “Me encanta esta aplicación de reserva de alojamientos. Es fácil de usar y tiene una amplia
-                            selección de alojamientos disponibles en cualquier ciudad que desee visitar.”
-                        </p>
-                        <figcaption class="font-medium">
-                            <div class="text-orange-500">
-                                Pedro Luis Domínguez Quevedo
-                            </div>
-                        </figcaption>
-                    </div>
-                </figure>
+                <div data-aos="fade-right" class="opacity-0 transition-all easy-in-out duration-200">
 
+                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                        <img class="h-full mx-auto" src="{{ asset('img/landing/experts/expertoQuevedo.png') }}"
+                            alt="" width="384" height="512">
+                        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                            <p class="text-lg font-medium">
+                                “Me encanta esta aplicación de reserva de alojamientos. Es fácil de usar y tiene una amplia
+                                selección de alojamientos disponibles en cualquier ciudad que desee visitar.”
+                            </p>
+                            <figcaption class="font-medium">
+                                <div class="text-orange-500">
+                                    Pedro Luis Domínguez Quevedo
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+
+                </div>
+
+                <div data-aos="fade-right"
+                    class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
+
+                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                            <p class="text-lg font-medium">
+                                “Recientemente visité la página de reserva de alojamientos "Howeb.com" y quedé gratamente
+                                sorprendida por la amplia variedad de opciones de alojamiento que ofrece en todo el mundo.”
+                            </p>
+                            <figcaption class="font-medium">
+                                <div class="text-orange-500">
+                                    Rosalía Vila Tobella
+                                </div>
+                            </figcaption>
+                        </div>
+                        <img class="w-60 h-auto mx-auto" src="{{ asset('img/landing/experts/rosaliaExpert.jpg') }}"
+                            alt="" width="384" height="512">
+                    </figure>
+
+                </div>
+
+                <div data-aos="fade-left"
+                    class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
+
+                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                        <img class="w-48 mx-auto" src="{{ asset('img/landing/experts/orslokExperto.jpg') }}" alt=""
+                            width="384" height="512">
+                        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                            <p class="text-lg font-medium">
+                                “Con esta aplicación, puedo encontrar y reservar un alojamiento en cuestión de minutos.”
+                            </p>
+                            <figcaption class="font-medium">
+                                <div class="text-orange-500">
+                                    Germán García Carro
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+
+                </div>
+
+                <div data-aos="fade-left"
+                    class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
+
+                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                            <p class="text-lg font-medium">
+                                “No puedo decir suficientes cosas buenas sobre esta aplicación. La interfaz es súper
+                                intuitiva y
+                                fácil de usar.”
+                            </p>
+                            <figcaption class="font-medium">
+                                <div class="text-orange-500">
+                                    Benito Antonio Martinez Ocasio
+                                </div>
+                            </figcaption>
+                        </div>
+                        <img class="h-auto w-48 mx-auto" src="{{ asset('img/landing/experts/BadBunnyExpert.jpg') }}"
+                            alt="" width="384" height="512">
+                    </figure>
+
+                </div>
             </div>
 
-            <div data-aos="fade-right"
-                class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
-
-                <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                    <img class="w-60 h-auto mx-auto" src="{{ asset('img/landing/experts/rosaliaExpert.jpg') }}"
-                        alt="" width="384" height="512">
-                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-                        <p class="text-lg font-medium">
-                            “Recientemente visité la página de reserva de alojamientos "Howeb.com" y quedé gratamente
-                            sorprendida por la amplia variedad de opciones de alojamiento que ofrece en todo el mundo.”
-                        </p>
-                        <figcaption class="font-medium">
-                            <div class="text-orange-500">
-                                Rosalía Vila Tobella
-                            </div>
-                        </figcaption>
-                    </div>
-                </figure>
-
-            </div>
-
-            <div data-aos="fade-left"
-                class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
-
-                <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                    <img class="w-48 mx-auto" src="{{ asset('img/landing/experts/orslokExperto.jpg') }}" alt=""
-                        width="384" height="512">
-                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-                        <p class="text-lg font-medium">
-                            “Con esta aplicación, puedo encontrar y reservar un alojamiento en cuestión de minutos.”
-                        </p>
-                        <figcaption class="font-medium">
-                            <div class="text-orange-500">
-                                Germán García Carro
-                            </div>
-                        </figcaption>
-                    </div>
-                </figure>
-
-            </div>
-
-            <div data-aos="fade-left" class="opacity-0 transition-all easy-in-out duration-200">
-
-                <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                    <img class="h-auto w-48 mx-auto" src="{{ asset('img/landing/experts/BadBunnyExpert.jpg') }}"
-                        alt="" width="384" height="512">
-                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-                        <p class="text-lg font-medium">
-                            “No puedo decir suficientes cosas buenas sobre esta aplicación. La interfaz es súper intuitiva y
-                            fácil de usar.”
-                        </p>
-                        <figcaption class="font-medium">
-                            <div class="text-orange-500">
-                                Benito Antonio Martinez Ocasio
-                            </div>
-                        </figcaption>
-                    </div>
-                </figure>
-
-            </div>
         </div>
+
+
     </section>
 
 @endsection

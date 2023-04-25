@@ -15,7 +15,7 @@ class ReservationController extends Controller
         $user_id = auth()->user()->id;
         $accomodation = Accomodations::find($id);
         // Con el id del alojamiento y el id del usuario insertamos una nueva reserva en la tabla de reservas
-        return view('reservation/complete');
+        return view('page/reservation/complete');
     }
 
     /**

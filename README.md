@@ -62,25 +62,40 @@ Note: Make sure you have the necessary permissions to run the application and th
 ### Landing Page
 
 <p align="center">
-    <img src="public/readMeImg/image/.png" alt="landing-page" />
+    <img src="public/readMeImg/image/landing1.png" alt="landing-page" />
+</p>
+
+
+<p align="center">
+    <img src="public/readMeImg/image/landing2.png" alt="landing-page" />
 </p>
 
 ### Login and Register
 
 <p align="center">
-   <img src="public/readMeImg/image/.png" alt="landing-page" />
+   <img src="public/readMeImg/image/login.png" alt="landing-page" />
+</p>
+
+<p align="center">
+   <img src="public/readMeImg/image/register.png" alt="landing-page" />
 </p>
 
 ### Home Client
 
 <p align="center">
-    <img src="public/readMeImg/image/.png" alt="landing-page" />>
+    <img src="public/readMeImg/image/clientSession.png" alt="landing-page" />>
 </p>
 
 ### Home Admin
 
 <p align="center">
-    <img src="public/readMeImg/image/.png" alt="landing-page" />
+    <img src="public/readMeImg/image/adminSession.png" alt="landing-page" />
+</p>
+
+### Credit Card
+
+<p align="center">
+    <img src="public/readMeImg/image/creditCard.png" alt="landing-page" />
 </p>
 
 ## Created by [Álvaro Martín Crespo](https://www.linkedin.com/in/%C3%A1lvaro-mart%C3%ADn-crespo-bb9aa5246/?originalSubdomain=es) · [GitHub](https://github.com/AlvaroMartinCrespo)
@@ -90,13 +105,13 @@ Note: Make sure you have the necessary permissions to run the application and th
 ### Entity-relationship 
 
 <p align="center">
-    <img src="public/readMeImg/tables/.png" alt="landing-page" />
+    <img src="public/readMeImg/tables/entidadRelacion.png" alt="landing-page" />
 </p>
 
 ### Relational model
 
 <p align="center">
-   <img src="public/readMeImg/tables/.png" alt="landing-page" />
+   <img src="public/readMeImg/tables/relacional.png" alt="landing-page" />
 </p>
 
 ## License

@@ -16,11 +16,18 @@
 
         <div class="grid grid-rows-2">
 
-            <div class="grid grid-cols-1">
+            <div class="grid grid-cols-1 mb-10">
 
                 @include('page/reservation/DataClient/DataClient')
 
+                <div class="bg-gray-100 p-4">
+                    <h2 class="text-xl font-bold mb-2">Precio total</h2>
+                    <p class="text-gray-700 text-lg">El precio total de tu reserva es:</p>
+                    <p class="text-3xl font-bold text-indigo-500">{{ $price }}€</p>
+                </div>
+
             </div>
+
             <div class="grid grid-cols-1">
 
                 <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-8">Introduzca Datos</h1>
@@ -94,14 +101,14 @@
                             </label>
                             <input id="inputName" maxlength="16"
                                 class="appearance-none border rounded w-64 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="cp" type="text" placeholder="John">
+                                id="cp" type="text" placeholder="John" required>
 
                             <label class="block text-gray-700 font-bold mb-2" for="cp">
                                 Apellido
                             </label>
                             <input id="inputLastName" maxlength="16"
                                 class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="cp" type="text" placeholder="Doe">
+                                id="cp" type="text" placeholder="Doe" required>
 
                         </div>
 
@@ -112,14 +119,14 @@
                             </label>
                             <input id="inputCardNumber" maxlength="16"
                                 class=" appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                type="text" placeholder="#### #### #### ####">
+                                type="text" placeholder="#### #### #### ####" required>
 
                             <label class="w-100 block text-gray-700 font-bold " for="inputCVV">
                                 CVV
                             </label>
                             <input id="inputCVV" maxlength="3"
                                 class="text-center appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                type="text" placeholder=". . .">
+                                type="text" placeholder=". . ." required>
 
                         </div>
 
@@ -128,7 +135,7 @@
                         <label class="block text-gray-700 font-bold mb-2 mt-[2rem]" for="expiration">Caducidad</label>
                         <label for="entryDate">
                             <input id="inputExpirationDate" type="month"
-                                class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4">
+                                class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4" required>
                         </label>
                         <div class="flex justify-center items-center gap-5">
                             <a class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded

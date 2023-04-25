@@ -50,6 +50,21 @@
                                 class="bg-gray-100 px-4 py-2 rounded-lg w-full" readonly>
                         </div>
                     </div>
+                    {{-- For step 3 --}}
+                    @if (request()->input('entryDate') && request()->input('departureDate'))
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="font-bold mb-2 block">Fecha de Entrada</label>
+                                <input name="cp" type="text" value="{{ request()->input('entryDate') }}"
+                                    class="bg-gray-100 px-4 py-2 rounded-lg w-full" readonly>
+                            </div>
+                            <div>
+                                <label class="font-bold mb-2 block">Fecha de Salida</label>
+                                <input name="country" type="text" value="{{ request()->input('departureDate') }}"
+                                    class="bg-gray-100 px-4 py-2 rounded-lg w-full" readonly>
+                            </div>
+                        </div>
+                    @endif
                     <div class="grid grid-cols-2 gap-4">
                         <div>
                             <label class="font-bold mb-2 block mt-[2rem]">Alojamiento</label>

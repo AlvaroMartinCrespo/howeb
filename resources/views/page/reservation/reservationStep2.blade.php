@@ -26,15 +26,18 @@
                     <div class="max-w-4xl mx-auto py-12 sm:px-6 lg:px-8">
                         <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-8">Seleccione Fechas</h1>
 
-                        <label for="entryDate">
-                            <input type="date"
-                                class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4">
-                        </label>
+                        <div class="mb-10">
+                            <label for="entryDate">
+                                <input name="entryDate" type="date"
+                                    class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4">
+                            </label>
 
-                        <label for="departureDate">
-                            <input type="date"
-                                class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4">
-                        </label>
+                            <label for="departureDate">
+                                <input name="departureDate" type="date"
+                                    class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4">
+                            </label>
+                        </div>
+
 
                         <div class="flex justify-center items-center gap-5">
                             <a class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded
@@ -47,6 +50,17 @@
                         </div>
 
                     </div>
+
+                    @if ($error)
+                        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+                            role="alert">
+                            <strong class="font-bold">Error:</strong>
+                            <span class="block sm:inline">Las fechas introducidas no son válidas. Por favor, introduzca
+                                fechas válidas.</span>
+                            <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+                            </span>
+                        </div>
+                    @endif
 
                 </div>
 

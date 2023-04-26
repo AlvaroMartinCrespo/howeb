@@ -4,7 +4,7 @@
 
 @section('main')
 
-    <section class="container mx-auto mt-[7rem]">
+    <section class="container mx-auto mt-[7rem] p-[2rem]">
 
         <div class="flex items-center justify-center">
             <span class="w-5 h-5 rounded-full bg-green-500 flex justify-center"></span>

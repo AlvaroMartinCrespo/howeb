@@ -86,13 +86,14 @@
 
         <div class="grid grid-rows-1">
 
-            <div class="grid grid-cols-1 gap-10">
+            <div class="grid grid-cols-1 gap-10 justify-items-center">
 
-                <div data-aos="fade-right" class="opacity-0 transition-all easy-in-out duration-200">
+                <div data-aos="fade-right" class="opacity-0 transition-all easy-in-out duration-200 w-[80%]">
 
                     <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                        <img class="h-full mx-auto" src="{{ asset('img/landing/experts/expertoQuevedo.png') }}"
-                            alt="" width="384" height="512">
+                        <img class="h-full mx-auto rounded-ss-xl"
+                            src="{{ asset('img/landing/experts/expertoQuevedo.png') }}" alt="" width="384"
+                            height="512">
                         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                             <p class="text-lg font-medium">
                                 “Me encanta esta aplicación de reserva de alojamientos. Es fácil de usar y tiene una amplia
@@ -109,7 +110,7 @@
                 </div>
 
                 <div data-aos="fade-right"
-                    class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
+                    class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center w-[70%]">
 
                     <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
                         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
@@ -123,18 +124,19 @@
                                 </div>
                             </figcaption>
                         </div>
-                        <img class="w-60 h-auto mx-auto" src="{{ asset('img/landing/experts/rosaliaExpert.jpg') }}"
-                            alt="" width="384" height="512">
+                        <img class="w-60 h-auto mx-auto rounded-ee-xl"
+                            src="{{ asset('img/landing/experts/rosaliaExpert.jpg') }}" alt="" width="384"
+                            height="512">
                     </figure>
 
                 </div>
 
                 <div data-aos="fade-left"
-                    class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
+                    class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center w-[70%]">
 
                     <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
-                        <img class="w-48 mx-auto" src="{{ asset('img/landing/experts/orslokExperto.jpg') }}" alt=""
-                            width="384" height="512">
+                        <img class="w-48 mx-auto rounded-ss-xl" src="{{ asset('img/landing/experts/orslokExperto.jpg') }}"
+                            alt="" width="384" height="512">
                         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                             <p class="text-lg font-medium">
                                 “Con esta aplicación, puedo encontrar y reservar un alojamiento en cuestión de minutos.”
@@ -150,7 +152,7 @@
                 </div>
 
                 <div data-aos="fade-left"
-                    class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center">
+                    class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center w-[80%]">
 
                     <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
                         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
@@ -165,8 +167,9 @@
                                 </div>
                             </figcaption>
                         </div>
-                        <img class="h-auto w-48 mx-auto" src="{{ asset('img/landing/experts/BadBunnyExpert.jpg') }}"
-                            alt="" width="384" height="512">
+                        <img class="h-auto w-48 mx-auto rounded-ee-xl"
+                            src="{{ asset('img/landing/experts/BadBunnyExpert.jpg') }}" alt="" width="384"
+                            height="512">
                     </figure>
 
                 </div>

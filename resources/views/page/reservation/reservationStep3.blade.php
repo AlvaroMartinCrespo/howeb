@@ -4,7 +4,7 @@
 
 @section('main')
 
-    <section class="container mx-auto mt-[7rem]">
+    <section class="container mx-auto mt-[7rem] p-[2rem]">
         <form action="{{ route('complete', ['id' => $accomodation->id]) }}" method="get">
             @csrf
             <div class="flex items-center justify-center">

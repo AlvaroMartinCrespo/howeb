@@ -4,9 +4,9 @@
 
 @section('main')
 
-    {{-- opcion 1 --}}
+    {{-- option 1 --}}
 
-    <section class="container mx-auto my-[9rem]">
+    <section class="container mx-auto my-[9rem] p-[2rem]">
         <div class="grid grid-cols-2 gap-8">
             <div class="rounded-lg overflow-hidden">
                 <img class="w-full" src="{{ $accomodation->image }}" alt="{{ $accomodation->name }}">

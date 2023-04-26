@@ -20,7 +20,8 @@ To install HOWEB, follow these steps:
 3. Set up a local server environment (you can use XAMPP or any other tool of your preference).
 4. Ensure that you have a MySQL database installed.
 5. Once you have downloaded the project and installed Composer, navigate to the project folder in the terminal and run the command `composer install` to install all the dependencies required for the project to work properly.
-6. Finally, open the project in your local server environment.
+6. Configure the .env file to connect to the database. The table relationships are located in the table relationship section.
+7. Finally, open the project in your local server environment.
 
 Note: Make sure you have the necessary permissions to run the application and that your server environment meets the minimum requirements.
 

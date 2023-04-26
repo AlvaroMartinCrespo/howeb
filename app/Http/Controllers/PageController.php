@@ -53,7 +53,7 @@ class PageController extends Controller
 
         $countUsers = DB::table('users')->count();
         $countAccomodations = DB::table('accomodations')->count();
-        $countReservations = DB::table('reservation')->count();
+        $countReservations = DB::table('reservations')->count();
         return view('page/cPanel', ['countUsers' => $countUsers, 'countAccomodations' => $countAccomodations], ['countReservations' => $countReservations]);
     }
 

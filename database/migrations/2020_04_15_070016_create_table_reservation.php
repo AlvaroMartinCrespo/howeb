@@ -13,17 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('reservation', function (Blueprint $table) {
+        Schema::create('reservations', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->unsignedBigInteger('id_accomodation');
             $table->foreign('id_accomodation')->references('id')->on('accomodations');
             $table->unsignedBigInteger('id_user');
             $table->foreign('id_user')->references('id')->on('users');
-            $table->integer('start_date');
-            $table->integer('end_date');
+            $table->date('start_date');
+            $table->date('end_date');
             $table->integer('price');
-            $table->string('state')->check("state IN ('confirmed', 'cancelled', 'completed')");
+            $table->string('state')->check("state IN ('confirmed', 'cancelled')")->default('confirmed');
         });
     }
 

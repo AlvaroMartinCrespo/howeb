@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Accomodations;
+use App\Models\Reservation;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 use Illuminate\Support\Str;

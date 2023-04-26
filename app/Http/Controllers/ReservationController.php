@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Accomodations;
+use App\Models\Reservation;
 use DateTime;
 use Illuminate\Http\Request;
 
@@ -13,9 +14,22 @@ class ReservationController extends Controller
     function complete($id)
     {
 
+        // Information about the reservation
         $user_id = auth()->user()->id;
-        $accomodation = Accomodations::find($id);
-        // Con el id del alojamiento y el id del usuario insertamos una nueva reserva en la tabla de reservas
+        $dateEntry = request()->input('entryDate');
+        $dateDeparture = request()->input('departureDate');
+        $price = request()->input('price');
+
+        // Create a new reservation
+        $reservation = new Reservation();
+        $reservation->id_accomodation = $id;
+        $reservation->id_user = $user_id;
+        $reservation->start_date = $dateEntry;
+        $reservation->end_date = $dateDeparture;
+        $reservation->price = $price;
+        $reservation->save();
+
+
         return view('page/reservation/complete');
     }
 
@@ -23,7 +37,7 @@ class ReservationController extends Controller
      * Return a view of reservation of accomodation by id 
      * @param $id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */ 
+     */
     function reservation($id)
     {
         session()->put('visitedStep1', true);

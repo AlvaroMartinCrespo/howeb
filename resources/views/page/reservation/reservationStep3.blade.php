@@ -5,93 +5,95 @@
 @section('main')
 
     <section class="container mx-auto mt-[7rem]">
-
-        <div class="flex items-center justify-center">
-            <span class="w-5 h-5 rounded-full bg-green-500 flex justify-center"></span>
-            <span class="border border-green-500 w-16"></span>
-            <span class="w-5 h-5 rounded-full bg-green-500 flex justify-center"></span>
-            <span class="border border-green-500 w-16"></span>
-            <span class="w-5 h-5 rounded-full bg-green-500 flex justify-center"></span>
-        </div>
-
-        <div class="grid grid-rows-2">
-
-            <div class="grid grid-cols-1 mb-10">
-
-                @include('page/reservation/DataClient/DataClient')
-
-                <div class="bg-gray-100 p-4">
-                    <h2 class="text-xl font-bold mb-2">Precio total</h2>
-                    <p class="text-gray-700 text-lg">El precio total de tu reserva es:</p>
-                    <p class="text-3xl font-bold text-indigo-500">{{ $price }}€</p>
-                </div>
-
+        <form action="{{ route('complete', ['id' => $accomodation->id]) }}" method="get">
+            @csrf
+            <div class="flex items-center justify-center">
+                <span class="w-5 h-5 rounded-full bg-green-500 flex justify-center"></span>
+                <span class="border border-green-500 w-16"></span>
+                <span class="w-5 h-5 rounded-full bg-green-500 flex justify-center"></span>
+                <span class="border border-green-500 w-16"></span>
+                <span class="w-5 h-5 rounded-full bg-green-500 flex justify-center"></span>
             </div>
 
-            <div class="grid grid-cols-1">
+            <div class="grid grid-rows-2">
 
-                <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-8">Introduzca Datos</h1>
+                <div class="grid grid-cols-1 mb-10">
 
-                <div class="bg-white h-100 flex justify-center items-center">
+                    @include('page/reservation/DataClient/DataClient')
 
-                    <div class="space-y-16">
-                        <div
-                            class="w-96 h-56 m-auto bg-red-100 rounded-xl relative text-white shadow-2xl transition-transform transform hover:scale-110">
+                    <div class="bg-gray-100 p-4">
+                        <h2 class="text-xl font-bold mb-2">Precio total</h2>
+                        <p class="text-gray-700 text-lg">El precio total de tu reserva es:</p>
+                        <input name="price" class="w-[3.3rem] text-3xl font-bold text-indigo-500 bg-gray-100"
+                            value="{{ $price }}" readonly /> <span
+                            class="text-3xl font-bold text-indigo-500">€</span>
+                    </div>
 
-                            <img class="relative object-cover w-full h-full rounded-xl"
-                                src="https://i.imgur.com/kGkSg1v.png">
+                </div>
 
-                            <div class="w-full px-8 absolute top-8">
-                                <div class="flex justify-between">
-                                    <div>
-                                        <p class="font-light">
-                                            Nombre
-                                            </h1>
-                                        <p id="cardName" class="font-medium tracking-widest">
-                                            JOHN
-                                        </p>
-                                        <p id="cardLastName" class="font-medium tracking-widest">
-                                            DOE
-                                        </p>
-                                    </div>
-                                    <img class="w-14 h-14" src="https://i.imgur.com/bbPHJVe.png" />
-                                </div>
-                                <div class="pt-1">
-                                    <p class="font-light">
-                                        Número de Tarjeta
-                                        </h1>
-                                    <p id="cardNumber" class="font-medium tracking-widest">
-                                        ################
-                                    </p>
-                                </div>
-                                <div class="pt-6 pr-6">
+                <div class="grid grid-cols-1">
+
+                    <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-8">Introduzca Datos</h1>
+
+                    <div class="bg-white h-100 flex justify-center items-center">
+
+                        <div class="space-y-16">
+                            <div
+                                class="w-96 h-56 m-auto bg-red-100 rounded-xl relative text-white shadow-2xl transition-transform transform hover:scale-110">
+
+                                <img class="relative object-cover w-full h-full rounded-xl"
+                                    src="https://i.imgur.com/kGkSg1v.png">
+
+                                <div class="w-full px-8 absolute top-8">
                                     <div class="flex justify-between">
                                         <div>
-                                            <p class="font-light text-xs">
-                                                Cad.
+                                            <p class="font-light">
+                                                Nombre
                                                 </h1>
-                                            <p id="cardExpirationDate" class="font-medium tracking-wider text-sm">
-                                                MM/AA
+                                            <p id="cardName" class="font-medium tracking-widest">
+                                                JOHN
+                                            </p>
+                                            <p id="cardLastName" class="font-medium tracking-widest">
+                                                DOE
                                             </p>
                                         </div>
+                                        <img class="w-14 h-14" src="https://i.imgur.com/bbPHJVe.png" />
+                                    </div>
+                                    <div class="pt-1">
+                                        <p class="font-light">
+                                            Número de Tarjeta
+                                            </h1>
+                                        <p id="cardNumber" class="font-medium tracking-widest">
+                                            ################
+                                        </p>
+                                    </div>
+                                    <div class="pt-6 pr-6">
+                                        <div class="flex justify-between">
+                                            <div>
+                                                <p class="font-light text-xs">
+                                                    Cad.
+                                                    </h1>
+                                                <p id="cardExpirationDate" class="font-medium tracking-wider text-sm">
+                                                    MM/AA
+                                                </p>
+                                            </div>
 
-                                        <div>
-                                            <p class="font-light text-xs">
-                                                CVV
-                                                </h1>
-                                            <p id="cardCVV" class="font-bold text-center text-sm">
-                                                ···
-                                            </p>
+                                            <div>
+                                                <p class="font-light text-xs">
+                                                    CVV
+                                                    </h1>
+                                                <p id="cardCVV" class="font-bold text-center text-sm">
+                                                    ···
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <form action="{{ route('complete', ['id' => $accomodation->id]) }}" method="get">
-                    @csrf
+
                     <div class="mt-[2rem] shadow-md border p-7 rounded-lg bg-gray-100 ">
 
                         <div class="flex justify-center items-center gap-4 mb-[2rem]">
@@ -148,11 +150,9 @@
                         </div>
                     </div>
 
+        </form>
 
-
-                </form>
-
-            </div>
+        </div>
         </div>
     </section>
 

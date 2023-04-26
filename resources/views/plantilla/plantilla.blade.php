@@ -100,7 +100,6 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script type="module" src="node_modules/spin.js/spin.js"></script>
     <script>
         AOS.init();
     </script>

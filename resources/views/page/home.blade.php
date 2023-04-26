@@ -77,42 +77,26 @@
                 </form>
             </div>
         </div>
-        {{-- Hacer foreach de reservas --}}
         @if (auth()->user()->reservations)
             <div class=" grid grid-cols-1 md:grid-cols-1 gap-4">
                 <div class="bg-white p-4 rounded-lg shadow m-5 ">
-                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Hoteles Reservados</h2>
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <div class="md:flex">
-                            <div class="md:flex-shrink-0">
-                                <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo"
-                                    class="h-48 w-full object-cover md:w-48">
-                            </div>
-                            <div class="p-8">
-                                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Nombre Hotel
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Alojamientos Reservados</h2>
+                    @foreach ($reservations as $reservation)
+                        <a href="#" class="bg-white rounded-lg shadow-lg mb-5">
+                            <div class="md:flex">
+                                <div class="md:flex-shrink-0">
+                                    <img src="" alt="Imagen de ejemplo" class="h-48 w-full object-cover md:w-48">
                                 </div>
-                                <p class="mt-2 text-gray-500">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-lg mt-[1rem]">
-                        <div class="md:flex">
-                            <div class="md:flex-shrink-0">
-                                <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo"
-                                    class="h-48 w-full object-cover md:w-48">
-                            </div>
-                            <div class="p-8">
-                                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Nombre Hotel
+                                <div class="p-8">
+                                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+
+                                    </div>
+                                    <p class="mt-2 text-gray-500"></p>
                                 </div>
-                                <p class="mt-2 text-gray-500">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.</p>
                             </div>
-                        </div>
-                    </div>
+                        </a>
+                    @endforeach
                 </div>
-
-
             </div>
         @else
             <div class=" grid grid-cols-1 md:grid-cols-1 gap-4">

@@ -47,6 +47,10 @@ class ReservationController extends Controller
         $reservation->price = $price;
         $reservation->save();
 
+        // Update the number of reservations of the user
+        $user = User::find($user_id);
+        $user->reservations = $user->reservations + 1;
+        $user->save();
 
         return view('page/reservation/complete');
     }

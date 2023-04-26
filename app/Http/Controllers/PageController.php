@@ -28,8 +28,22 @@ class PageController extends Controller
                 }
             }
         };
+
         $randomAccomodations = DB::table('accomodations')->inRandomOrder()->take(3)->get();
-        return view('page/home', compact('randomAccomodations'));
+
+        $idUser = auth()->user()->id;
+
+        //Get reservations of user
+        $reservations = Reservation::where('id_user', $idUser)->get();
+
+        $date = DB::table('reservations')
+            ->join('accomodations', 'reservations.id_accomodation', '=', 'accomodations.id')
+            ->select('reservations.*', 'accomodations.*')
+            ->get();
+
+        dd($date);
+
+        return view('page/home', compact('randomAccomodations', 'reservations', 'accomodations'));
     }
 
     /**

@@ -37,7 +37,7 @@
                 <p class="mb-4 text-white">Cantidad de reservas: <span class="font-bold">{{ $countReservations }}
                         reservas</span>.</p>
                 @if ($countReservations > 0)
-                    <a href="{{ route('listAccomodation') }}"
+                    <a href="{{ route('listReservation') }}"
                         class="text-yellow-500 px-4 py-2 rounded-md bg-gray-700 hover:bg-gray-500 transition-all ease-in-out duration-300">Ver
                         reservas</a>
                 @endif

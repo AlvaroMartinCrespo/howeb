@@ -52,6 +52,7 @@ Route::controller(UserController::class)->group(function () {
 //Reservation controller
 Route::controller(ReservationController::class)->group(function () {
     Route::get('/reservation/{id}', 'reservation')->middleware('auth')->name('reservation');
+    Route::get('/infoReservation/{id}', 'infoReservation')->middleware('auth')->name('infoReservation');
 
     // We created new middleware to prevent the user from accessing different reservation steps without having gone through the previous ones. (CheckVisitedStep1, CheckVisitedStep2, CheckVisitedStep3)
     Route::get('/reservationStep2/{id}', 'reservationStep2')->middleware('auth', 'CheckVisitedStep1')->name('reservationStep2');

@@ -5,12 +5,30 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Accomodations;
 use App\Models\Reservation;
+use App\Models\User;
 use DateTime;
 use Illuminate\Http\Request;
 
 class ReservationController extends Controller
 {
+    /**
+     * Return a view of reservation with the information of the reservation, the accomodation and the user
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    function infoReservation($id)
+    {
+        $reservation = Reservation::find($id);
+        $accomodation = Accomodations::find($reservation->id_accomodation);
+        $user = User::find($reservation->id_user);
+        return view('page/reservation/infoReservation', compact('reservation', 'accomodation', 'user'));
+    }
 
+    /**
+     * When you finish the reservation, redirect to the complete page with a animation payment successful.
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     function complete($id)
     {
 

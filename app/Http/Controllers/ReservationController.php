@@ -12,6 +12,7 @@ class ReservationController extends Controller
 
     function complete($id)
     {
+
         $user_id = auth()->user()->id;
         $accomodation = Accomodations::find($id);
         // Con el id del alojamiento y el id del usuario insertamos una nueva reserva en la tabla de reservas
@@ -22,9 +23,10 @@ class ReservationController extends Controller
      * Return a view of reservation of accomodation by id 
      * @param $id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
+     */ 
     function reservation($id)
     {
+        session()->put('visitedStep1', true);
         $accomodation = Accomodations::find($id);
         return view('page/reservation/reservation', compact('accomodation'));
     }
@@ -36,6 +38,7 @@ class ReservationController extends Controller
      */
     function reservationStep2($id)
     {
+        session()->put('visitedStep2', true);
         $accomodation = Accomodations::find($id);
         $error = false;
         return view('page/reservation/reservationStep2', compact('accomodation', 'error'));
@@ -48,6 +51,8 @@ class ReservationController extends Controller
      */
     function reservationStep3(Request $request, $id)
     {
+
+        session()->put('visitedStep3', true);
         $accomodation = Accomodations::find($id);
 
         // Check if date is valid, if not redirect to step 2

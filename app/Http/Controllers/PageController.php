@@ -12,10 +12,22 @@ class PageController extends Controller
 {
     /**
      * Return home view
+     * Turn to false if already visited visitedStep1, visitedStep2 and visitedStep3 
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
+        // If exists checksteps variables in session set them to false
+        if (session()->has('visitedStep1')) {
+            session()->put('visitedStep1', false);
+            if (session()->has('visitedStep2')) {
+                session()->put('visitedStep2', false);
+
+                if (session()->has('visitedStep2')) {
+                    session()->put('visitedStep3', false);
+                }
+            }
+        };
         $randomAccomodations = DB::table('accomodations')->inRandomOrder()->take(3)->get();
         return view('page/home', compact('randomAccomodations'));
     }
@@ -98,6 +110,4 @@ class PageController extends Controller
         $reservations = Reservation::paginate(5);
         return view('page/reservation/listReservation', ['reservations' => $reservations]);
     }
-
-
 }

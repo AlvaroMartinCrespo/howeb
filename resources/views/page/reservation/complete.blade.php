@@ -1,11 +1,17 @@
-@extends('../plantilla/plantilla')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('title', 'Procesando reserva')
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Procesando pago</title>
+</head>
 
-@section('main')
+<body>
 
     <section id="sectionBack" class="bg-gray-900 text-white w-full h-screen pt-[7rem]">
-        <div id="buttonBack" class="">Hola</div>
         <div id="loader" class="fixed inset-0 z-50 flex justify-center items-center bg-white">
             <div class="flex justify-center items-center" role="status">
                 <svg aria-hidden="true" class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
@@ -22,6 +28,20 @@
         </div>
     </section>
 
-@endsection
+
+    <div id="back"
+        class="hidden fixed top-0 left-0 z-50 w-screen h-screen flex items-center justify-center bg-gray-800 bg-opacity-75">
+        <div class="bg-white rounded-lg p-8">
+            <h2 class="text-gray-900 font-bold mb-4">Pago realizado correctamente</h2>
+            <p class="text-gray-700 mb-4">Vuela a su perfil:</p><a href="{{ route('home') }}"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Volver</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
 
 <script src="{{ asset('js/loader.js') }}"></script>

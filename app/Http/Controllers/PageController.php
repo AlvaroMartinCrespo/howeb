@@ -33,17 +33,14 @@ class PageController extends Controller
 
         $idUser = auth()->user()->id;
 
-        //Get reservations of user
-        $reservations = Reservation::where('id_user', $idUser)->get();
-
-        $date = DB::table('reservations')
+        // Get all reservations of current user
+        $dates = DB::table('reservations')
             ->join('accomodations', 'reservations.id_accomodation', '=', 'accomodations.id')
-            ->select('reservations.*', 'accomodations.*')
+            ->select('reservations.id as id_reservation', 'reservations.*', 'accomodations.*')
+            ->where('reservations.id_user', '=', $idUser)
             ->get();
 
-        dd($date);
-
-        return view('page/home', compact('randomAccomodations', 'reservations', 'accomodations'));
+        return view('page/home', compact('randomAccomodations', 'dates'));
     }
 
     /**

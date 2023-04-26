@@ -11,6 +11,25 @@ use Illuminate\Http\Request;
 
 class ReservationController extends Controller
 {
+
+    /**
+     * Eliminate a reservation by id
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    function removeReservation($id)
+    {
+        Reservation::find($id)->delete();
+        //Remove reservation from user
+        $user_id = auth()->user()->id;
+        $user = User::find($user_id);
+        $user->reservations = $user->reservations - 1;
+        $user->save();
+
+        return redirect('home')->with('eliminate', 'Reservation removed!');
+        // return redirect()->route('home');
+    }
+
     /**
      * Return a view of reservation with the information of the reservation, the accomodation and the user
      * @param $id

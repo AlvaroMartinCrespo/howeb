@@ -5,11 +5,20 @@
 @section('main')
 
     @if (session('success'))
-        <div id="alertMessage" class="bg-green-500 text-white font-bold p-4 hidden fixed bottom-10 left-10">
+        <div id="alertMessage" class="bg-green-500 z-50 text-white font-bold p-4 hidden fixed bottom-10 left-10">
             <p>{{ session('success') }}</p>
         </div>
         @php
             session()->forget('success');
+        @endphp
+    @endif
+
+    @if (session('eliminate'))
+        <div id="alertMessage" class="bg-green-500 z-50 text-white font-bold p-4 hidden fixed bottom-10 left-10">
+            <p>{{ session('eliminate') }}</p>
+        </div>
+        @php
+            session()->forget('eliminate');
         @endphp
     @endif
 
@@ -77,24 +86,29 @@
                 </form>
             </div>
         </div>
-        @if (auth()->user()->reservations)
+        @if (auth()->user()->reservations !== 0)
+
             <div class=" grid grid-cols-1 md:grid-cols-1 gap-4">
                 <div class="bg-white p-4 rounded-lg shadow m-5 ">
                     <h2 class="text-xl font-semibold text-gray-800 mb-4">Alojamientos Reservados</h2>
-                    @foreach ($reservations as $reservation)
-                        <a href="#" class="bg-white rounded-lg shadow-lg mb-5">
-                            <div class="md:flex">
-                                <div class="md:flex-shrink-0">
-                                    <img src="" alt="Imagen de ejemplo" class="h-48 w-full object-cover md:w-48">
-                                </div>
-                                <div class="p-8">
-                                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-
+                    @foreach ($dates as $date)
+                        <div class="mb-5">
+                            <a href="{{ route('infoReservation', ['id' => $date->id_reservation]) }}"
+                                class="bg-white rounded-lg shadow-lg">
+                                <div class="md:flex">
+                                    <div class="md:flex-shrink-0">
+                                        <img src="{{ $date->image }}" alt="Imagen de ejemplo"
+                                            class="h-48 w-full object-cover md:w-48">
                                     </div>
-                                    <p class="mt-2 text-gray-500"></p>
+                                    <div class="p-8">
+                                        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                                            {{ $date->name }}
+                                        </div>
+                                        <p class="mt-2 text-gray-500">{{ $date->description }}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     @endforeach
                 </div>
             </div>

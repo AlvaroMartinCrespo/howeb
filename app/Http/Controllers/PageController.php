@@ -88,8 +88,13 @@ class PageController extends Controller
      */
     public function user($id)
     {
+        $dates = DB::table('reservations')
+            ->join('accomodations', 'reservations.id_accomodation', '=', 'accomodations.id')
+            ->select('reservations.id as id_reservation', 'reservations.*', 'accomodations.*')
+            ->where('reservations.id_user', '=', $id)
+            ->get();
         $user = User::find($id);
-        return view('page/user/user', compact('user'));
+        return view('page/user/user', compact('user', 'dates'));
     }
 
     /**

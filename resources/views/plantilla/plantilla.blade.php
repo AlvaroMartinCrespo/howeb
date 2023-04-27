@@ -26,7 +26,7 @@
                             class="ml-10 box-content w-25 text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400 ">Inicio</a>
                         <a href="{{ route('accomodations') }}"
                             class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Alojamientos</a>
-                        <a href="#"
+                        <a href="{{ route('aboutUs') }}"
                             class="ml-4 box-border text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400">Sobre
                             Nosotros</a>
                         @auth

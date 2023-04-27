@@ -108,6 +108,16 @@ class PageController extends Controller
     }
 
     /**
+     * Return aboutUs view
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * 
+     */
+    public function aboutUs()
+    {
+        return view('page/aboutUs');
+    }
+
+    /**
      * Return a view of list of accomodation
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */

@@ -4,13 +4,24 @@
 
 @section('main')
 
-    <section class="mt-[5.5rem] bg-slate-100">
+    <div class="flex justify-center ">
+        <video class="h-screen object-fill w-full" src="{{ asset('video/islas.mp4') }}" autoplay muted loop></video>
+        <div class="absolute top-[-10rem] left-0 w-full h-full flex justify-center items-center">
+            <img class="w-60%" src="{{ asset('img/landing/icons/logoSinFondo.png') }}" alt="logo">
+        </div>
+        <div class="absolute top-[2rem] left-0 w-full h-full flex justify-center items-center">
+            <span class="text-5xl font-bold text-gray-300 
+               opacity-80">No te pongas</span>
+        </div>
+        <div class="absolute top-[5rem] left-0 w-full h-full flex justify-center items-center">
+            <span
+                class="text-7xl font-bold text-white relative underline underline-offset-3 decoration-8 decoration-blue-400">Limites</span>
+        </div>
+    </div>
+    <section class=" bg-slate-100">
         <div class="container mx-auto">
             <div class="grid grid-rows-1">
                 <div class="grid grid-cols-1">
-                    <div class="flex justify-center h-[25rem] pt-[2rem]">
-                        <img class="rounded-xl" src="https://via.placeholder.com/1920x500" alt="">
-                    </div>
                     <div class="mt-10 flex justify-center">
                         <h1 class="text-4xl font-bold">Sobre Nosotros</h1>
                     </div>
@@ -24,9 +35,10 @@
                                 textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo
                                 sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos
                                 electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la
-                                creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                                creación de las hojas " Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
                                 recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye
-                                versiones de Lorem Ipsum.</p>
+                                versiones de Lorem
+                                Ipsum.</p>
                         </div>
                     </div>
                     <div class="flex justify-center">

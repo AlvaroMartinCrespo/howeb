@@ -16,9 +16,9 @@
                 </div>
                 <hr class="w-48 h-1 mx-auto my-4 rounded bg-yellow-200 border-0 md:my-10 dark:bg-gray-700">
                 <div class="grid sm:grid-cols-1 lg:grid-cols-2 mt-20">
-                    <img class="p-10" src="https://via.placeholder.com/600x400" alt="placeholder">
+                    <img class=" rounded-3xl" src="https://via.placeholder.com/600x400" alt="placeholder">
                     <div>
-                        <p class="text-2xl font-bold p-10">
+                        <p class="text-2xl font-bold px-10">
                             Ofrecemos opciones como cabañas acogedoras en la montaña, villas de lujo frente al mar y
                             apartamentos en la ciudad.
                             Estamos seguros de que encontrará la opción perfecta para sus vacaciones.

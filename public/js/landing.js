@@ -4,6 +4,19 @@
 window.addEventListener("DOMContentLoaded", () => {
     let accomodations = document.querySelectorAll(".accomodation");
 
+    console.log("hola");
+
+    let typed = new Typed("#lettersLanding", {
+        strings: [
+            "<span class='text-6xl'>Playas. </span><span class='text-orange-400 text-6xl'>Hoteles. </span><br>Diversión.",
+        ],
+        typeSpeed: 220,
+        backSpeed: 70,
+        cursorChar: "",
+        backDelay: 700,
+        startDelay: 200,
+    });
+
     accomodations.forEach((accomodation) => {
         let description = accomodation.querySelector(
             ".accomodationDescription"

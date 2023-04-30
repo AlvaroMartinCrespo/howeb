@@ -8,9 +8,7 @@
     <section id="inicio-landing" class="w-full h-screen bg-[url('{{ asset('/img/landing/playa.jpg') }}')] rounded-b-xl">
 
         <div class="h-full flex justify-center items-center flex-col">
-            <h1 class="text-white font-bold text-6xl left-50 top-50">Playas. <span class="text-orange-300">Hoteles.</span>
-                <br><span class="text-7xl ">Diversion.</span>
-            </h1>
+            <h1 id="lettersLanding" class="text-white font-bold text-7xl left-50 top-50"></h1>
             <div class="flex justify-center items-center gap-10 mt-20">
                 @if (auth()->check())
                     <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""

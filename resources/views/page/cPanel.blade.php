@@ -65,7 +65,7 @@
                         <ul class="divide-y divide-gray-700">
                             @foreach (session('users') as $user)
                                 <li
-                                    class="flex items-center p-4 m-4 hover:bg-gray-700 rounded transition-all ease-in-out duration-200">
+                                    class="flex items-center p-4 m-4 hover:mx-0 hover:bg-gray-700 rounded transition-all ease-in-out duration-200">
                                     <a href="{{ route('user', ['id' => $user->id]) }}">
                                         <div class="flex justify-center items-center gap-5">
                                             <img class="w-8 h-8 rounded-full" src="{{ asset('img/landing/avatar.png') }}"

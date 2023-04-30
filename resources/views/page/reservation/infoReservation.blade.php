@@ -5,7 +5,7 @@
 @section('main')
 
     <div class="bg-gray-100 mt-[5.5rem] h-screen">
-        <div class="container mx-auto px-4 py-6">
+        <div class="container mx-auto px-10 py-6">
             <div class="flex justify-between items-center mb-8">
                 <h1 class="text-2xl font-bold">Factura de Reserva de Alojamiento</h1>
                 <img src="{{ asset('img/landing/icons/logoSinFondo.png') }}" alt="Logo" class="w-24 h-24 object-contain" />

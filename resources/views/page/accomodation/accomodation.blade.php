@@ -5,8 +5,8 @@
 @section('main')
 
     {{-- option 1 --}}
-    <div class="bg-gray-100 h-screen">
-        <section class="container mx-auto py-[9rem]">
+    <div class="bg-gray-100 h-full">
+        <section class="container mx-auto p-[7rem]">
             <div class="grid grid-cols-2 gap-8">
                 <div class="rounded-lg overflow-hidden">
                     <img class="w-full " src="{{ $accomodation->image }}" alt="{{ $accomodation->name }}">

@@ -15,7 +15,7 @@
                     </h1>
                 </div>
                 <hr class="w-48 h-1 mx-auto my-4 rounded bg-yellow-200 border-0 md:my-10 dark:bg-gray-700">
-                <div class="grid sm:grid-cols-1 lg:grid-cols-2 mt-20">
+                <div class="p-14 grid sm:grid-cols-1 lg:grid-cols-2 mt-20">
                     <img class=" rounded-3xl" src="https://via.placeholder.com/600x400" alt="placeholder">
                     <div>
                         <p class="text-2xl font-bold px-10">

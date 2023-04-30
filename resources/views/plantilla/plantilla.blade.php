@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="{{ asset('/img/landing/icons/logoSinFondo.png') }}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>@yield('title')</title>
 
@@ -19,8 +20,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class=" h-full flex items-center justify-center align-items-center">
-                    <a href="#" class="h-full text-white font-bold"><img class="h-full"
-                            src="{{ asset('/img/landing/icons/logoSinFondo.png') }}" alt="logo-hov"></a>
+                    <span class="h-full text-white font-bold"><img class="h-full"
+                            src="{{ asset('/img/landing/icons/logoSinFondo.png') }}" alt="logo-hov"></span>
                     <div class="hidden md:block">
                         <a href="{{ route('landing') }}"
                             class="ml-10 box-content w-25 text-black p-2 rounded transition ease-in-out duration-300 hover:border-y-2 hover:border-orange-400 ">Inicio</a>

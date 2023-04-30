@@ -4,46 +4,28 @@
 
 @section('main')
 
-    {{-- Method using containers and columns to make the page responsive. --}}
-    <div class="bg-gray-100">
-        <section id="title" class="container mx-auto py-28">
-            <div class="grid grid-cols-1">
-                <div class="flex justify-center">
-                    <h1
-                        class="text-6xl font-bold bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent h-20">
-                        Alojamientos
-                    </h1>
-                </div>
-                <hr class="w-48 h-1 mx-auto my-4 rounded bg-yellow-200 border-0 md:my-10 dark:bg-gray-700">
-                <div class="p-14 grid sm:grid-cols-1 lg:grid-cols-2 mt-20">
-                    <img class=" rounded-3xl" src="https://via.placeholder.com/600x400" alt="placeholder">
-                    <div>
-                        <p class="text-2xl font-bold px-10">
-                            Ofrecemos opciones como cabañas acogedoras en la montaña, villas de lujo frente al mar y
-                            apartamentos en la ciudad.
-                            Estamos seguros de que encontrará la opción perfecta para sus vacaciones.
-                        </p>
 
-                        <ul class="list-disc list-inside p-10">
-                            <li class="text-xl">Alojamientos equipados con todas las comodidades necesarias.</li>
-                            <li class="text-xl">Permanencia confortable y placentera.</li>
-                        </ul>
+    <section class=" w-full h-[45rem] bg-[url('{{ asset('/img/palmeras.jpg') }}')] rounded-b-xl">
 
-                        <p class="text-xl p-10">
-                            Esperamos hacerte sentir como en casa <span class="font-bold">¡No te lo pierdas!</span>
-                        </p>
+        <div class="h-full flex justify-center items-center flex-col">
+            <h1 id="letters" class="text-white font-bold text-7xl left-50 top-50">
+            </h1>
+        </div>
 
-                    </div>
+    </section>
 
-                </div>
-            </div>
-        </section>
-    </div>
 
     <div class="bg-gray-100">
-        <section class="container mx-auto py-[2rem]">
+        <section class="container mx-auto p-[5rem]">
 
-            <h2 class="text-3xl font-bold mb-10 text-center">Sección de Alojamientos</h2>
+            <h2 class="text-5xl font-bold mb-10 text-center">Sección<span class="text-blue-400">Alojamientos</span></h2>
+
+
+            <p class="text-xl px-10 text-justify">Ofrecemos opciones como cabañas acogedoras en la montaña, villas de lujo
+                frente al mar y apartamentos en la ciudad.
+                Estamos seguros de que encontrará la opción perfecta para sus vacaciones.</p>
+
+
 
             <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
 
@@ -84,3 +66,5 @@
 
 
 @endsection
+
+<script src="{{ asset('js/accomodations.js') }}"></script>

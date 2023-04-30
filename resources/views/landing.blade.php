@@ -5,7 +5,7 @@
 @section('main')
 
 
-    <section id="inicio-landing" class="w-full h-[45rem] bg-[url('{{ asset('/img/landing/playa.jpg') }}')] rounded-b-xl">
+    <section id="inicio-landing" class="w-full h-screen bg-[url('{{ asset('/img/landing/playa.jpg') }}')] rounded-b-xl">
 
         <div class="h-full flex justify-center items-center flex-col">
             <h1 class="text-white font-bold text-6xl left-50 top-50">Playas. <span class="text-orange-300">Hoteles.</span>

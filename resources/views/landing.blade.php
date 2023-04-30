@@ -89,7 +89,7 @@
 
                 <div data-aos="fade-right" class="opacity-0 transition-all easy-in-out duration-200 w-[80%]">
 
-                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 shadow-lg">
+                    <figure class="md:flex bg-white rounded-xl p-8 md:p-0 shadow-lg">
                         <img class="h-full mx-auto rounded-ss-xl"
                             src="{{ asset('img/landing/experts/expertoQuevedo.png') }}" alt="" width="384"
                             height="512">
@@ -111,7 +111,7 @@
                 <div data-aos="fade-right"
                     class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center w-[70%]">
 
-                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 shadow-lg">
+                    <figure class="md:flex bg-white rounded-xl p-8 md:p-0 shadow-lg">
                         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                             <p class="text-lg font-medium">
                                 “Recientemente visité la página de reserva de alojamientos "Howeb.com" y quedé gratamente
@@ -133,7 +133,7 @@
                 <div data-aos="fade-left"
                     class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center w-[70%]">
 
-                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 shadow-lg">
+                    <figure class="md:flex bg-white rounded-xl p-8 md:p-0 shadow-lg">
                         <img class="w-48 mx-auto rounded-ss-xl" src="{{ asset('img/landing/experts/orslokExperto.jpg') }}"
                             alt="" width="384" height="512">
                         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
@@ -153,7 +153,7 @@
                 <div data-aos="fade-left"
                     class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center w-[80%]">
 
-                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 shadow-lg">
+                    <figure class="md:flex bg-white rounded-xl p-8 md:p-0 shadow-lg">
                         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                             <p class="text-lg font-medium">
                                 “No puedo decir suficientes cosas buenas sobre esta aplicación. La interfaz es súper

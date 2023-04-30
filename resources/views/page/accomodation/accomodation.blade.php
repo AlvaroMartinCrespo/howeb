@@ -5,7 +5,7 @@
 @section('main')
 
     {{-- option 1 --}}
-    <div class="bg-gray-100 h-full">
+    <div class="bg-[#E5E7EB] h-full">
         <section class="container mx-auto p-[7rem]">
             <div class="grid grid-cols-2 gap-8">
                 <div class="rounded-lg overflow-hidden">

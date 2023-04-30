@@ -5,15 +5,16 @@
 @section('main')
 
     <div class="flex justify-center ">
-        <video class="h-screen object-fill w-full" src="{{ asset('video/islas.mp4') }}" autoplay muted loop></video>
-        <div class="absolute top-[-10rem] left-0 w-full h-full flex justify-center items-center">
+        <video class="h-screen object-fill w-full rounded-xl" src="{{ asset('video/islas.mp4') }}" autoplay muted
+            loop></video>
+        <div class="absolute top-[-5rem] left-0 w-full h-full flex justify-center items-center">
             <img class="w-60%" src="{{ asset('img/landing/icons/logoSinFondo.png') }}" alt="logo">
         </div>
-        <div class="absolute top-[2rem] left-0 w-full h-full flex justify-center items-center">
+        <div class="absolute top-[7rem] left-0 w-full h-full flex justify-center items-center">
             <span class="text-5xl font-bold text-gray-300 
                opacity-80">No te pongas</span>
         </div>
-        <div class="absolute top-[5rem] left-0 w-full h-full flex justify-center items-center">
+        <div class="absolute top-[10rem] left-0 w-full h-full flex justify-center items-center">
             <span
                 class="text-7xl font-bold text-white relative underline underline-offset-3 decoration-8 decoration-blue-400">Limites</span>
         </div>

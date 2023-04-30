@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     let typed = new Typed("#lettersLanding", {
         strings: [
-            "<span class='text-6xl'>Playas. </span><span class='text-orange-400 text-6xl'>Hoteles. </span><br>Diversión.",
+            "<span class='text-7xl'>Playas. </span><span class='text-orange-400 text-7xl bg-gray-400/40'>Hoteles. </span><br><span class=''>Diversión.</span>",
         ],
         typeSpeed: 150,
         backSpeed: 70,

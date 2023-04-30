@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // Particles
 particlesJS("particles-js", {
     particles: {
-        number: { value: 90, density: { enable: true, value_area: 600 } },
+        number: { value: 90, density: { enable: true, value_area: 400 } },
         color: { value: "#000" },
         shape: {
             type: "circle",

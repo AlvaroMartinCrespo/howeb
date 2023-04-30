@@ -25,9 +25,9 @@
 
     <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
 
-    <section class="w-full  p-[3rem]">
+    <section class="w-full p-[3rem]">
 
-        <div id="particles-js" class="absolute w-full h-full"></div>
+        <div id="particles-js" class="absolute w-auto h-full"></div>
 
 
         <div class="w-full flex justify-center flex-col items-center p-5">

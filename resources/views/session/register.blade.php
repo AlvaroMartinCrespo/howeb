@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ asset('/img/landing/icons/logoSinFondo.png') }}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Register Howeb</title>
@@ -11,10 +12,10 @@
 
 <body>
     <div class="h-screen bg-blue-100 flex flex-col justify-center sm:py-12">
-        <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
-            <div class="bg-white shadow w-full rounded-lg divide-y divide-gray-200">
+        <div class="xs:p-0 mx-auto md:w-full md:max-w-md">
+            <div class="bg-white shadow w-[30rem] rounded-lg divide-y divide-gray-200">
                 <img src="{{ asset('img/landing/icons/logoSinFondo.png') }}" alt="logoSinFondo">
-                <div class="px-5 py-7">
+                <div class="px-5 py-7 w-full">
                     <form action="{{ route('register-validate') }}" method="post">
                         @csrf
                         <div class="grid grid-cols-2 gap-10">

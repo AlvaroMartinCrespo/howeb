@@ -5,7 +5,7 @@
 @section('main')
 
 
-    <section class=" w-full h-[45rem] bg-[url('{{ asset('/img/palmeras.jpg') }}')] rounded-b-xl">
+    <section class=" w-full h-screen bg-[url('{{ asset('/img/palmeras.jpg') }}')] rounded-b-xl">
 
         <div class="h-full flex justify-center items-center flex-col">
             <h1 id="letters" class="text-white font-bold text-7xl left-50 top-50">

@@ -15,7 +15,7 @@
     </section>
 
 
-    <div class="bg-gray-100">
+    <div class="bg-[#E5E7EB]">
         <section class="container mx-auto p-[5rem]">
 
             <h2 class="text-5xl font-bold mb-10 text-center">Sección<span class="text-blue-400">Alojamientos</span></h2>
@@ -33,10 +33,10 @@
 
                 {{-- ForEach --}}
                 @foreach ($accomodations as $accomodation)
-                    <div data-aos="zoom-in-up" class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div data-aos="zoom-in-up" class="max-w-sm rounded-xl overflow-hidden shadow-lg">
                         <div>
                             <img class="w-96 h-80" src="{{ $accomodation->image }}" alt="{{ $accomodation->name }}">
-                            <div class="px-6 py-4">
+                            <div class="px-6 py-4 bg-white">
                                 <div class="font-bold text-xl mb-2">{{ $accomodation->name }}</div>
                                 <div class="flex justify-between items-center">
                                     <p class="text-gray-700 text-base flex justify-center flex-col items-center">

@@ -4,7 +4,7 @@
 
 @section('main')
 
-    <div class="flex justify-center ">
+    <div class="flex justify-center bg-[#E5E7EB]">
         <video class="h-screen object-fill w-full rounded-xl" src="{{ asset('video/islas.mp4') }}" autoplay muted
             loop></video>
         <div class="absolute top-[-5rem] left-0 w-full h-full flex justify-center items-center">
@@ -19,7 +19,7 @@
                 class="text-7xl font-bold text-white relative underline underline-offset-3 decoration-8 decoration-blue-400">Limites</span>
         </div>
     </div>
-    <section class=" bg-slate-100">
+    <section class=" bg-[#E5E7EB]">
         <div class="container mx-auto">
             <div class="grid grid-rows-1">
                 <div class="grid grid-cols-1">

@@ -25,7 +25,7 @@
 
     <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
 
-    <section class="w-full p-[3rem]">
+    <section class="w-full p-[2rem]">
 
         <div id="particles-js" class="absolute w-auto h-full"></div>
 
@@ -66,9 +66,10 @@
 
     </section>
 
-    <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 
-    <section class="container mx-auto mt-[18rem] mb-[10rem]">
+
+    <section class="bg-[#E5E7EB] p-[5rem] rounded-t-3xl mt-[13rem]">
+        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 
         <div class="w-full flex justify-center flex-col items-center p-5 mb-[5rem]">
             <h1 class="text-6xl"> <span class="font-thin">Opinión</span><span class="font-bold text-orange-400">Expertos
@@ -88,7 +89,7 @@
 
                 <div data-aos="fade-right" class="opacity-0 transition-all easy-in-out duration-200 w-[80%]">
 
-                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 shadow-lg">
                         <img class="h-full mx-auto rounded-ss-xl"
                             src="{{ asset('img/landing/experts/expertoQuevedo.png') }}" alt="" width="384"
                             height="512">
@@ -110,7 +111,7 @@
                 <div data-aos="fade-right"
                     class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center w-[70%]">
 
-                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 shadow-lg">
                         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                             <p class="text-lg font-medium">
                                 “Recientemente visité la página de reserva de alojamientos "Howeb.com" y quedé gratamente
@@ -132,7 +133,7 @@
                 <div data-aos="fade-left"
                     class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center w-[70%]">
 
-                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 shadow-lg">
                         <img class="w-48 mx-auto rounded-ss-xl" src="{{ asset('img/landing/experts/orslokExperto.jpg') }}"
                             alt="" width="384" height="512">
                         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
@@ -152,7 +153,7 @@
                 <div data-aos="fade-left"
                     class="opacity-0 transition-all easy-in-out duration-200 flex justify-center items-center w-[80%]">
 
-                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 ">
+                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 shadow-lg">
                         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                             <p class="text-lg font-medium">
                                 “No puedo decir suficientes cosas buenas sobre esta aplicación. La interfaz es súper

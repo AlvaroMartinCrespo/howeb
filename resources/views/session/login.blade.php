@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="min-h-screen bg-blue-100 flex flex-col justify-center sm:py-12">
+    <div class="h-screen bg-blue-100 flex flex-col justify-center sm:py-12">
         <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
             <div class="bg-white shadow w-full rounded-lg divide-y divide-gray-200">
                 <img src="{{ asset('img/landing/icons/logoSinFondo.png') }}" alt="logoSinFondo">

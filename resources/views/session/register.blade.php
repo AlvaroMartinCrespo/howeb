@@ -17,36 +17,49 @@
                 <div class="px-5 py-7">
                     <form action="{{ route('register-validate') }}" method="post">
                         @csrf
-                        <label class="font-semibold text-sm text-gray-600 pb-1 block">Nombre completo</label>
-                        <input name="name" type="text"
-                            class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
-                            placeholder="Nombre completo" />
+                        <div class="grid grid-cols-2 gap-10">
+                            <div>
+                                <label class="font-semibold text-sm text-gray-600 pb-1 block">Nombre completo</label>
+                                <input name="name" type="text"
+                                    class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+                                    placeholder="Nombre completo" />
 
-                        <label class="font-semibold text-sm text-gray-600 pb-1 block">Correo electrónico</label>
-                        <input name="email" type="email"
-                            class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
-                            placeholder="Correo electrónico" />
-                        {{-- If the passwords already exists, an error will be thrown. --}}
-                        @if (isset($errorEmail))
-                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-1 rounded relative mb-6">
-                                <span class="block sm:inline">{{ $errorEmail }}</span>
+                                <label class="font-semibold text-sm text-gray-600 pb-1 block mt-5">Correo
+                                    electrónico</label>
+                                <input name="email" type="email"
+                                    class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+                                    placeholder="Correo electrónico" />
+                                {{-- If the passwords already exists, an error will be thrown. --}}
+                                @if (isset($errorEmail))
+                                    <div
+                                        class="bg-red-100 border border-red-400 text-red-700 px-4 py-1 rounded relative mb-6">
+                                        <span class="block sm:inline">{{ $errorEmail }}</span>
+                                    </div>
+                                @endif
                             </div>
-                        @endif
+                            <div>
+                                <label class="font-semibold text-sm text-gray-600 pb-1 block">Contraseña</label>
+                                <input name="password" type="password"
+                                    class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+                                    placeholder="Contraseña" />
 
-                        <label class="font-semibold text-sm text-gray-600 pb-1 block">Contraseña</label>
-                        <input name="password" type="password"
-                            class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" placeholder="Contraseña" />
-
-                        <label class="font-semibold text-sm text-gray-600 pb-1 block">Confirmar contraseña</label>
-                        <input name="repeatPassword" type="password"
-                            class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
-                            placeholder="Confirmar contraseña" />
-                        {{-- If the passwords do not match, an error will be thrown. --}}
-                        @if (isset($errorPassword))
-                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-1 rounded relative mb-6">
-                                <span class="block sm:inline">{{ $errorPassword }}</span>
+                                <label class="font-semibold text-sm text-gray-600 pb-1 block mt-5">Confirmar
+                                    contraseña</label>
+                                <input name="repeatPassword" type="password"
+                                    class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+                                    placeholder="Confirmar contraseña" />
+                                {{-- If the passwords do not match, an error will be thrown. --}}
+                                @if (isset($errorPassword))
+                                    <div
+                                        class="bg-red-100 border border-red-400 text-red-700 px-4 py-1 rounded relative mb-6">
+                                        <span class="block sm:inline">{{ $errorPassword }}</span>
+                                    </div>
+                                @endif
                             </div>
-                        @endif
+                        </div>
+
+
+
 
                         <button type="submit"
                             class="transition duration-500 ease-in-out bg-[#243859] transform hover:scale-105 rounded-lg p-3 text-sm text-white w-full">Registrarse</button>

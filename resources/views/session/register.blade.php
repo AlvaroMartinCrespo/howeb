@@ -13,7 +13,7 @@
 <body>
     <div class="h-screen bg-blue-100 flex flex-col justify-center sm:py-12">
         <div class="xs:p-0 mx-auto md:w-full md:max-w-md">
-            <div class="bg-white shadow w-[30rem] rounded-lg divide-y divide-gray-200">
+            <div class="bg-white shadow w-[25rem] rounded-lg divide-y divide-gray-200">
                 <img src="{{ asset('img/landing/icons/logoSinFondo.png') }}" alt="logoSinFondo">
                 <div class="px-5 py-7 w-full">
                     <form action="{{ route('register-validate') }}" method="post">

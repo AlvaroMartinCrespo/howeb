@@ -95,8 +95,7 @@
                                         de relleno en documentos electrónicos, quedando esencialmente igual al original.</p>
                                 </div>
                                 <div class="w-[50%]">
-                                    <img class="h-full rounded-e-xl" src="https://via.placeholder.com/500x500"
-                                        alt="">
+                                    <img class=" rounded-e-xl" src="{{ asset('img/me.png') }}" alt="me">
                                 </div>
                             </div>
                         </div>

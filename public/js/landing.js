@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
     let accomodations = document.querySelectorAll(".accomodation");
 
     let typed = new Typed("#lettersLanding", {
-        strings: ["Diversión."],
+        strings: ["Diversión"],
         typeSpeed: 70,
         backSpeed: 70,
         cursorChar: "",

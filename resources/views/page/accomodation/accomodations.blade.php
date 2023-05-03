@@ -8,12 +8,12 @@
     <section class=" w-full h-screen bg-[url('{{ asset('/img/palmeras.jpg') }}')] rounded-b-xl">
 
         <div class="h-full flex justify-center items-center flex-col">
-            <h1 id="letters" class="text-white font-bold text-9xl left-50 top-50 transform -rotate-6 skew-x-6">
+            <h1 id="letters" class="text-white font-bold text-9xl transform -rotate-6 skew-x-6">
             </h1>
         </div>
 
     </section>
-    
+
 
     <div class="bg-[#E5E7EB]">
         <section class="container mx-auto p-[5rem]">

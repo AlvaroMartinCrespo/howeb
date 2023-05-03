@@ -14,7 +14,7 @@
             </h1>
             <span id="lettersLanding"
                 class='text-white font-bold text-9xl h-[5rem] underline underline-offset-8 decoration-8 decoration-[#c99924]'></span>
-            <div id="button" class="flex justify-center items-center transform transition-all ease-in-out duration-300">
+            <div id="button" class="flex justify-center items-center transform transition-all ease-in-out duration-1000">
                 @if (auth()->check())
                     <a class="transition-all ease-in-out duration-500 border border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black""
                         href="{{ route('home') }}">Perfil</a>

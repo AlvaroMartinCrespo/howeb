@@ -14,18 +14,20 @@
 
     </section>
 
+    <section class="p-[7rem]">
 
-    <div class="bg-[#E5E7EB]">
-        <section class="container mx-auto p-[5rem]">
-
-            <h2 class="text-5xl font-bold mb-10 text-center">Sección<span class="text-blue-400">Alojamientos</span></h2>
+        <h2 class="text-5xl font-bold mb-10 text-center">Sección<span class="text-blue-400">Alojamientos</span></h2>
 
 
-            <p class="text-2xl px-10 text-justify">Ofrecemos opciones como <span class="font-bold">cabañas acogedoras en la
-                    montaña, villas de lujo frente al mar y apartamentos en la ciudad.</span>
-                Estamos seguros de que encontrará la <span class="font-bold">opción perfecta para sus vacaciones.</span></p>
+        <p class="text-2xl px-10 text-justify">Ofrecemos opciones como <span class="font-bold">cabañas acogedoras en la
+                montaña, villas de lujo frente al mar y apartamentos en la ciudad.</span>
+            Estamos seguros de que encontrará la <span class="font-bold">opción perfecta para sus vacaciones.</span></p>
 
 
+    </section>
+
+    <div class="bg-[#E5E7EB] rounded-t-[7rem] ">
+        <section class="container mx-auto p-[3rem]">
 
             <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
 

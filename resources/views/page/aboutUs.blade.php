@@ -127,25 +127,31 @@
                                 <h2 class="text-2xl font-bold">LinkedIn</h2>
                                 <a target="_blank"
                                     href="https://www.linkedin.com/in/%C3%A1lvaro-mart%C3%ADn-crespo-bb9aa5246/">
-                                    <img class="w-[4rem] transition-all ease-in-out duration-300 hover:w-[6rem]"
+                                    <img class="w-[4rem] transition-all ease-in-out duration-300 hover:scale-150"
                                         src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin">
                                 </a>
+                                <p class="font-bold text-sm-center flex justify-center items-center gap-2">Curriculum <span
+                                        class="text-3xl">·</span> Contacto</p>
                             </div>
                             <div data-aos="fade-down"
                                 class="mt-10 p-10 gap-10 bg-white rounded-xl flex justify-center flex-col shadow-lg items-center">
                                 <h2 class="text-2xl font-bold">Portfolio</h2>
                                 <a target="_blank" href="https://alvarodev.vercel.app/">
-                                    <img class="w-[4rem] transition-all ease-in-out duration-300 hover:w-[6rem]"
+                                    <img class="w-[4rem] transition-all ease-in-out duration-300 hover:scale-150"
                                         src="{{ asset('img/svg/vite.svg') }}" alt="linkedin">
                                 </a>
+                                <p class="font-bold text-sm-center flex justify-center items-center gap-2">Información <span
+                                        class="text-3xl">·</span> Proyectos <span class="text-3xl">·</span> Contacto</p>
                             </div>
                             <div data-aos="fade-down"
-                                class="mt-10 p-10 gap-10 bg-white rounded-xl flex justify-center flex-col shadow-lg items-center">
+                                class="mt-10 p-8 gap-8 bg-white justify-center rounded-xl flex flex-col shadow-lg items-center">
                                 <h2 class="text-2xl font-bold">GitHub</h2>
                                 <a target="_blank" href="https://github.com/AlvaroMartinCrespo">
-                                    <img class="w-[4rem] transition-all ease-in-out duration-300 hover:w-[6rem]"
+                                    <img class="w-[4rem] transition-all ease-in-out duration-300 hover:scale-150"
                                         src="{{ asset('img/svg/github.svg') }}" alt="linkedin">
                                 </a>
+                                <p class="font-bold text-sm-center flex justify-center items-center gap-2">Proyectos <span
+                                        class="text-3xl">·</span> Trabajos</p>
                             </div>
 
                         </div>

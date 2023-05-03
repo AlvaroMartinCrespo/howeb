@@ -73,7 +73,7 @@
 
 
 
-    <section class="bg-[#E5E7EB] p-[5rem] rounded-t-3xl mt-[13rem]">
+    <section class="bg-[#E5E7EB] p-[3rem] rounded-t-[7rem] mt-[17rem]">
         <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 
         <div class="w-full flex justify-center flex-col items-center p-5 mb-[5rem]">

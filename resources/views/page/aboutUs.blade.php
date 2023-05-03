@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="flex justify-center mt-10 mb-24">
-                        <div class="grid grid-cols-3 w-[90%] gap-7">
+                        <div class="grid grid-cols-3 w-[90%] h-[20rem] gap-7">
 
                             <div data-aos="fade-down"
                                 class="mt-10 p-10 gap-10 bg-white rounded-xl flex justify-center flex-col shadow-lg items-center">

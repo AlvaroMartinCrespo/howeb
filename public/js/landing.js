@@ -3,18 +3,16 @@
  */
 window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("button").classList.add("translate-y-[9rem]");
-    setTimeout(() => {
-        let accomodations = document.querySelectorAll(".accomodation");
+    let accomodations = document.querySelectorAll(".accomodation");
 
-        let typed = new Typed("#lettersLanding", {
-            strings: ["Diversión."],
-            typeSpeed: 70,
-            backSpeed: 70,
-            cursorChar: "",
-            backDelay: 700,
-            startDelay: 200,
-        });
-    }, 200);
+    let typed = new Typed("#lettersLanding", {
+        strings: ["Diversión."],
+        typeSpeed: 70,
+        backSpeed: 70,
+        cursorChar: "",
+        backDelay: 700,
+        startDelay: 200,
+    });
 
     accomodations.forEach((accomodation) => {
         let description = accomodation.querySelector(

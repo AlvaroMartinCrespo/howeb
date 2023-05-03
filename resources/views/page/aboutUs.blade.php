@@ -23,11 +23,12 @@
         <div class="container mx-auto">
             <div class="grid grid-rows-1">
                 <div class="grid grid-cols-1">
-                    <div class="mt-10 flex justify-center">
+                    <div class="py-[5rem] flex justify-center">
                         <h1 class="text-6xl font-semibold">Sobre<span
                                 class="font-bold text-[#243859] underline underline-offset-3 decoration-8 decoration-[#c99924]">Howeb</span>
                         </h1>
                     </div>
+                    <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
                     <div class="flex justify-center">
                         <div
                             class="mt-10 bg-white rounded-xl w-[60%] flex justify-center shadow-lg flex-col items-center  gap-5 p-10">
@@ -73,15 +74,16 @@
                     </div>
                     <div class="flex justify-center">
                         <div class="mt-20 flex justify-center shadow-lg rounded-xl flex-col items-center">
-                            <img class="object-none h-96 w-[80rem] rounded-xl" src="{{ asset('img/japon.jpg') }}"
+                            <img class="object-none h-96 w-[80rem] rounded-xl shadow-lg" src="{{ asset('img/japon.jpg') }}"
                                 alt="japon">
                         </div>
                     </div>
-                    <div class="mt-10 flex justify-center">
+                    <div class="py-[5rem] flex justify-center">
                         <h1 class="text-6xl font-semibold">Sobre<span
                                 class="font-bold text-[#243859] underline underline-offset-3 decoration-8 decoration-[#c99924]">Nosotros</span>
                         </h1>
                     </div>
+                    <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
                     <div data-aos="flip-right" class="flex justify-center mt-10">
                         <div class="grid grid-cols-1 items-center w-[60%] justify-items-center">
                             <div class="mt-10 bg-white rounded-xl flex justify-center shadow-lg items-center">

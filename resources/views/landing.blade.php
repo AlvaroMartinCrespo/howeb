@@ -8,7 +8,7 @@
     <section id="inicio-landing"
         class="w-full h-screen bg-[url('{{ asset('/img/landing/playa.jpg') }}')] rounded-b-xl h-screen">
 
-        <div class="h-full flex pt-[15rem] items-center flex-col">
+        <div class="h-full flex pt-[10rem] items-center flex-col">
             <h1 class="text-white font-bold"><span class='text-8xl'>Playas.
                 </span><span class='text-[#efb810] text-8xl'>Hoteles. </span>
             </h1>

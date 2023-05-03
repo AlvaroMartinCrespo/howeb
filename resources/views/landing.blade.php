@@ -13,7 +13,7 @@
                 </span><span class='text-[#efb810] text-7xl'>Hoteles. </span>
             </h1>
             <span id="lettersLanding"
-                class='text-white font-bold text-9xl h-[5rem] underline underline-offset-8 rotate-6 skew-x-12 decoration-4 decoration-white pt-6'></span>
+                class='text-white font-bold text-9xl h-[5rem] underline underline-offset-8 rotate-6 skew-x-12 decoration-4 decoration-[#efb810] pt-6'></span>
             <div id="button" class="flex justify-center items-center transform transition-all ease-in-out duration-1000">
                 @if (auth()->check())
                     <a class="transition-all ease-in-out duration-500 border-2 font-bold border-white text-white bg-transparent px-6 py-4 rounded-lg hover:bg-white hover:text-black"

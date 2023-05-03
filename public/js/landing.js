@@ -2,18 +2,19 @@
  * Animation to accomodation in the landing page
  */
 window.addEventListener("DOMContentLoaded", () => {
-    let accomodations = document.querySelectorAll(".accomodation");
+    document.getElementById("button").classList.add("translate-y-[9rem]");
+    setTimeout(() => {
+        let accomodations = document.querySelectorAll(".accomodation");
 
-    let typed = new Typed("#lettersLanding", {
-        strings: [
-            "<span class='text-7xl'>Playas. </span><span class='text-orange-400 text-7xl'>Hoteles. </span><br><span class=''>Diversión.</span>",
-        ],
-        typeSpeed: 150,
-        backSpeed: 70,
-        cursorChar: "",
-        backDelay: 700,
-        startDelay: 200,
-    });
+        let typed = new Typed("#lettersLanding", {
+            strings: ["Diversión."],
+            typeSpeed: 70,
+            backSpeed: 70,
+            cursorChar: "",
+            backDelay: 700,
+            startDelay: 200,
+        });
+    }, 200);
 
     accomodations.forEach((accomodation) => {
         let description = accomodation.querySelector(
@@ -39,7 +40,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // Particles
 particlesJS("particles-js", {
     particles: {
-        number: { value: 90, density: { enable: true, value_area: 400 } },
+        number: { value: 90, density: { enable: true, value_area: 500 } },
         color: { value: "#000" },
         shape: {
             type: "circle",

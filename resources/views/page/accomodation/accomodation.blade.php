@@ -5,7 +5,7 @@
 @section('main')
 
     {{-- option 1 --}}
-    <div class="bg-[#E5E7EB] h-full">
+    <div class="bg-[#E5E7EB] h-screen ">
         <section class="container mx-auto p-[7rem]">
             <div class="grid grid-cols-2 gap-8">
                 <div class="rounded-lg overflow-hidden">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-2 mt-10">
+            <div class="grid grid-cols-2 mt-10 mb-[10rem]">
                 <div class="flex justify-center items-center">
                     <a href="{{ url()->previous() }}"
                         class="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-500 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
@@ -45,6 +45,15 @@
                         Continuar a Reserva
                     </a>
                 </div>
+            </div>
+            <div>
+                <span class="text-xs text-justify">
+                    Al hacer clic en el botón 'Continuar a Reserva', aceptas los <a href="{{ route('terms') }}"
+                        class=" text-cyan-600">términos y
+                        condiciones</a> establecidos por esta plataforma. Estos términos y condiciones, junto con nuestra
+                    política de privacidad, rigen el uso de nuestro sitio web o aplicación y cualquier contenido, función,
+                    producto o servicio ofrecido en este.
+                </span>
             </div>
         </section>
     </div>

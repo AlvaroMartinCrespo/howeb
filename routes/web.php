@@ -41,6 +41,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/accomodation/{id}', 'accomodation')->middleware('auth')->name('accomodation');
     Route::get('/listReservation', 'listReservation')->middleware('auth')->name('listReservation');
     Route::get('/aboutUs', 'aboutUs')->name('aboutUs');
+    Route::get('/terms', 'terms')->name('terms');
 });
 
 //User controller

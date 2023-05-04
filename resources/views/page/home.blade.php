@@ -4,6 +4,7 @@
 
 @section('main')
 
+    {{-- Alerts  --}}
     @if (session('success'))
         <div id="alertMessage" class="bg-green-500 z-50 text-white font-bold p-4 hidden fixed bottom-10 left-10">
             <p>{{ session('success') }}</p>
@@ -21,7 +22,7 @@
             session()->forget('eliminate');
         @endphp
     @endif
-
+    {{-- End Alerts --}}
 
     <div class="bg-[#E5E7EB]">
         <div class="mt-[5.5rem] grid grid-cols-1 md:grid-cols-2 gap-4 ">
@@ -114,10 +115,10 @@
             </div>
         @else
             <div class=" grid grid-cols-1 md:grid-cols-1 gap-4">
-                <div class="bg-white p-4 rounded-lg shadow m-5 flex justify-center flex-col">
+                <div class="bg-white p-12 rounded-lg shadow m-5 flex justify-center flex-col">
                     <h2 class="text-xl font-semibold text-gray-800 mb-4">Actualmente no tiene ninguna reserva</h2>
                     <h2>Según sus intereses le recomendamos estos alojamientos:</h2>
-                    <div class=" flex justify-center gap-6 mt-[5rem] px-5 ">
+                    <div class=" flex justify-center lg:flex-row flex-col gap-6 mt-[5rem] px-5 ">
 
                         @foreach ($randomAccomodations as $accomodation)
                             <a href="{{ route('accomodation', ['id' => $accomodation->id]) }}"

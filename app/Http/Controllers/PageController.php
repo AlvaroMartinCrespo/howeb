@@ -136,4 +136,13 @@ class PageController extends Controller
         $reservations = Reservation::paginate(5);
         return view('page/reservation/listReservation', ['reservations' => $reservations]);
     }
+
+    /**
+     * Return a view of terms and conditions
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    function terms()
+    {
+        return view('page/termsAndConditions');
+    }
 }

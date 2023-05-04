@@ -11,12 +11,12 @@
             <img class="w-60%" src="{{ asset('img/landing/icons/logoSinFondo.png') }}" alt="logo">
         </div>
         <div class="absolute top-[7rem] left-0 w-full h-full flex justify-center items-center">
-            <span class="text-5xl font-bold text-gray-300 
-               opacity-80">No te pongas</span>
+            <span id="letters1" class="text-5xl font-bold text-gray-300 
+               opacity-80"></span>
         </div>
         <div class="absolute top-[10rem] left-0 w-full h-full flex justify-center items-center">
-            <span
-                class="text-7xl font-bold text-white relative underline underline-offset-3 decoration-8 decoration-[#243859]">Limites</span>
+            <span id="limitedLetters"
+                class="text-7xl font-bold text-white relative underline underline-offset-3 decoration-8 decoration-[#243859]"></span>
         </div>
     </div>
     <section class=" bg-[#E5E7EB]">
@@ -167,3 +167,5 @@
     </section>
 
 @endsection
+
+<script src="{{ asset('js/aboutUs.js') }}"></script>

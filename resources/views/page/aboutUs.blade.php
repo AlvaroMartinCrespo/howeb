@@ -84,17 +84,20 @@
                         </h1>
                     </div>
                     <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
-                    <div data-aos="flip-right" class="flex justify-center mt-10">
+                    <div data-aos="flip-right" class="flex justify-center mt-10]">
                         <div class="grid grid-cols-1 items-center w-[60%] justify-items-center">
-                            <div class="mt-10 bg-white rounded-xl flex justify-center shadow-lg items-center">
+                            <div class="mt-10 bg-white rounded-xl flex justify-center shadow-lg items-center w-[45rem]">
                                 <div class="w-[50%] p-7 flex justify-center flex-col gap-5">
-                                    <h2 class="text-2xl text-center">Lorem Ipsum</h2>
-                                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-                                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año
-                                        1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido
-                                        usó una galería de textos y los mezcló de tal manera que logró hacer un libro de
-                                        textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto
-                                        de relleno en documentos electrónicos, quedando esencialmente igual al original.</p>
+                                    <h2 class="text-2xl text-center font-bold">Álvaro Martín Crespo</h2>
+                                    <p>Apasionado por aprender nuevas habilidades y tecnologías para mejorar
+                                        sus capacidades y hacer que sus proyectos sean aún mejores. Su enfoque está en la
+                                        creación de aplicaciones web interactivas y dinámicas que brinden una excelente
+                                        experiencia de usuario.<br><br>
+
+                                        Su pasión por la tecnología y la programación lo/la ha llevado a trabajar en
+                                        diferentes proyectos, desde pequeñas aplicaciones hasta sitios web más grandes y
+                                        complejos. Siempre se esfuerza por utilizar las mejores prácticas y las tecnologías
+                                        más avanzadas para crear soluciones innovadoras y efectivas.</p>
                                 </div>
                                 <div class="w-[50%]">
                                     <img class=" rounded-e-xl" src="{{ asset('img/me.png') }}" alt="me">

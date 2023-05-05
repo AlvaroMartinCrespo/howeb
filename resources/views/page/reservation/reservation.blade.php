@@ -23,7 +23,7 @@
                     <div class="max-w-4xl mx-auto py-12 sm:px-6 lg:px-8">
                         <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-8">Formulario de Datos Personales
                         </h1>
-                        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+                        <form id="formUser" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
                             action="{{ route('reservationStep2', ['id' => $accomodation->id]) }}" method="get">
                             @csrf
                             <div class="grid grid-cols-2 gap-4">
@@ -35,6 +35,7 @@
                                         class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="nombre" type="text" placeholder="Ingrese su nombre" name="name"
                                         required>
+                                    <span id="errorName" class="text-red-500 text-sm font-medium"></span>
                                 </div>
                                 <div>
                                     <label class="block text-gray-700 font-bold mb-2" for="apellidos">
@@ -44,6 +45,7 @@
                                         class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="apellidos" type="text" placeholder="Ingrese sus apellidos" name="lastName"
                                         required>
+                                    <span id="errorLastName" class="text-red-500 text-sm font-medium"></span>
                                 </div>
                             </div>
                             <div class="grid grid-cols-2 gap-4 mt-4">
@@ -55,6 +57,7 @@
                                         class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="email" type="email" placeholder="Ingrese su email" name="email"
                                         required>
+                                    <span id="errorEmail" class="text-red-500 text-sm font-medium"></span>
                                 </div>
                                 <div>
                                     <label class="block text-gray-700 font-bold mb-2" for="telefono">
@@ -64,6 +67,7 @@
                                         class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="telefono" type="tel" placeholder="Ingrese su número de teléfono"
                                         name="phone" required>
+                                    <span id="errorTel" class="text-red-500 text-sm font-medium"></span>
                                 </div>
                             </div>
                             <div class="grid grid-cols-2 gap-4 mt-4">
@@ -74,6 +78,7 @@
                                     <input
                                         class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="dni" type="text" placeholder="Ingrese su DNI" name="dni" required>
+                                    <span id="errorDni" class="text-red-500 text-sm font-medium"></span>
                                 </div>
                                 <div>
                                     <label class="block text-gray-700 font-bold mb-2" for="direccion">
@@ -83,6 +88,7 @@
                                         class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="direccion" type="text" placeholder="Ingrese su dirección" name="address"
                                         required>
+
 
                                 </div>
                                 <div class="grid grid-cols-2 gap-4 mt-4">
@@ -94,6 +100,7 @@
                                             class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                             id="cp" type="text" placeholder="Ingrese su código postal"
                                             name="cp" required>
+                                        <span id="errorCp" class="text-red-500 text-sm font-medium"></span>
                                     </div>
                                     <div>
                                         <label class="block text-gray-700 font-bold mb-2" for="pais">
@@ -149,3 +156,4 @@
 @endsection
 
 <script src="{{ asset('js/reservation.js') }}"></script>
+<script src="{{ asset('js/validationStep1.js') }}"></script>

@@ -1,51 +1,54 @@
 window.addEventListener("DOMContentLoaded", () => {
     // Card data input
+    if (document.getElementById("inputCardNumber")) {
+        const inputCardNumber = document.getElementById("inputCardNumber");
+        const cardNumber = document.getElementById("cardNumber");
+        inputCardNumber.addEventListener("input", () => {
+            const input = inputCardNumber.value;
 
-    const inputCardNumber = document.getElementById("inputCardNumber");
-    const cardNumber = document.getElementById("cardNumber");
+            const formattedInput = input.replaceAll(/[^0-9]/g, "");
+            const formattedNumber = formattedInput.padEnd(16, "#");
+            cardNumber.textContent = formattedNumber;
+        });
 
-    inputCardNumber.addEventListener("input", () => {
-        const input = inputCardNumber.value;
+        const inputName = document.getElementById("inputName");
+        const cardName = document.getElementById("cardName");
 
-        const formattedInput = input.replaceAll(/[^0-9]/g, "");
-        const formattedNumber = formattedInput.padEnd(16, "#");
-        cardNumber.textContent = formattedNumber;
-    });
+        inputName.addEventListener("input", () => {
+            const input = inputName.value;
+            const formattedInput = input.toUpperCase();
+            cardName.textContent = formattedInput ? formattedInput : "JOHN";
+        });
 
-    const inputName = document.getElementById("inputName");
-    const cardName = document.getElementById("cardName");
+        const inputLastName = document.getElementById("inputLastName");
+        const cardLastName = document.getElementById("cardLastName");
 
-    inputName.addEventListener("input", () => {
-        const input = inputName.value;
-        const formattedInput = input.toUpperCase();
-        cardName.textContent = formattedInput ? formattedInput : "JOHN";
-    });
+        inputLastName.addEventListener("input", () => {
+            const input = inputLastName.value;
+            const formattedInput = input.toUpperCase();
+            cardLastName.textContent = formattedInput ? formattedInput : "DOE";
+        });
 
-    const inputLastName = document.getElementById("inputLastName");
-    const cardLastName = document.getElementById("cardLastName");
+        const inputExpirationDate = document.getElementById(
+            "inputExpirationDate"
+        );
+        const cardExpirationDate =
+            document.getElementById("cardExpirationDate");
 
-    inputLastName.addEventListener("input", () => {
-        const input = inputLastName.value;
-        const formattedInput = input.toUpperCase();
-        cardLastName.textContent = formattedInput ? formattedInput : "DOE";
-    });
+        inputExpirationDate.addEventListener("input", () => {
+            const input = inputExpirationDate.value;
+            const formattedInput = input.split("-");
 
-    const inputExpirationDate = document.getElementById("inputExpirationDate");
-    const cardExpirationDate = document.getElementById("cardExpirationDate");
+            cardExpirationDate.textContent =
+                formattedInput[1] + "/" + formattedInput[0];
+        });
 
-    inputExpirationDate.addEventListener("input", () => {
-        const input = inputExpirationDate.value;
-        const formattedInput = input.split("-");
+        const inputCVV = document.getElementById("inputCVV");
+        const cardCVV = document.getElementById("cardCVV");
 
-        cardExpirationDate.textContent =
-            formattedInput[1] + "/" + formattedInput[0];
-    });
-
-    const inputCVV = document.getElementById("inputCVV");
-    const cardCVV = document.getElementById("cardCVV");
-
-    inputCVV.addEventListener("input", () => {
-        const input = inputCVV.value;
-        cardCVV.textContent = input ? input : "...";
-    });
+        inputCVV.addEventListener("input", () => {
+            const input = inputCVV.value;
+            cardCVV.textContent = input ? input : "...";
+        });
+    }
 });

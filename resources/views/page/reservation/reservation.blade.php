@@ -23,7 +23,7 @@
                     <div class="max-w-4xl mx-auto py-12 sm:px-6 lg:px-8">
                         <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-8">Formulario de Datos Personales
                         </h1>
-                        <form id="formUser" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+                        <form id="formUser" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" novalidate
                             action="{{ route('reservationStep2', ['id' => $accomodation->id]) }}" method="get">
                             @csrf
                             <div class="grid grid-cols-2 gap-4">
@@ -32,7 +32,7 @@
                                         Nombre
                                     </label>
                                     <input
-                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="nombre" type="text" placeholder="Ingrese su nombre" name="name"
                                         required>
                                     <span id="errorName" class="text-red-500 text-sm font-medium"></span>
@@ -42,7 +42,7 @@
                                         Apellidos
                                     </label>
                                     <input
-                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="apellidos" type="text" placeholder="Ingrese sus apellidos" name="lastName"
                                         required>
                                     <span id="errorLastName" class="text-red-500 text-sm font-medium"></span>
@@ -54,7 +54,7 @@
                                         Email
                                     </label>
                                     <input
-                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="email" type="email" placeholder="Ingrese su email" name="email"
                                         required>
                                     <span id="errorEmail" class="text-red-500 text-sm font-medium"></span>
@@ -64,7 +64,7 @@
                                         Teléfono
                                     </label>
                                     <input
-                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="telefono" type="tel" placeholder="Ingrese su número de teléfono"
                                         name="phone" required>
                                     <span id="errorTel" class="text-red-500 text-sm font-medium"></span>
@@ -76,7 +76,7 @@
                                         DNI
                                     </label>
                                     <input
-                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="dni" type="text" placeholder="Ingrese su DNI" name="dni" required>
                                     <span id="errorDni" class="text-red-500 text-sm font-medium"></span>
                                 </div>
@@ -85,7 +85,7 @@
                                         Dirección
                                     </label>
                                     <input
-                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="direccion" type="text" placeholder="Ingrese su dirección" name="address"
                                         required>
 
@@ -97,7 +97,7 @@
                                             Código Postal
                                         </label>
                                         <input
-                                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                            class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                             id="cp" type="text" placeholder="Ingrese su código postal"
                                             name="cp" required>
                                         <span id="errorCp" class="text-red-500 text-sm font-medium"></span>
@@ -107,7 +107,7 @@
                                             País
                                         </label>
                                         <input
-                                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                            class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                             id="pais" type="text" placeholder="Ingrese su país" name="country"
                                             required>
                                     </div>
@@ -116,7 +116,7 @@
                                             Alojamiento
                                         </label>
                                         <input
-                                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-slate-300 leading-tight focus:outline-none focus:shadow-outline"
+                                            class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-slate-300 leading-tight focus:outline-none focus:shadow-outline"
                                             id="pais" type="text" value="{{ $accomodation->name }}" readonly>
                                     </div>
                                     <div>
@@ -124,7 +124,7 @@
                                             Id
                                         </label>
                                         <input
-                                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-slate-300 leading-tight focus:outline-none focus:shadow-outline"
+                                            class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-slate-300 leading-tight focus:outline-none focus:shadow-outline"
                                             id="pais" type="text" value="{{ $accomodation->id }}" readonly>
                                     </div>
                                 </div>
@@ -150,10 +150,7 @@
     </div>
 
 
-
-
-
 @endsection
 
 <script src="{{ asset('js/reservation.js') }}"></script>
-<script src="{{ asset('js/validationStep1.js') }}"></script>
+<script src="{{ asset('js/validationForm/validationStep1.js') }}"></script>

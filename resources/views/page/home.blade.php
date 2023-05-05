@@ -90,7 +90,7 @@
         @if (auth()->user()->reservations !== 0)
 
             <div class=" grid grid-cols-1 md:grid-cols-1 gap-4">
-                <div class="bg-white p-4 rounded-lg shadow m-5 ">
+                <div class="bg-white p-10 rounded-lg shadow m-5">
                     <h2 class="text-xl font-semibold text-gray-800 mb-4">Alojamientos Reservados</h2>
                     @foreach ($dates as $date)
                         <div class="mb-5">

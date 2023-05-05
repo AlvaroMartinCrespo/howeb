@@ -96,7 +96,8 @@ class ReservationController extends Controller
         session()->put('visitedStep2', true);
         $accomodation = Accomodations::find($id);
         $error = false;
-        return view('page/reservation/reservationStep2', compact('accomodation', 'error'));
+        $busy = false;
+        return view('page/reservation/reservationStep2', compact('accomodation', 'error', 'busy'));
     }
 
     /**
@@ -113,9 +114,49 @@ class ReservationController extends Controller
         // Check if date is valid, if not redirect to step 2
         $entryDate = $request->input('entryDate');
         $departureDate = $request->input('departureDate');
+
+        // If entry date or departure date are null redirect to step 2
+        if (is_null($entryDate) || is_null($departureDate)) {
+            $error = true;
+            $busy = false;
+            return view('page/reservation/reservationStep2', compact('accomodation', 'error', 'busy'));
+        }
+
+        // Take all the reservation with id of accomodation
+        $reservations = Reservation::where('id_accomodation', $id)->get();
+
+
+        // We have the reservation dates in the reservations collection, and I have to check one by one if the new dates are within any of the already reserved dates to determine if the accommodation may be occupied or not.
+
+        $available = true;
+        foreach ($reservations as $reservation) {
+
+            $reservationEntryDate = $reservation->start_date;
+            $reservationDepartureDate = $reservation->end_date;
+
+            if ($entryDate >= $reservationEntryDate && $entryDate <= $reservationDepartureDate) {
+                $available = false;
+                break;
+            }
+
+            if ($departureDate >= $reservationEntryDate && $departureDate <= $reservationDepartureDate) {
+                $available = false;
+                break;
+            }
+        }
+
+        // If the dates are wrong redirect to step 2
         if ($entryDate > $departureDate) {
             $error = true;
-            return view('page/reservation/reservationStep2', compact('accomodation', 'error'));
+            $busy = false;
+            return view('page/reservation/reservationStep2', compact('accomodation', 'error', 'busy'));
+        }
+
+        // If not available redirect to step 2 
+        if (!$available) {
+            $busy = true;
+            $error = false;
+            return view('page/reservation/reservationStep2', compact('accomodation', 'busy', 'error'));
         }
 
         $price = $this->calculatePrice($entryDate, $departureDate);

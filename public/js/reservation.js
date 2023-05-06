@@ -31,10 +31,12 @@ window.addEventListener("DOMContentLoaded", () => {
                 "$1 "
             );
 
-            const inputValueWithSpaces = inputValue.replace(/(.{4})/g, "$1 ");
+            const inputValueWithSpaces = inputValue.replace(
+                /(.{4})(?!$)/g,
+                "$1 "
+            );
 
             cardNumber.textContent = formattedNumberWithSpaces;
-            console.log(inputValue);
             inputCardNumber.value = inputValueWithSpaces;
         });
         // Input name

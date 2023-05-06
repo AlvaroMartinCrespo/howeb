@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
 
         // If everything is ok, submit
-        // form.submit();
+        form.submit();
     });
 
     function errorMessage(error, input) {
@@ -113,7 +113,7 @@ window.addEventListener("DOMContentLoaded", () => {
      */
     function validateCardNumber() {
         // Use regex to validate card number
-        const regex = /^[0-9]{16}$/;
+        const regex = /^[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}$/;
         return regex.test(inputCardNumber.value);
     }
 });

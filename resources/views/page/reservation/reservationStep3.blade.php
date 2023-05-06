@@ -122,7 +122,7 @@
                                 <label class="w-100 block text-gray-700 font-bold " for="inputCardNumber">
                                     Número de Tarjeta
                                 </label>
-                                <input id="inputCardNumber" maxlength="16"
+                                <input id="inputCardNumber" maxlength="20"
                                     class="focus:border-blue-300  appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     type="text" placeholder="#### #### #### ####" required>
                                 <span id="errorCardNumber" class="text-red-500 text-sm font-medium"></span>

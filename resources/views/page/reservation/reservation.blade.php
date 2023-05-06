@@ -107,7 +107,7 @@
                                             País
                                         </label>
                                         <input
-                                            class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                            class="focus:border-orange-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
                                             id="pais" type="text" placeholder="Ingrese su país" name="country"
                                             required>
                                     </div>

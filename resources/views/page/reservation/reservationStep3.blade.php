@@ -6,7 +6,7 @@
 
     <div class="bg-[#E5E7EB] p-5">
         <section class="container mx-auto mt-[7rem] p-[2rem]">
-            <form action="{{ route('complete', ['id' => $accomodation->id]) }}" method="get">
+            <form id="formCard" novalidate action="{{ route('complete', ['id' => $accomodation->id]) }}" method="get">
                 @csrf
                 <div class="flex items-center justify-center">
                     <span class="w-5 h-5 rounded-full bg-green-500 flex justify-center"></span>
@@ -65,7 +65,7 @@
                                                 Número de Tarjeta
                                                 </h1>
                                             <p id="cardNumber" class="font-medium tracking-widest">
-                                                ################
+                                                #### #### #### ####
                                             </p>
                                         </div>
                                         <div class="pt-6 pr-6">
@@ -103,15 +103,17 @@
                                     Nombre
                                 </label>
                                 <input id="inputName" maxlength="16"
-                                    class="appearance-none border rounded w-64 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="cp" type="text" placeholder="John" required>
+                                    class="focus:border-blue-300 appearance-none border rounded w-64 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="nameCard" type="text" placeholder="John" required>
+                                <span id="errorNameCard" class="text-red-500 text-sm font-medium"></span>
 
                                 <label class="block text-gray-700 font-bold mb-2" for="cp">
                                     Apellido
                                 </label>
                                 <input id="inputLastName" maxlength="16"
-                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="cp" type="text" placeholder="Doe" required>
+                                    class="focus:border-blue-300 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="lastNameCard" type="text" placeholder="Doe" required>
+                                <span id="errorLastNameCard" class="text-red-500 text-sm font-medium"></span>
 
                             </div>
 
@@ -121,15 +123,16 @@
                                     Número de Tarjeta
                                 </label>
                                 <input id="inputCardNumber" maxlength="16"
-                                    class=" appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="focus:border-blue-300  appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     type="text" placeholder="#### #### #### ####" required>
-
+                                <span id="errorCardNumber" class="text-red-500 text-sm font-medium"></span>
                                 <label class="w-100 block text-gray-700 font-bold " for="inputCVV">
                                     CVV
                                 </label>
                                 <input id="inputCVV" maxlength="3"
-                                    class="text-center appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="focus:border-blue-300 text-center appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     type="text" placeholder=". . ." required>
+                                <span id="errorCvv" class="text-red-500 text-sm font-medium"></span>
 
                             </div>
 
@@ -139,6 +142,7 @@
                             <label for="entryDate">
                                 <input id="inputExpirationDate" type="month"
                                     class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4" required>
+                                <span id="errorDate" class="text-red-500 text-sm font-medium"></span>
                             </label>
                             <div class="flex justify-center items-center gap-5">
                                 <a class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded
@@ -161,3 +165,4 @@
 @endsection
 
 <script src="{{ asset('js/reservation.js') }}"></script>
+<script src="{{ asset('js/validationForm/validationStep3.js') }}"></script>

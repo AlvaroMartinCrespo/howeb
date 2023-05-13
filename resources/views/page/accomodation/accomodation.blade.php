@@ -15,7 +15,7 @@
                 <div class="md:col-span-4 col-span-1 px-10 pb-3 rounded-lg shadow-lg bg-white">
                     <div class="flex justify-between items-center">
                         <a class="m-3 rounded-lg hover:bg-slate-300 transition-all ease-in-out duration-200"
-                            href="{{ route('accomodations') }}">
+                            href="{{ url()->previous() }}">
                             <svg class="p-2 w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
                                 <path style="fill:#c99924"
                                     d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"

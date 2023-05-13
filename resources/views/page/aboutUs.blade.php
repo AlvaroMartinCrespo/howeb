@@ -10,11 +10,11 @@
         <div class="absolute top-[-5rem] left-0 w-full h-full flex justify-center items-center">
             <img class="w-60%" src="{{ asset('img/landing/icons/logoSinFondo.png') }}" alt="logo">
         </div>
-        <div class="absolute top-[7rem] left-0 w-full h-full flex justify-center items-center">
+        <div class="absolute bottom-[20rem] left-0 w-full flex justify-center items-center">
             <span id="letters1" class="text-5xl font-bold text-gray-300 
                opacity-80"></span>
         </div>
-        <div class="absolute top-[10rem] left-0 w-full h-full flex justify-center items-center">
+        <div class="absolute bottom-[16rem] left-0 w-full flex justify-center items-center">
             <span id="limitedLetters"
                 class="text-7xl font-bold text-white relative underline underline-offset-3 decoration-8 decoration-[#243859]"></span>
         </div>

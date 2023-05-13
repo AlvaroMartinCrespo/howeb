@@ -19,7 +19,7 @@
         <h2 class="text-5xl font-bold mb-10 text-center">Sección<span class="text-blue-400">Alojamientos</span></h2>
 
 
-        <p class="text-2xl px-10 text-justify">Ofrecemos opciones como <span class="font-bold">cabañas acogedoras en la
+        <p class="text-2xl px-10 text-center">Ofrecemos opciones como <span class="font-bold">cabañas acogedoras en la
                 montaña, villas de lujo frente al mar y apartamentos en la ciudad.</span>
             Estamos seguros de que encontrará la <span class="font-bold">opción perfecta para sus vacaciones.</span></p>
 

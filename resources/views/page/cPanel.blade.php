@@ -62,7 +62,7 @@
                 </form>
                 <div>
                     @if (session('users') && !session('users')->isEmpty())
-                        <ul class="divide-y divide-gray-700">
+                        <ul class="">
                             @foreach (session('users') as $user)
                                 <li
                                     class="flex items-center p-4 m-4 hover:mx-0 hover:bg-gray-700 rounded transition-all ease-in-out duration-200">

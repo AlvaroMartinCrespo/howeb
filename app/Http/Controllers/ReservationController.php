@@ -19,9 +19,12 @@ class ReservationController extends Controller
      */
     function removeReservation($id)
     {
+        // Error, elimina la reserva del usuario activo en la pagina.
+        // TO DO
+        // A partir de la reserva obtener el id de usuario y eliminar la reserva a ese usuario, no al usuario activo
         Reservation::find($id)->delete();
         //Remove reservation from user
-        $user_id = auth()->user()->id;
+        $user_id = auth()->user()->id; /* Aqui es el error */
         $user = User::find($user_id);
         $user->reservations = $user->reservations - 1;
         $user->save();

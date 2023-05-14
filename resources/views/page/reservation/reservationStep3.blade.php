@@ -94,8 +94,71 @@
                             </div>
                         </div>
 
+                        <div class="grid md:grid-cols-8 grid-cols-1 grid-rows-1 mt-[2rem]">
+                            <span class="md:col-span-1"></span>
+                            <div
+                                class="flex flex-col md:col-span-6 col-span-1 shadow-md p-7 rounded-lg bg-gray-100 items-center justify-items-center md:grid md:grid-cols-2">
+                                <div class="md:order-1 order-1 md:p-0 p-4">
+                                    <p class="font-bold text-xl order-1 md:order-1">Datos Personales</p>
+                                </div>
+                                <div class="md:order-2 order-3 md:p-0 p-4">
+                                    <p class="font-bold text-xl sm:order-3">Datos Bancarios</p>
+                                </div>
+                                <div class="md:order-3 order-2 md:p-0 p-4">
+                                    <label class="block text-gray-700 font-bold mb-2" for="cp">
+                                        Nombre
+                                    </label>
+                                    <input id="inputName" maxlength="16"
+                                        class="focus:border-blue-300 appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="nameCard" type="text" placeholder="John" required>
+                                    <span id="errorNameCard" class="text-red-500 text-sm font-medium"></span>
 
-                        <div class="mt-[2rem] shadow-md border p-7 rounded-lg bg-gray-100 ">
+                                    <label class="block text-gray-700 font-bold mb-2" for="cp">
+                                        Apellido
+                                    </label>
+                                    <input id="inputLastName" maxlength="16"
+                                        class="focus:border-blue-300 appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="lastNameCard" type="text" placeholder="Doe" required>
+                                    <span id="errorLastNameCard" class="text-red-500 text-sm font-medium"></span>
+                                </div>
+                                <div class="md:order-4 order-4 md:p-0 p-4">
+                                    <label class="w-100 block text-gray-700 font-bold " for="inputCardNumber">
+                                        Número de Tarjeta
+                                    </label>
+                                    <input id="inputCardNumber" maxlength="19"
+                                        class="focus:border-blue-300  appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        type="text" placeholder="#### #### #### ####" required>
+                                    <span id="errorCardNumber" class="text-red-500 text-sm font-medium"></span>
+                                    <label class="w-100 block text-gray-700 font-bold " for="inputCVV">
+                                        CVV
+                                    </label>
+                                    <input id="inputCVV" maxlength="3"
+                                        class="focus:border-blue-300 text-center appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        type="text" placeholder=". . ." required>
+                                    <span id="errorCvv" class="text-red-500 text-sm font-medium"></span>
+                                    <label class="block text-gray-700 font-bold" for="expiration">Caducidad</label>
+                                    <label for="entryDate">
+                                        <input id="inputExpirationDate" type="month"
+                                            class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4"
+                                            required>
+                                        <span id="errorDate" class="text-red-500 text-sm font-medium"></span>
+                                    </label>
+                                </div>
+
+                                <div class="md:col-span-2 flex justify-center items-center gap-5 order-last">
+                                    <a class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded
+                                focus:outline-none focus:shadow-outline"
+                                        href="{{ route('reservation', ['id' => $accomodation->id]) }}">Volver</a>
+                                    <button
+                                        class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded
+                                focus:outline-none focus:shadow-outline"
+                                        type="submit">Completar proceso</button>
+                                </div>
+                            </div>
+                            <span class="md:col-span-1"></span>
+                        </div>
+
+                        {{-- <div class="mt-[2rem] shadow-md border p-7 rounded-lg bg-gray-100 ">
 
                             <div class="flex justify-center items-center gap-4 mb-[2rem]">
 
@@ -153,7 +216,7 @@
                                 focus:outline-none focus:shadow-outline"
                                     type="submit">Completar proceso</button>
                             </div>
-                        </div>
+                        </div> --}}
 
             </form>
 

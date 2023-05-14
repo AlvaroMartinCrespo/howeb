@@ -8,6 +8,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+use function PHPUnit\Framework\isNull;
+
 class PageController extends Controller
 {
     /**
@@ -94,6 +96,10 @@ class PageController extends Controller
             ->where('reservations.id_user', '=', $id)
             ->get();
         $user = User::find($id);
+        // If user doesn't exist
+        if (isNull($user)) {
+            abort(404);
+        }
         return view('page/user/user', compact('user', 'dates'));
     }
 
@@ -104,6 +110,10 @@ class PageController extends Controller
     public function accomodation($id)
     {
         $accomodation = Accomodations::find($id);
+        // If accomodation doesn't exist
+        if (isNull($accomodation)) {
+            abort(404);
+        }
         return view('page/accomodation/accomodation', compact('accomodation'));
     }
 

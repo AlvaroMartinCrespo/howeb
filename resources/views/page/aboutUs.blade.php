@@ -9,11 +9,11 @@
             loop></video>
         <div class="absolute top-[-5rem] left-0 w-full h-full flex justify-center items-center">
             <img class="w-60%" src="{{ asset('img/landing/icons/logoSinFondo.png') }}" alt="logo">
-            <div class="absolute bottom-[17rem] left-0 w-full flex justify-center items-center">
+            <div class="absolute bottom-[10rem] left-0 w-full flex justify-center items-center">
                 <span id="letters1" class="text-5xl font-bold text-gray-300 
                opacity-80"></span>
             </div>
-            <div class="absolute bottom-[13rem] left-0 w-full flex justify-center items-center">
+            <div class="absolute bottom-[6rem] left-0 w-full flex justify-center items-center">
                 <span id="limitedLetters"
                     class="text-7xl font-bold text-white relative underline underline-offset-3 decoration-8 decoration-[#243859]"></span>
             </div>

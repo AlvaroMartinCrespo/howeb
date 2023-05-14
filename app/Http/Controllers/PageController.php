@@ -97,7 +97,7 @@ class PageController extends Controller
             ->get();
         $user = User::find($id);
         // If user doesn't exist
-        if (isNull($user)) {
+        if (!$user) {
             abort(404);
         }
         return view('page/user/user', compact('user', 'dates'));
@@ -111,7 +111,7 @@ class PageController extends Controller
     {
         $accomodation = Accomodations::find($id);
         // If accomodation doesn't exist
-        if (isNull($accomodation)) {
+        if (!$accomodation) {
             abort(404);
         }
         return view('page/accomodation/accomodation', compact('accomodation'));

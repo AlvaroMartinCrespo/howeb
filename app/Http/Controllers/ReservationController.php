@@ -9,6 +9,7 @@ use App\Models\User;
 use DateTime;
 use Illuminate\Http\Request;
 
+use function PHPUnit\Framework\isEmpty;
 use function PHPUnit\Framework\isNull;
 
 class ReservationController extends Controller
@@ -41,7 +42,8 @@ class ReservationController extends Controller
     {
         $reservation = Reservation::find($id);
         // If the reservation doesn't exist
-        if (isNull($reservation)) {
+        // dd($reservation);
+        if (!$reservation) {
             abort(404);
         }
         $accomodation = Accomodations::find($reservation->id_accomodation);

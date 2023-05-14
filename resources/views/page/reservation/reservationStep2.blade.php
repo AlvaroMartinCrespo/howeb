@@ -20,25 +20,44 @@
 
                 @include('page/reservation/DataClient/DataClient')
 
-                <div class="grid grid-row">
+                <div class="grid grid-row bg-white rounded-lg shadow-lg">
 
                     <div class="grid grid-cols-1">
 
                         <div class="max-w-4xl mx-auto py-12 sm:px-6 lg:px-8">
                             <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-8">Seleccione Fechas</h1>
+                            <div class="mb-10 flex gap-5 justify-center">
+                                <div class="flex flex-col items-center">
+                                    <span class="font-bold">Fecha de Entrada:</span>
+                                    <label for="entryDate">
+                                        <input name="entryDate" type="date"
+                                            class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4">
+                                    </label>
+                                </div>
 
-                            <div class="mb-10">
-                                <label for="entryDate">
-                                    <input name="entryDate" type="date"
-                                        class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4">
-                                </label>
+                                <div class="flex flex-col items-center">
+                                    <span class="font-bold">Fecha de Salida:</span>
+                                    <label for="departureDate">
+                                        <input name="departureDate" type="date"
+                                            class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4">
+                                    </label>
+                                </div>
 
-                                <label for="departureDate">
-                                    <input name="departureDate" type="date"
-                                        class="bg-gray-100 text-gray-800 border border-gray-400 rounded-lg py-2 px-4">
-                                </label>
                             </div>
 
+                            @if ($error)
+                                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded m-4">
+                                    <strong class="font-bold">Error:</strong>
+                                    <span class="block sm:inline">The dates entered are not valid. Please enter valid
+                                        dates.</span>
+                                </div>
+                            @endif
+
+                            @if ($busy)
+                                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded m-4">
+                                    <span class="block sm:inline">The room is not available for those dates.</span>
+                                </div>
+                            @endif
 
                             <div class="flex justify-center items-center gap-5">
                                 <a class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded
@@ -49,34 +68,10 @@
                                 focus:outline-none focus:shadow-outline"
                                     type="submit">Enviar</button>
                             </div>
-
                         </div>
-
-                        @if ($error)
-                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
-                                role="alert">
-                                <strong class="font-bold">Error:</strong>
-                                <span class="block sm:inline">The dates entered are not valid. Please enter valid
-                                    dates.</span>
-                                <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
-                                </span>
-                            </div>
-                        @endif
-
-                        @if ($busy)
-                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
-                                role="alert">
-                                <span class="block sm:inline">The room is not available for those dates.</span>
-                                <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
-                                </span>
-                            </div>
-                        @endif
-
                     </div>
-
                 </div>
             </form>
-
         </section>
     </div>
 

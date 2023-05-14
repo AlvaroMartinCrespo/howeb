@@ -66,10 +66,10 @@
                             </div>
                         </div>
                     @endif
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 gap-4">
                         <div>
                             <label class="font-bold mb-2 block mt-[2rem]">Alojamiento</label>
-                            <div class="bg-white rounded-lg shadow-md flex p-4 w-100">
+                            <div class="bg-white rounded-lg shadow-md flex p-4 w-100 items-center">
                                 <img class="w-16 h-16 rounded-full mr-4" src="{{ $accomodation->image }}">
                                 <div>
                                     <h2 class="text-lg font-medium text-gray-800">{{ $accomodation->name }}</h2>

@@ -24,12 +24,11 @@
         <div class="container mx-auto">
             <div class="grid grid-rows-1">
                 <div class="grid grid-cols-1">
-                    <div class="py-[5rem] flex justify-center">
+                    <div class="pt-[5rem] flex justify-center">
                         <h1 class="text-6xl font-semibold">Sobre<span
                                 class="font-bold text-[#243859] underline underline-offset-3 decoration-8 decoration-[#c99924]">Howeb</span>
                         </h1>
                     </div>
-                    <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
                     <div class="flex justify-center">
                         <div
                             class="mt-10 bg-white rounded-xl w-[60%] flex justify-center shadow-lg flex-col items-center  gap-5 p-10">
@@ -41,7 +40,7 @@
                         </div>
                     </div>
                     <div class="flex justify-center">
-                        <div class="grid grid-cols-2 items-center w-[60%] gap-5 justify-items-center">
+                        <div class="grid lg:grid-cols-2 grid-cols-1 items-center w-[60%] gap-5 justify-items-center">
                             <div
                                 class="mt-10 bg-white rounded-xl gap-5 flex justify-center shadow-lg flex-col items-center p-10">
                                 <h2 class="text-2xl font-semibold">Objetivos</h2>
@@ -79,16 +78,16 @@
                                 alt="japon">
                         </div>
                     </div>
-                    <div class="py-[5rem] flex justify-center">
+                    <div class="pt-[5rem] flex justify-center">
                         <h1 class="text-6xl font-semibold">Sobre<span
                                 class="font-bold text-[#243859] underline underline-offset-3 decoration-8 decoration-[#c99924]">Nosotros</span>
                         </h1>
                     </div>
-                    <hr class="w-48 h-1 mx-auto my-4 bg-yellow-200 border-0 rounded md:my-10 dark:bg-gray-700">
-                    <div data-aos="flip-right" class="flex justify-center mt-10]">
+                    <div data-aos="flip-right" class="flex justify-center mt-10">
                         <div class="grid grid-cols-1 items-center w-[60%] justify-items-center">
-                            <div class="mt-10 bg-white rounded-xl flex justify-center shadow-lg items-center w-[45rem]">
-                                <div class="w-[50%] p-7 flex justify-center flex-col gap-5">
+                            <div
+                                class="mt-10 lg:flex-row flex-col bg-white rounded-xl flex justify-center shadow-lg items-center">
+                                <div class="lg:w-[50%] w-full p-7 flex justify-center flex-col gap-5">
                                     <h2 class="text-2xl text-center font-bold">Álvaro Martín Crespo</h2>
                                     <p>Apasionado por aprender nuevas habilidades y tecnologías para mejorar
                                         sus capacidades y hacer que sus proyectos sean aún mejores. Su enfoque está en la
@@ -100,20 +99,21 @@
                                         complejos. Siempre se esfuerza por utilizar las mejores prácticas y las tecnologías
                                         más avanzadas para crear soluciones innovadoras y efectivas.</p>
                                 </div>
-                                <div class="w-[50%]">
-                                    <img class=" rounded-e-xl" src="{{ asset('img/me.png') }}" alt="me">
+                                <div class="lg:w-[50%] w-full">
+                                    <img class="rounded-e-xl" src="{{ asset('img/me.png') }}" alt="me">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div data-aos="flip-left" class="flex justify-center mt-10">
                         <div class="grid grid-cols-1 items-center w-[60%] justify-items-center">
-                            <div class="mt-10 bg-white rounded-xl flex justify-center shadow-lg items-center">
-                                <div class="w-[50%]">
-                                    <img class="h-full rounded-s-xl" src="https://via.placeholder.com/500x500"
+                            <div
+                                class="mt-10 bg-white lg:flex-row flex-col rounded-xl flex justify-center shadow-lg items-center">
+                                <div class="lg:w-[50%] w-full">
+                                    <img class="h-full lg:rounded-s-xl" src="https://via.placeholder.com/500x500"
                                         alt="">
                                 </div>
-                                <div class="w-[50%] p-7 flex justify-center flex-col gap-5">
+                                <div class="lg:w-[50%] w-full p-7 flex justify-center flex-col gap-5">
                                     <h2 class="text-2xl text-center">Lorem Ipsum</h2>
                                     <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
                                         Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año
@@ -126,7 +126,7 @@
                         </div>
                     </div>
                     <div class="flex justify-center mt-10 mb-24">
-                        <div class="grid grid-cols-3 w-[90%] h-[20rem] gap-7">
+                        <div class="grid lg:grid-cols-3 grid-cols-1 w-[90%] gap-7">
 
                             <div data-aos="fade-down"
                                 class="mt-10 p-10 gap-10 bg-white rounded-xl flex justify-center flex-col shadow-lg items-center">

@@ -23,7 +23,7 @@
     <section class=" bg-[#E5E7EB]">
         <div class="container mx-auto">
             <div class="grid grid-rows-1">
-                <div class="grid grid-cols-1">
+                <div class="grid grid-cols-1 justify-items-center">
                     <div class="pt-[5rem] flex justify-center">
                         <h1 class="text-6xl font-semibold">Sobre<span
                                 class="font-bold text-[#243859] underline underline-offset-3 decoration-8 decoration-[#c99924]">Howeb</span>
@@ -100,7 +100,8 @@
                                         más avanzadas para crear soluciones innovadoras y efectivas.</p>
                                 </div>
                                 <div class="lg:w-[50%] w-full">
-                                    <img class="rounded-e-xl" src="{{ asset('img/me.png') }}" alt="me">
+                                    <img class="lg:rounded-e-xl object-cover h-[30rem] w-full"
+                                        src="{{ asset('img/me.png') }}" alt="me">
                                 </div>
                             </div>
                         </div>
@@ -108,60 +109,61 @@
                     <div data-aos="flip-left" class="flex justify-center mt-10">
                         <div class="grid grid-cols-1 items-center w-[60%] justify-items-center">
                             <div
-                                class="mt-10 bg-white lg:flex-row flex-col rounded-xl flex justify-center shadow-lg items-center">
+                                class="mt-10 bg-white lg:gap-0 gap-5 lg:flex-row flex-col rounded-xl flex justify-center shadow-lg items-center">
                                 <div class="lg:w-[50%] w-full">
-                                    <img class="h-full lg:rounded-s-xl" src="https://via.placeholder.com/500x500"
-                                        alt="">
+                                    <img class="lg:rounded-s-xl h-[25rem] object-none" src="{{ asset('img/code.png') }}"
+                                        alt="code">
                                 </div>
-                                <div class="lg:w-[50%] w-full p-7 flex justify-center flex-col gap-5">
-                                    <h2 class="text-2xl text-center">Lorem Ipsum</h2>
-                                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-                                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año
-                                        1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido
-                                        usó una galería de textos y los mezcló de tal manera que logró hacer un libro de
-                                        textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto
-                                        de relleno en documentos electrónicos, quedando esencialmente igual al original.</p>
+                                <div class="lg:w-[50%] w-full px-7 lg:pb-0 pb-7 flex justify-center flex-col gap-5">
+                                    <h2 class="text-2xl text-center font-bold">Proyectos</h2>
+                                    <p>He realizado múltiples proyectos utilizando React junto con Vite para mejorar el
+                                        rendimiento y agilidad del desarrollo. Además, he llevado a cabo diversos proyectos
+                                        utilizando Laravel, un framework de PHP ampliamente reconocido y utilizado en el
+                                        desarrollo web.En mi experiencia, también estoy familiarizado con tecnologías como
+                                        Bootstrap y Tailwind, que son frameworks de CSS que permiten el diseño y desarrollo
+                                        de interfaces de usuario modernas y responsivas. Estas herramientas me han permitido
+                                        crear interfaces atractivas y funcionales en mis proyectos.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center mt-10 mb-24">
-                        <div class="grid lg:grid-cols-3 grid-cols-1 w-[90%] gap-7">
 
-                            <div data-aos="fade-down"
-                                class="mt-10 p-10 gap-10 bg-white rounded-xl flex justify-center flex-col shadow-lg items-center">
-                                <h2 class="text-2xl font-bold">LinkedIn</h2>
-                                <a target="_blank"
-                                    href="https://www.linkedin.com/in/%C3%A1lvaro-mart%C3%ADn-crespo-bb9aa5246/">
-                                    <img class="w-[4rem] transition-all ease-in-out duration-300 hover:scale-150"
-                                        src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin">
-                                </a>
-                                <p class="font-bold text-sm-center flex justify-center items-center gap-2">Curriculum <span
-                                        class="text-3xl">·</span> Contacto</p>
-                            </div>
-                            <div data-aos="fade-down"
-                                class="mt-10 p-10 gap-10 bg-white rounded-xl flex justify-center flex-col shadow-lg items-center">
-                                <h2 class="text-2xl font-bold">Portfolio</h2>
-                                <a target="_blank" href="https://alvarodev.vercel.app/">
-                                    <img class="w-[4rem] transition-all ease-in-out duration-300 hover:scale-150"
-                                        src="{{ asset('img/svg/vite.svg') }}" alt="linkedin">
-                                </a>
-                                <p class="font-bold text-sm-center flex justify-center items-center gap-2">Información <span
-                                        class="text-3xl">·</span> Proyectos <span class="text-3xl">·</span> Contacto</p>
-                            </div>
-                            <div data-aos="fade-down"
-                                class="mt-10 p-8 gap-8 bg-white justify-center rounded-xl flex flex-col shadow-lg items-center">
-                                <h2 class="text-2xl font-bold">GitHub</h2>
-                                <a target="_blank" href="https://github.com/AlvaroMartinCrespo">
-                                    <img class="w-[4rem] transition-all ease-in-out duration-300 hover:scale-150"
-                                        src="{{ asset('img/svg/github.svg') }}" alt="linkedin">
-                                </a>
-                                <p class="font-bold text-sm-center flex justify-center items-center gap-2">Proyectos <span
-                                        class="text-3xl">·</span> Trabajos</p>
-                            </div>
 
+                    <div class="grid lg:grid-cols-3 grid-cols-1 w-[90%] gap-7 mt-10">
+                        <div data-aos="fade-down"
+                            class="mt-10 p-10 gap-10 bg-white rounded-xl flex justify-center flex-col shadow-lg items-center">
+                            <h2 class="text-2xl font-bold">LinkedIn</h2>
+                            <a target="_blank" href="https://www.linkedin.com/in/%C3%A1lvaro-mart%C3%ADn-crespo-bb9aa5246/">
+                                <img class="w-[4rem] transition-all ease-in-out duration-300 hover:scale-150"
+                                    src="{{ asset('img/svg/linkedin.svg') }}" alt="linkedin">
+                            </a>
+                            <p class="font-bold text-sm-center flex justify-center items-center gap-2">Curriculum <span
+                                    class="text-3xl">·</span> Contacto</p>
+                        </div>
+                        <div data-aos="fade-down"
+                            class="mt-10 p-10 gap-10 bg-white rounded-xl flex justify-center flex-col shadow-lg items-center">
+                            <h2 class="text-2xl font-bold">Portfolio</h2>
+                            <a target="_blank" href="https://alvarodev.vercel.app/">
+                                <img class="w-[4rem] transition-all ease-in-out duration-300 hover:scale-150"
+                                    src="{{ asset('img/svg/vite.svg') }}" alt="linkedin">
+                            </a>
+                            <p class="font-bold text-sm-center flex justify-center items-center gap-2">Información <span
+                                    class="text-3xl">·</span> Proyectos <span class="text-3xl">·</span> Contacto</p>
+                        </div>
+                        <div data-aos="fade-down"
+                            class="mt-10 p-8 gap-8 bg-white justify-center rounded-xl flex flex-col shadow-lg items-center">
+                            <h2 class="text-2xl font-bold">GitHub</h2>
+                            <a target="_blank" href="https://github.com/AlvaroMartinCrespo">
+                                <img class="w-[4rem] transition-all ease-in-out duration-300 hover:scale-150"
+                                    src="{{ asset('img/svg/github.svg') }}" alt="linkedin">
+                            </a>
+                            <p class="font-bold text-sm-center flex justify-center items-center gap-2">Proyectos <span
+                                    class="text-3xl">·</span> Trabajos</p>
                         </div>
                     </div>
+
+
+
                 </div>
             </div>
         </div>

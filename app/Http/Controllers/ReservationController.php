@@ -42,7 +42,6 @@ class ReservationController extends Controller
     {
         $reservation = Reservation::find($id);
         // If the reservation doesn't exist
-        // dd($reservation);
         if (!$reservation) {
             abort(404);
         }

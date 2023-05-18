@@ -2,17 +2,25 @@
 
 namespace Tests\Unit;
 
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 use PHPUnit\Framework\TestCase;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function test_that_true_is_true()
+
+    public function test_user_create()
     {
-        $this->assertTrue(true);
+        // TODO Preguntar
+
+        // $testUser = new User();
+        // $testUser->name = 'prueba';
+        // $testUser->email = 'prueba@prueba.prueba';
+        // $testUser->password = Hash::make('prueba');
+        // $testUser->save();
+
+        // $userRegistered = User::find($testUser->id);
+
+        // $this->assertTrue($userRegistered->email === 'prueba@prueba.prueba');
     }
 }

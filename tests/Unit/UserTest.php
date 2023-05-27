@@ -23,7 +23,7 @@ class UserTest extends TestCase
         $pagePost = $this->post(route('register-validate'), [
             'name' => 'John Doe',
             'email' => 'JzK0a@example.com',
-            'password' => 'password',
+            'password' => 'Password1',
         ])->assertRedirect(route('home'));
     }
 
@@ -41,13 +41,13 @@ class UserTest extends TestCase
         User::create([
             'name' => 'John Doe',
             'email' => 'JzK0a@example.com',
-            'password' => 'password',
+            'password' => 'Password1',
         ]);
 
         // Login
         $pagePost = $this->post(route('login-validate'), [
             'email' => 'JzK0a@example.com',
-            'password' => 'password',
+            'password' => 'Password1',
         ])->assertStatus(200);
     }
 }

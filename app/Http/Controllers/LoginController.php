@@ -60,6 +60,7 @@ class LoginController extends Controller
             $request->password !== $request->repeatPassword
         ) {
             return view('session/register', ['errorPassword' => 'Passwords do not match']);
+            // If email already exists return error
         } else if (User::where('email', $request->email)->exists()) {
             return view('session/register', ['errorEmail' => 'Email already exists']);
         } else {

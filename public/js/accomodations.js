@@ -5,9 +5,9 @@ window.addEventListener("DOMContentLoaded", () => {
             "Comienza tu <span class='text-orange-400'>sueño</span>",
             "Comienza tu <br> <span class='text-orange-600 bg-gray-400/40'>Realidad.</span>",
         ],
-        typeSpeed: 120,
+        typeSpeed: 100,
         backSpeed: 50,
         cursorChar: "",
-        backDelay: 700,
+        backDelay: 100,
     });
 });

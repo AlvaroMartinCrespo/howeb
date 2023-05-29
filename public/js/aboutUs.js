@@ -18,4 +18,17 @@ window.addEventListener("DOMContentLoaded", () => {
             backDelay: 700,
         });
     }, 3000);
+
+    // Modal
+    const myButton = document.getElementById("myButton");
+    const myModal = document.getElementById("myModal");
+    const closeButton = document.getElementById("closeButton");
+
+    myButton.addEventListener("click", function () {
+        myModal.classList.remove("hidden");
+    });
+
+    closeButton.addEventListener("click", function () {
+        myModal.classList.add("hidden");
+    });
 });

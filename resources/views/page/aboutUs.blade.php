@@ -37,6 +37,18 @@
                                 opciones para diferentes tipos de usuarios. Cada usuario tiene acceso a funcionalidades
                                 específicas adaptadas a sus necesidades."
                             </p>
+                            <span>
+                                <button id="myButton" class="underline">
+                                    Terminos y condiciones
+                                </button>
+                            </span>
+                            <div id="myModal" class="bg-slate-400 fixed inset-0 overflow-y-auto hidden z-50">
+                                <div class="flex items-center justify-center min-h-screen p-6 z-50">
+                                    <div class="bg-white rounded-lg shadow-xl p-4 z-50">
+                                        @include('page/termsAndConditions')
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="flex justify-center">
